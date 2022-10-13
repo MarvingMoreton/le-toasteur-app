@@ -1,3 +1,19 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
+
+/* Colors */
+
+body {
+  --primary-blue: #041e42;
+  --primary-orange: #ff5c39;
+  --primary-beige: rgba(239, 219, 178, 0.45);
+  --secondary-beige-45: #efdbb2;
+  --secondary-beige-20: rgba(239, 219, 178, 0.2);
+  --black-body: #0e0e0e;
+  --grey-subtitle: #7b8493;
+  --grey-dark: #383838;
+}
+
 html {
   font-size: 62.5%;
   /* 10px/16 px = 0.626= 62.5%; do not set a fix font-size, use % instead. *Percentage of user's browser font-size setting */
@@ -6,23 +22,21 @@ html {
   /* = All the element that overflow the viewport will be HIDDEN* - Only works if there is nothing absolutely positioned in relation to body*/
   /* des not work on Safari */
   /* scroll-behavior: smooth; */
-  background-color: white;
 }
 
 html,
 body {
   /* padding: 0;
   margin: 0; */
-  font-family: "Work Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body {
   /* DJ - Body Regular */
-  font-family: "Work Sans";
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 120%;
 
   /* Dark Blue title */
 
@@ -53,43 +67,32 @@ header {
 }
 
 h1 {
-  font-family: "Work Sans";
+  font-family: "Fira Sans";
   font-size: 70px;
   font-weight: 700;
-  line-height: 73px;
-  letter-spacing: -0.02em;
   text-align: center;
 }
 
 h2 {
-  font-family: Work Sans;
+  font-family: "Fira Sans";
   font-size: 40px;
   font-weight: 700;
-  line-height: 47px;
-  letter-spacing: -0.02em;
-  text-align: left;
 }
 
 h3 {
-  font-family: Work Sans;
+  font-family: "Fira Sans";
   font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
-  letter-spacing: -0.02em;
-  text-align: left;
 }
 
 h4 {
-  font-family: Work Sans;
+  font-family: "Fira Sans";
   font-size: 20px;
   font-weight: 500;
-  line-height: 23px;
-  letter-spacing: -0.02em;
-  text-align: left;
 }
 
 h5 {
-  font-family: "Work Sans";
+  font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
