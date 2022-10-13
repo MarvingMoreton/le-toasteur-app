@@ -1,0 +1,57 @@
+.footer,
+.copyright-box {
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #efdbb2;
+}
+.grid {
+  display: flex;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+}
+.container {
+  /* 114px convention can be used; or 120 rem also is a convention used */
+  max-width: 120rem;
+  padding: 8rem 3.2rem;
+  margin: 0rem auto;
+  /* Reminder : "margin 0 auto" gives the same margin to the left and right side and figure out automatically --> allow to center always*/
+}
+
+.footer-col--1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.logo-blue-transparent {
+  width: 50%;
+}
+.line {
+  border: 1px solid rgba(236, 241, 244, 0.35);
+}
+.subtitle {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  /* T - Blue */
+
+  color: #041e42;
+}
+
+.footer-col--2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+}
+.col-2--address,
+.col-2--openings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
