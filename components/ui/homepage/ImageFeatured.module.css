@@ -1,0 +1,21 @@
+.section-featured {
+  display: flex;
+  gap: 12rem;
+  margin: 0 auto;
+  max-width: 130rem;
+}
+
+.subtitle {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 26px;
+
+  color: #ff5c39;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin-bottom: 3rem;
+}

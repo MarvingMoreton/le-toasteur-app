@@ -36,15 +36,12 @@ body {
 
 body,
 li {
-  /* DJ - Body Regular */
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
 
-  /* Dark Blue title */
-
-  color: #170f49;
+  color: #383838;
 }
 
 a {
