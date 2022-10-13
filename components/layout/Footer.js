@@ -2,6 +2,10 @@ import classes from "./Footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareFacebook, faHashtag } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -32,10 +36,18 @@ function Footer() {
               <p>Jeudi au Lundi | 8H00 - 15H00 </p>
             </div>
           </div>
-          <div className={classes["footer-col--3"]}>{/* Map */}</div>
-          <div className={classes["footer-col--'"]}>
+          <div className={classes["footer-col--3"]}>
+            {/* Map - placeholder */}
+            <Image
+              src="/images/map-placeholder.png"
+              alt="test"
+              width={436}
+              height={311}
+            />
+          </div>
+          <div className={classes["footer-col--4"]}>
             <span className={classes.subtitle}>Services</span>
-            <ul>
+            <ul className={classes["col-4-nav-list"]}>
               <li>Photos</li>
               <li>Notre Histoire</li>
               <li>Contact</li>
@@ -56,11 +68,18 @@ function Footer() {
             </ul>
           </div>
           <div className={classes["footer-col--5"]}>
-            <span>Notre communauté</span>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+            <span className={classes.subtitle}>Notre communauté</span>
+            <ul className={classes["col-5-nav-list"]}>
+              <li>
+                <FontAwesomeIcon icon={faHashtag} />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faHashtag} />
+              </li>
+              <li>
+                {" "}
+                <FontAwesomeIcon icon={faHashtag} />
+              </li>
             </ul>
           </div>
         </div>
