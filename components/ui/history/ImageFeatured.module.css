@@ -1,0 +1,38 @@
+.section-image-featured {
+  padding: 9.6rem 0;
+}
+.grid-image-featured {
+  display: flex;
+  gap: 4rem;
+}
+.box-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.box-image {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.overlay-beige {
+  position: absolute;
+  z-index: -999;
+}
+
+.subtitle {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 26px;
+
+  color: #ff5c39;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin-bottom: 3rem;
+}
