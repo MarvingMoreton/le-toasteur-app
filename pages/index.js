@@ -4,12 +4,14 @@ import styles from "../styles/Home.module.css";
 
 import Hero from "../components/ui/homepage/Hero";
 import ImageFeatured from "../components/ui/homepage/ImageFeatured";
+import ImpactContent from "../components/ui/homepage/ImpactContent";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <ImageFeatured />
+      <ImpactContent />
     </div>
   );
 }

@@ -7,19 +7,20 @@ function Hero() {
   return (
     <section className={classes["hero-section"]}>
       <div className={classes["box-text"]}>
-        <h1>Le meilleur Brunch de l’île</h1>
+        <h1>
+          Le meilleur &nbsp; <strong>Brunch de l’île</strong>
+        </h1>
         <span>Profiter de notre délicieux brunch</span>
-        <a>Notre menu</a>
-        <a>Notre menu</a>
+        <a className="btn-primary">Notre menu</a>
       </div>
-      <div className={classes["image-box"]}>
+      <div className={classes["box-image"]}>
         <Image
           className={classes["hero-illustration"]}
           src="/images/illustration-overlayed.png"
           alt="test"
           // layout="responsive"
           // layout="fill"
-          objectFit="contain"
+          // objectFit="contain"
           width={638}
           height={549}
         />

@@ -75,3 +75,10 @@
 .copyright-box {
   text-align: center;
 }
+
+.box-icon {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-self: center;
+}

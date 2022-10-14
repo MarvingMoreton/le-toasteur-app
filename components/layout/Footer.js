@@ -51,20 +51,21 @@ function Footer() {
               <li>Photos</li>
               <li>Notre Histoire</li>
               <li>Contact</li>
-              <li>
-                <Link href="">
-                  <a>
-                    <Image
-                      src="/images/uk-flag.png"
-                      alt="test"
-                      // layout="fill"
-                      width={26}
-                      height={26}
-                    />
-                  </a>
-                </Link>
-                English
-              </li>
+              <div lassName={classes["box-icon"]}>
+                <Image
+                  src="/images/uk-flag.png"
+                  alt="test"
+                  // layout="fill"
+                  width={20}
+                  height={20}
+                />
+                <li className={classes["icon-uk"]}>
+                  <Link href="">
+                    <a></a>
+                  </Link>
+                  English
+                </li>
+              </div>
             </ul>
           </div>
           <div className={classes["footer-col--5"]}>
