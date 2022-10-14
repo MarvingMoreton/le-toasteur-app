@@ -78,6 +78,9 @@ function GalleryList(props) {
             height={450}
           />
         </figure>
+        <Link href="">
+          <a className="btn-secondary">Voir plus</a>
+        </Link>
       </div>
     </div>
   );
