@@ -1,0 +1,87 @@
+.background {
+  background: url(../../public/images/404-background.png);
+  /* color: red; */
+
+  /* width: 192rem;
+  height: 108rem; */
+  padding: 30rem 25rem;
+  color: #ffff;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10rem;
+}
+.box-text > h1 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 288px;
+  line-height: 70px;
+  /* or 24% */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.75);
+  /* backdrop-filter: blur(1px); */
+}
+
+.box-text > span {
+  text-align: left;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 75px;
+  /* or 312% */
+
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.box-text > h2 {
+  text-align: right;
+
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  padding-left: 30rem;
+}
+
+.box-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  /* flex-direction: column; */
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+
+.arrow-icon {
+  font-size: 3.2rem;
+}
