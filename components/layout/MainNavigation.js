@@ -36,7 +36,7 @@ function MainNavigation() {
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="/menu">
                   <a
                     className={`${classes["main-nav-link"]} ${
                       currentRoute === "/" ? "active" : ""
@@ -60,7 +60,7 @@ function MainNavigation() {
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="/gallerie">
                   <a
                     className={`${classes["main-nav-link"]} ${
                       currentRoute === "/" ? "active" : ""
@@ -71,7 +71,7 @@ function MainNavigation() {
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="/notre-histoire">
                   <a
                     className={`${classes["main-nav-link"]} ${
                       currentRoute === "/" ? "active" : ""
