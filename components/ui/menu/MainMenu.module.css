@@ -1,0 +1,53 @@
+.section-main-menu {
+  padding: 9.6rem 0;
+  background-color: #041e42;
+}
+
+.menu-grid {
+  background-color: #ffff;
+  border-radius: 0.8rem;
+  min-width: 1372px;
+  min-height: 2800px;
+}
+
+.box-text {
+  display: flex;
+  gap: 5rem;
+  /* flex-wrap: wrap; */
+}
+
+.left-side {
+  width: 60%;
+}
+
+.left-side > h2 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  /* identical to box height */
+
+  /* T - Orange */
+
+  color: #ff5c39;
+}
+.left-side > span {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  /* or 100% */
+
+  color: #000000;
+}
+
+.right-side {
+  /* align-self: flex-end; */
+  justify-self: end;
+}
+
+.title-row {
+  display: flex;
+}
