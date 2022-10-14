@@ -1,0 +1,23 @@
+.section-gallery {
+  padding: 9.6rem 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  width: 80%;
+}
+
+.gallery-item > image {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
