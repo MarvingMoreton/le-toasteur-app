@@ -1,10 +1,12 @@
 .section-featured {
   display: flex;
-  gap: 12rem;
-  margin: 0 auto;
-  max-width: 130rem;
+  gap: 4rem;
+  /* margin: 0 auto; */
 }
 
+.box-featured-image {
+  width: 100%;
+}
 .subtitle {
   font-family: "Fira Sans";
   font-style: normal;
@@ -19,3 +21,46 @@
 .title {
   margin-bottom: 3rem;
 }
+
+.box-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.box-buttons {
+  display: flex;
+  gap: 5rem;
+  margin-top: 6rem;
+}
+/* .btn-primary {
+  background: #041e42;
+  border-radius: 0.8rem;
+  padding: 1rem 1.8rem;
+  width: 50%;
+
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8rem;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #ffffff;
+
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  width: 50%;
+  border: 1.5px solid #041e42;
+
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8rem;
+  text-align: center;
+
+  color: #041e42;
+} */

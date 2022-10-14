@@ -130,3 +130,37 @@ input:focus-visible {
   border: 1px solid #c9c5ff;
   outline: #c9c5ff;
 }
+
+/* BUTTONS */
+
+.btn-primary {
+  background: #041e42;
+  border-radius: 0.8rem;
+  padding: 1rem 1.8rem;
+  width: 50%;
+
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8rem;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #ffffff;
+
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  width: 50%;
+  border: 1.5px solid #041e42;
+
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8rem;
+  text-align: center;
+
+  color: #041e42;
+}
