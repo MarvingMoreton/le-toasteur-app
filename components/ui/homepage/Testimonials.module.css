@@ -1,0 +1,30 @@
+.section-testimonials {
+  padding: 9.6rem 0;
+}
+
+.grid-testimonials {
+  display: flex;
+  background: rgba(239, 219, 178, 0.2);
+  padding: 5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.grid-image {
+  display: flex;
+  /* flex-direction: ; */
+  flex-wrap: wrap;
+  /* gap: 1rem; */
+  width: 100%;
+}
+.image-card {
+  /* margin: 10px;
+  padding: 10px; */
+  flex: 50%;
+}
+
+.image-gallery {
+  border-radius: 1.2rem;
+}
