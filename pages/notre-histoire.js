@@ -12,6 +12,8 @@ export default function OurStory(props) {
     <div>
       <Banner />
       <ImageFeatured />
+      <Values />
+
       <OurTeam />
     </div>
   );
