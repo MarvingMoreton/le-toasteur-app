@@ -1,0 +1,71 @@
+.section-book-table {
+  padding: 9.6rem 0;
+}
+
+.container-book-table {
+  display: flex;
+  width: 100%;
+}
+
+.box-left {
+  background: url(../../../public/images/book-table.png);
+  /* width: 60rem; */
+  height: 90rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.box-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 5rem;
+
+  background: rgba(239, 219, 178, 0.45);
+  border-radius: 0px 0.8rem 0.8rem 0;
+}
+.box-right > span {
+  font-size: 8rem;
+  margin-bottom: 1rem;
+}
+.box-right > h2 {
+  margin-bottom: 3rem;
+}
+/* .box-right > p {
+} */
+.box-right > a {
+  margin-top: 3rem;
+}
+
+.box-right-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.box-left--text {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.box-left--text > H3 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 58px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+}
+
+.box-left--text:last-child {
+  font-size: 4rem;
+}

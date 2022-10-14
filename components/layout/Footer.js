@@ -51,7 +51,7 @@ function Footer() {
               <li>Photos</li>
               <li>Notre Histoire</li>
               <li>Contact</li>
-              <div lassName={classes["box-icon"]}>
+              <div className={classes["box-icon"]}>
                 <Image
                   src="/images/uk-flag.png"
                   alt="test"
