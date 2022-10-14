@@ -7,17 +7,27 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
-  gap: 1.6rem;
+  text-align: center;
+  row-gap: 8rem;
   padding: 1.6rem;
 }
 
 .gallery-item {
   overflow: hidden;
-  width: 80%;
+  width: 100%;
 }
 
 .gallery-item > image {
   display: block;
   width: 100%;
   transition: all 0.4s;
+}
+/* .gallery-item:child {
+  width: 100%;
+} */
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
 }

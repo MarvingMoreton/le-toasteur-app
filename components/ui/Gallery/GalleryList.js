@@ -29,26 +29,8 @@ function GalleryList(props) {
             src="/images/office-image.png"
             alt="test"
             // layout="fill"
-            width={507}
-            height={509}
-          />
-        </figure>
-        <figure className={classes["gallery-item"]}>
-          <Image
-            src="/images/office-image.png"
-            alt="test"
-            // layout="fill"
             width={450}
             height={450}
-          />
-        </figure>
-        <figure className={classes["gallery-item"]}>
-          <Image
-            src="/images/office-image.png"
-            alt="test"
-            // layout="fill"
-            width={507}
-            height={509}
           />
         </figure>
         <figure className={classes["gallery-item"]}>
@@ -78,6 +60,26 @@ function GalleryList(props) {
             height={450}
           />
         </figure>
+        <figure className={classes["gallery-item"]}>
+          <Image
+            src="/images/office-image.png"
+            alt="test"
+            // layout="fill"
+            width={450}
+            height={450}
+          />
+        </figure>
+        <figure className={classes["gallery-item"]}>
+          <Image
+            src="/images/office-image.png"
+            alt="test"
+            // layout="fill"
+            width={450}
+            height={450}
+          />
+        </figure>
+      </div>
+      <div className={classes["btn-box"]}>
         <Link href="">
           <a className="btn-secondary">Voir plus</a>
         </Link>
