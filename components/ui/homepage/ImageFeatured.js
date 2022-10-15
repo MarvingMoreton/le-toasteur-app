@@ -1,18 +1,20 @@
 import classes from "./ImageFeatured.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import illustration from "../../../public/images/illustrations/illustration-brunch-eggs.png";
+
 import React from "react";
 
 function ImageFeatured() {
   return (
     <section className={`${classes["section-featured"]} ${"container"}`}>
-      <div className={classes["box-featured-image"]}>
+      <div className={classes["box-image"]}>
         <Image
-          src="/images/expert-brunch.png"
+          src={illustration}
           alt="test"
-          // layout="fill"
-          width={485}
-          height={602}
+          layout="responsive"
+          // width={485}
+          // height={602}
         />
       </div>
       <div className={classes["box-text"]}>

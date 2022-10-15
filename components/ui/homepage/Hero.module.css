@@ -1,33 +1,41 @@
 .hero-section {
   display: flex;
-  justify-content: center;
-}
-
-.hero-illustration {
-  /* left: 15% !important;
-  /* z-index: 3; */
-  /* width: 100% !important; */
-  /* min-height: 90% !important; */
-  z-index: -1;
+  align-items: center;
+  /* margin-top: 0.8rem; */
+  margin-top: 0.1rem;
+  width: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgb(255, 255, 255, 0.1)
+    ),
+    url(../../../public/images/illustrations/brunch-random--2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  min-width: 50%;
+  height: 549px;
 }
 
 .box-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  text-align: left;
   gap: 1rem;
+  margin-left: 10rem;
 }
 .box-text > h1 {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 300;
-  font-size: 6rem;
+  font-size: 6.4rem;
   line-height: 74px;
   /* or 103% */
 
   display: flex;
-  align-items: center;
 
   color: #333333;
 }
@@ -43,16 +51,22 @@
 
   color: #0e0e0e;
 }
-.box-image {
-  /* width: 100%;
-  height: 100%;
-  min-width: 100%; */
-  z-index: -1;
-  /* position: absolute; */
+/* .box-image {
 
-  /* position: relative; */
-  margin-right: 5rem;
-}
+  overflow: hidden;
+  background: #rgba(4, 30, 66, 1);
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgb(255, 255, 255, 0.1)
+    ),
+    url(../../../public/images/illustrations/brunch-random.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-width: 50%;
+  height: 549px;
+} */
 
 /* .hero-section {
   position: relative;
