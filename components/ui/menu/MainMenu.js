@@ -18,11 +18,11 @@ function MainMenu(props) {
           </div>
           <div className={classes["right-side"]}>
             <Image
-              src="/images/toasteur-illustration.png"
+              src="/images/toast-pop-orange.png"
               alt="test"
               // layout="fill"
-              width={269}
-              height={168}
+              width={356}
+              height={241}
             />
           </div>
         </div>
@@ -208,18 +208,34 @@ function MainMenu(props) {
             </p>
           </div>
           {/* ITEM */}
-          <div className={classes["item-card"]}>
+          <div
+            className={`${classes["item-card"]} ${classes["highlighted-item"]}`}
+          >
             <div className={classes["title-row"]}>
-              <h3>Poutine Déjeuner</h3>
-              <span>16</span>
+              <h3>Kit à partager (2 personnes)</h3>
+              <span>40</span>
             </div>
             <p>
-              2 œufs pochés, rissolées, mozzarella, légumes, hollandaise (ou
-              pesto tomates séchées) Rég : bacon, saucisse Végé : tofu, courge
-              butternut * remplacer par sauce macncheese +2
+              4 oeufs, rôties, rissolées 2 tr. pains dorée briochés, sirop
+              d’érable Salade de fruit [bananes, pommes, compote baies -
+              rhubarbe - menthe] 3 choix parmi : bacon* • jambon • saucisses •
+              creton • tofu • cheddar • saucisse ‘Gusta’ paprika
+            </p>
+            <p className={classes.instruction}>
+              * surcharge si bacon choisi plus d’une fois +1
             </p>
           </div>
         </div>
+      </div>
+      <div className={classes["logo-box"]}>
+        <Image
+          className={classes["logo-blue-transparent"]}
+          src="/images/toasteur-villeray-logo.png"
+          alt="test"
+          // layout="fill"
+          width={207}
+          height={106}
+        />
       </div>
     </section>
   );

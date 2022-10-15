@@ -1,23 +1,27 @@
 .section-main-menu {
   padding: 9.6rem 0;
   background-color: #041e42;
+  position: relative;
 }
 
 .menu-grid {
   background-color: #ffff;
   border-radius: 0.8rem;
   min-width: 1372px;
-  min-height: 2800px;
+  min-height: 100%;
+  padding: 7rem 8rem;
 }
 
 .box-text {
   display: flex;
+  justify-content: space-between;
   gap: 5rem;
+  margin-left: 8rem;
   /* flex-wrap: wrap; */
 }
 
 .left-side {
-  width: 60%;
+  width: 95%;
 }
 
 .left-side > h2 {
@@ -43,11 +47,71 @@
   color: #000000;
 }
 
-.right-side {
+/* .right-side {
   /* align-self: flex-end; */
-  justify-self: end;
+/* justify-self: end; */
+/* width: 80%; }*/
+
+.title-row {
+  display: flex;
+  margin-bottom: 1.6rem;
+}
+
+/* Menu list section */
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  row-gap: 7rem;
+  column-gap: 8rem;
+  margin: 9rem auto;
+}
+
+.item-card {
+  width: 40%;
+}
+
+.item-card > p {
+  width: 86%;
 }
 
 .title-row {
   display: flex;
+  justify-content: space-between;
+}
+
+.title-row > span {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 24px;
+  /* identical to box height, or 80% */
+
+  /* T - Blue */
+
+  color: #041e42;
+}
+
+.instruction {
+  font-style: italic;
+
+  /* T - Black 0E0E0E */
+}
+
+.highlighted-item {
+  border: 2px dashed #ff5c39;
+  padding: 2rem;
+}
+
+.logo-box {
+  position: absolute;
+  /* left: 50%; */
+  left: 50%;
+  margin-left: -50px;
+  /* top: 50%; */
+  margin-top: -50px;
+  /* transform: translate(-50%, -50%); */
 }
