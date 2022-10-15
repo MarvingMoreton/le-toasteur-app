@@ -9,7 +9,12 @@ import Addresses from "../components/ui/contact/Addresses";
 export default function Contact(props) {
   return (
     <div>
-      <Banner />
+      <Banner
+        h1={"Contact"}
+        text={
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+        }
+      />
       <Map />
       <Addresses />
     </div>

@@ -10,7 +10,7 @@ import Drinks from "../components/ui/menu/Drinks";
 export default function Menu(props) {
   return (
     <div>
-      <Banner />
+      <Banner h1={"Notre Menu"} text={"Pour l’amour du brunch !"} />
 
       <MainMenu />
       <VeganMenu />

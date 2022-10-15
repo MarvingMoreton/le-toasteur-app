@@ -10,7 +10,12 @@ import OurTeam from "../components/ui/history/OurTeam";
 export default function OurStory(props) {
   return (
     <div>
-      <Banner />
+      <Banner
+        h1={"Notre Histoire"}
+        text={
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+        }
+      />
       <ImageFeatured />
       <Values />
 

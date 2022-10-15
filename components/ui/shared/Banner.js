@@ -6,11 +6,8 @@ import React from "react";
 function Banner(props) {
   return (
     <div className={classes["banner-background"]}>
-      <h1>Notre menu</h1>
-      <span>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry
-      </span>
+      <h1>{props.h1}</h1>
+      <span>{props.text}</span>
     </div>
   );
 }

@@ -8,7 +8,12 @@ import GalleryList from "../components/ui/Gallery/GalleryList";
 export default function Gallerie() {
   return (
     <div>
-      <Banner />
+      <Banner
+        h1={"Chez Nous"}
+        text={
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+        }
+      />
       <GalleryList />
     </div>
   );
