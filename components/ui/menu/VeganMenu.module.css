@@ -16,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   gap: 5rem;
   margin-left: 8rem;
   /* flex-wrap: wrap; */
