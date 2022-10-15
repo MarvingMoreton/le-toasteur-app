@@ -3,7 +3,7 @@
 }
 .grid-image-featured {
   display: flex;
-  gap: 4rem;
+  gap: 5rem;
   position: relative;
   justify-content: center;
   align-items: center;
