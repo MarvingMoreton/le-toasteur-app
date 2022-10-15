@@ -180,3 +180,37 @@ input:focus-visible {
 
   color: #041e42;
 }
+
+.avatar {
+  border-radius: 50%;
+}
+
+.subtitle {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* T - Orange */
+
+  color: #ff5c39;
+}
+
+.secondary-heading {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 58px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #041e42;
+}
