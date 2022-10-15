@@ -1,6 +1,9 @@
 import classes from "./MainNavigation.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import blueLogo from "../../public/images/logos/logo-toasteur-villeray-navy.png";
+import blueToast from "../../public/images/logos/toast-blue-navy-ellipsed.svg";
+
 import React from "react";
 import { useRouter } from "next/router";
 
@@ -10,17 +13,19 @@ function MainNavigation() {
   return (
     <React.Fragment>
       <header>
-        <Link href="/">
-          <a>
-            <Image
-              src="/images/toasteur-villeray-logo.png"
-              alt="test"
-              // layout="fill"
-              width={133}
-              height={68}
-            />
-          </a>
-        </Link>
+        <div className={classes["nav-logo"]}>
+          <Link href="/">
+            <a>
+              <Image
+                src={blueLogo}
+                alt="test"
+                layout="responsive"
+                // width={133}
+                // height={68}
+              />
+            </a>
+          </Link>
+        </div>
         <div className={classes["nav-container"]}>
           <nav className={classes["main-nav"]}>
             <ul className={classes["main-nav-list"]}>
@@ -50,11 +55,11 @@ function MainNavigation() {
                 <Link href="/">
                   <a>
                     <Image
-                      src="/images/toast-blue-navy.png"
+                      src={blueToast}
                       alt="test"
-                      // layout="fill"
-                      width={124}
-                      height={124}
+                      // layout="responsive"
+                      // width={124}
+                      // height={124}
                     />
                   </a>
                 </Link>
