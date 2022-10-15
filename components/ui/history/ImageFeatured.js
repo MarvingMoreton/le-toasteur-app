@@ -25,7 +25,7 @@ function ImageFeatured(props) {
             alt="test"
             // layout="fill"
             width={400}
-            height={380}
+            height={320}
           />
         </div>
         <div className={classes["box-text"]}>

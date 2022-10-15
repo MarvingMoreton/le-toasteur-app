@@ -24,6 +24,25 @@
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
+  position: relative;
+}
+
+.emoji-box {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.emoji-box > span {
+  font-size: 5.5rem;
+}
+.box-overlay {
+  z-index: -999;
+  /* bottom: 47%;
+  left: 37%; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -25%;
 }
 
 .value-title {

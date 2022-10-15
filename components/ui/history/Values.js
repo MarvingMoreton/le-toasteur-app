@@ -9,7 +9,19 @@ function Values() {
       <div className={classes["card-grid"]}>
         <div className={classes["card-value"]}>
           <div className={classes["value-background"]}>
-            <span>☕️</span>
+            <div className={classes["emoji-box"]}>
+              <span>☕️</span>
+              <div className={classes["box-overlay"]}>
+                <Image
+                  className={classes["overlay-beige"]}
+                  src="/images/ellipse-beige.png"
+                  alt="test"
+                  // layout="fill"
+                  width={105}
+                  height={105}
+                />
+              </div>
+            </div>
           </div>
           <h3 className={classes["value-title"]}>Valeur 1</h3>
           <span className={classes["value-desc"]}>
@@ -18,7 +30,19 @@ function Values() {
         </div>
         <div className={classes["card-value"]}>
           <div className={classes["value-background"]}>
-            <span>🍳</span>
+            <div className={classes["emoji-box"]}>
+              <span>🍳</span>
+              <div className={classes["box-overlay"]}>
+                <Image
+                  className={classes["overlay-beige"]}
+                  src="/images/ellipse-beige.png"
+                  alt="test"
+                  // layout="fill"
+                  width={105}
+                  height={105}
+                />
+              </div>
+            </div>
           </div>
           <h3 className={classes["value-title"]}>Valeur 1</h3>
           <span className={classes["value-desc"]}>
@@ -27,7 +51,19 @@ function Values() {
         </div>
         <div className={classes["card-value"]}>
           <div className={classes["value-background"]}>
-            <span>🌳</span>
+            <div className={classes["emoji-box"]}>
+              <span>🌳</span>
+              <div className={classes["box-overlay"]}>
+                <Image
+                  className={classes["overlay-beige"]}
+                  src="/images/ellipse-beige.png"
+                  alt="test"
+                  // layout="fill"
+                  width={105}
+                  height={105}
+                />
+              </div>
+            </div>
           </div>
           <h3 className={classes["value-title"]}>Valeur 1</h3>
           <span className={classes["value-desc"]}>
