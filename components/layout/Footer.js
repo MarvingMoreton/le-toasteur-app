@@ -84,9 +84,9 @@ function Footer() {
             </ul>
           </div>
         </div>
+        <hr className={classes.line}></hr>
       </footer>
       <div className={classes["copyright-box"]}>
-        <hr className={classes.line}></hr>
         <p>Copyright © 2022 Le Toasteur | Fait avec 💙 par Marving Moreton </p>
       </div>
     </React.Fragment>
