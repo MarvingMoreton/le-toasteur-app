@@ -2,6 +2,7 @@ import classes from "./ImageFeatured.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import teamPhoto from "../../../public/images/restaurant/team-photo--1.jpg";
 
 function ImageFeatured(props) {
   return (
@@ -9,19 +10,22 @@ function ImageFeatured(props) {
       <div className={classes["grid-image-featured"]}>
         <div className={classes["box-image"]}>
           <Image
-            src="/images/team-photo.png"
+            src={teamPhoto}
             alt="test"
+            className="image"
             // layout="fill"
-            width={663}
-            height={758}
+            // width={663}
+            // height={758}
           />
+        </div>
+        <div className={classes["box-overlay"]}>
           <Image
             className={classes["overlay-beige"]}
             src="/images/background-beige-rectangle.png"
             alt="test"
             // layout="fill"
-            width={517}
-            height={599}
+            width={400}
+            height={380}
           />
         </div>
         <div className={classes["box-text"]}>

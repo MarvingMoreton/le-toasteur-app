@@ -214,3 +214,7 @@ input:focus-visible {
 
   color: #041e42;
 }
+
+.image {
+  border-radius: 0.8rem;
+}
