@@ -8,14 +8,26 @@
 }
 
 .box-left {
-  background: url(../../../public/images/book-table.png);
+  /* background: url(../../../public/images/book-table.png); */
   /* width: 60rem; */
-  height: 90rem;
 
+  overflow: hidden;
+  /* background: #C04848;  fallback for old browsers */
+  background: linear-gradient(rgb(14, 14, 14, 0.5), rgb(14, 14, 14, 0.5)),
+    url(../../../public/images/restaurant/table-toasteur.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 90rem;
+  /* background: rgba(14, 14, 14, 0.1); */
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
+}
+
+.image {
+  width: 100%;
 }
 
 .box-right {

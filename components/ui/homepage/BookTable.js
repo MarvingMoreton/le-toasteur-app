@@ -1,6 +1,8 @@
 import classes from "./BookTable.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import table from "../../../public/images/restaurant/table-toasteur.png";
+
 import React from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
