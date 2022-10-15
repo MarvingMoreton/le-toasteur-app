@@ -1,11 +1,18 @@
 import classes from "./Footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import blueTransparentLogo from "../../public/images/logos/logo-toasteur-villeray-navy-transparent.png";
+
 import React from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareFacebook, faHashtag } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSquareFacebook,
+  faHashtag,
+  faDuotone,
+  faHeart,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -13,14 +20,15 @@ function Footer() {
       <footer className={classes["footer"]}>
         <div className={` ${classes.container} ${classes.grid} `}>
           <div className={classes["footer-col--1"]}>
-            <Image
-              className={classes["logo-blue-transparent"]}
-              src="/images/toasteur-blue-transparent.png"
-              alt="test"
-              // layout="fill"
-              width={94}
-              height={48}
-            />
+            <div className={classes["image-logo-navy"]}>
+              <Image
+                src={blueTransparentLogo}
+                alt="test"
+                layout="responsive"
+                // width={94}
+                // height={48}
+              />
+            </div>
             <span>
               It has survived not only five centuries, but also the leap.
             </span>
@@ -51,21 +59,11 @@ function Footer() {
               <li>Photos</li>
               <li>Notre Histoire</li>
               <li>Contact</li>
-              <div className={classes["box-icon"]}>
-                <Image
-                  src="/images/uk-flag.png"
-                  alt="test"
-                  // layout="fill"
-                  width={20}
-                  height={20}
-                />
-                <li className={classes["icon-uk"]}>
-                  <Link href="">
-                    <a></a>
-                  </Link>
-                  English
-                </li>
-              </div>
+              <li>
+                <Link href="">
+                  <a>English</a>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className={classes["footer-col--5"]}>
@@ -87,7 +85,13 @@ function Footer() {
         <hr className={classes.line}></hr>
       </footer>
       <div className={classes["copyright-box"]}>
-        <p>Copyright © 2022 Le Toasteur | Fait avec 💙 par Marving Moreton </p>
+        <p>
+          Copyright © 2022 Le Toasteur | Fait avec&nbsp;
+          <FontAwesomeIcon icon={faHeart} className={classes.heart} /> &nbsp;par
+          Marving Moreton
+        </p>
+
+        <FontAwesomeIcon icon="fa-duotone fa-heart" />
       </div>
     </React.Fragment>
   );
