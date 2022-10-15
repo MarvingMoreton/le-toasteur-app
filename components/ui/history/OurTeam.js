@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import classes from "./OurTeam.module.css";
+import portrait from "../../../public/images/illustrations/dummy-team-portrait.jpg";
 
 function OurTeam(props) {
   return (
@@ -15,11 +16,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>
@@ -41,11 +42,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>
@@ -67,11 +68,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>
@@ -93,11 +94,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>
@@ -119,11 +120,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>
@@ -145,11 +146,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>
@@ -171,11 +172,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>
@@ -197,11 +198,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>
@@ -223,11 +224,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>
@@ -249,11 +250,11 @@ function OurTeam(props) {
           <div className={classes["employee-card"]}>
             <div className={classes["image-box"]}>
               <Image
-                src="/images/employee-dummy.png"
+                src={portrait}
                 alt="test"
-                // layout="fill"
-                width={399}
-                height={470}
+                // layout="responsive"
+                // width={399}
+                // height={470}
               />
             </div>
             <div className={classes["employee-text-box"]}>

@@ -52,7 +52,7 @@ function BookTable() {
               <div className={classes["box-excerpt"]}>
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam"
+                  aliquam “
                 </p>
                 <Link href="">
                   <a className={classes["see-more"]}>See more...</a>
@@ -85,7 +85,7 @@ function BookTable() {
               <div className={classes["box-excerpt"]}>
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam"
+                  aliquam “
                 </p>
                 <Link href="">
                   <a className={classes["see-more"]}>See more...</a>
@@ -118,7 +118,7 @@ function BookTable() {
               <div className={classes["box-excerpt"]}>
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam"
+                  aliquam “
                 </p>
                 <Link href="">
                   <a className={classes["see-more"]}>See more...</a>
@@ -151,7 +151,7 @@ function BookTable() {
               <div className={classes["box-excerpt"]}>
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam"
+                  aliquam “
                 </p>
                 <Link href="">
                   <a className={classes["see-more"]}>See more...</a>
