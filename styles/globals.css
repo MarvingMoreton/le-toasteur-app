@@ -236,3 +236,27 @@ input:focus-visible {
 .image {
   border-radius: 0.8rem;
 }
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+}
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+}
+/**************************/
+/* BELOW 768 (tablets) */
+/**************************/
+@media (max-width: 48em) {
+}
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+}
