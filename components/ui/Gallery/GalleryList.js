@@ -13,7 +13,7 @@ import React from "react";
 
 function GalleryList(props) {
   return (
-    <div className={`${classes["section-gallery"]} ${"container"}`}>
+    <div className={`${classes["section-gallery"]} ${"container"} `}>
       <div className={classes["gallery"]}>
         {/* FIGURE */}
         <figure className={classes["gallery-item"]}>
