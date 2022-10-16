@@ -62,8 +62,8 @@
 }
 
 .first-row-box {
-  display: flex;
-  justify-content: start;
+  display: flex-start;
+  justify-content: flex-start;
   align-items: center;
   gap: 2rem;
 }

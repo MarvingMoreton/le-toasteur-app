@@ -8,6 +8,7 @@
 
 .box-image {
   width: 100%;
+  z-index: -1;
 }
 .subtitle {
   font-family: "Fira Sans";

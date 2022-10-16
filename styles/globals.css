@@ -59,13 +59,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #ffff; */
+  background-color: #ffff;
   /* adding height bcoz we want header to be sticky later */
   height: 9.6rem;
-  padding: 0 6rem;
-  margin-top: 0.5rem;
-  /* position: relative; */
-  /* added in the media queries mobile phase, because we set up .main-nav to absolute, so parent need to be relative */
+  padding: 0.5rem 6rem 0 6rem;
+  z-index: 9999;
 }
 
 h1 {
@@ -217,4 +215,22 @@ input:focus-visible {
 
 .image {
   border-radius: 0.8rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  animation: smoothScroll 1s forwards;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-142px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
