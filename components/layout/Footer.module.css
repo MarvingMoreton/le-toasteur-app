@@ -94,6 +94,12 @@
   color: #041e42;
 }
 
+.footer-col--3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .map {
   border-radius: 1rem;
   border: 0;
