@@ -93,3 +93,8 @@
 .heart {
   color: #041e42;
 }
+
+.map {
+  border-radius: 1rem;
+  border: 0;
+}
