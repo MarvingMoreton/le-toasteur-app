@@ -2,6 +2,7 @@ import classes from "./Addresses.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import illustration from "../../../public/images/logos/illustration-toast-house-orange.png";
 
 function Addresses() {
   return (
@@ -30,11 +31,11 @@ function Addresses() {
       </div>
       <div className={classes["box-illustration"]}>
         <Image
-          src="/images/toasteur-illustration.png"
+          src={illustration}
           alt="test"
           // layout="fill"
-          width={269}
-          height={167}
+          // width={269}
+          // height={167}
         />
       </div>
     </section>

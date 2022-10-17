@@ -48,5 +48,7 @@
 .box-illustration {
   display: flex;
   justify-content: center;
-  margin-top: 8rem;
+  width: 25%;
+  text-align: center;
+  margin: 6rem auto 0 auto;
 }
