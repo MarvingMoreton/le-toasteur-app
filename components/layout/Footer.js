@@ -2,17 +2,16 @@ import classes from "./Footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import blueTransparentLogo from "../../public/images/logos/logo-toasteur-villeray-navy-transparent.png";
+import facebook from "../../public/images/socials/square-facebook.svg";
+import instagram from "../../public/images/socials/square-instagram.svg";
+
+import { Facebook, Instagram, Google } from "@mui/icons-material";
 
 import React from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSquareFacebook,
-  faHashtag,
-  faDuotone,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -55,20 +54,25 @@ function Footer() {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            {/* Map - placeholder */}
-            {/* <Image
-              src="/images/map-placeholder.png"
-              alt="test"
-              width={436}
-              height={311}
-            /> */}
           </div>
           <div className={classes["footer-col--4"]}>
             <span className={classes.subtitle}>Services</span>
             <ul className={classes["col-4-nav-list"]}>
-              <li>Photos</li>
-              <li>Notre Histoire</li>
-              <li>Contact</li>
+              <li>
+                <Link href="/gallerie">
+                  <a>Photos</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/notre-histoire">
+                  <a>Notre Histoire</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact">
+                  <a>Contact</a>
+                </Link>
+              </li>
               <li>
                 <Link href="">
                   <a>English</a>
@@ -80,14 +84,31 @@ function Footer() {
             <span className={classes.subtitle}>Notre communauté</span>
             <ul className={classes["col-5-nav-list"]}>
               <li>
-                <FontAwesomeIcon icon={faHashtag} />
+                <Link href="https://fr-ca.facebook.com/LeToasteurVilleray/">
+                  <a target="_blank" rel="noopener noreferrer">
+                    <div className={classes["icon-svg"]}>
+                      <Facebook sx={{ fontSize: 30 }} />
+                    </div>
+                  </a>
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon icon={faHashtag} />
+                <Link href="https://www.instagram.com/toasteurvilleray/?hl=fr">
+                  <a target="_blank" rel="noopener noreferrer">
+                    <div className={classes["icon-svg"]}>
+                      <Instagram sx={{ fontSize: 30 }} />
+                    </div>{" "}
+                  </a>
+                </Link>
               </li>
               <li>
-                {" "}
-                <FontAwesomeIcon icon={faHashtag} />
+                <Link href="/">
+                  <a>
+                    <div className={classes["icon-svg"]}>
+                      <Google sx={{ fontSize: 30 }} />
+                    </div>{" "}
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>

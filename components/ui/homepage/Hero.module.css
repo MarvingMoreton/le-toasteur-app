@@ -41,10 +41,10 @@
 }
 
 .box-text > span {
-  font-family: "Lato";
+  font-family: "Fira Sans";
   font-style: light;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 58px;
 
   /* T - Black 0E0E0E */

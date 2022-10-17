@@ -4,6 +4,10 @@
   flex-direction: column; */
   background-color: #efdbb2;
 }
+
+.copyright-box p {
+  font-size: 1.8rem !important;
+}
 .grid {
   display: flex;
   column-gap: 5rem;
@@ -103,4 +107,9 @@
 .map {
   border-radius: 1rem;
   border: 0;
+}
+
+.icon-svg {
+  width: 50%;
+  color: #041e42;
 }
