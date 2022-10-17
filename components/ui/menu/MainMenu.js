@@ -2,6 +2,7 @@ import classes from "./MainMenu.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import toastOrange from "../../../public/images/logos/toast-orange.png";
 import logoBlue from "../../../public/images/logos/logo-toasteur-villeray-navy.png";
 
 function MainMenu(props) {
@@ -19,11 +20,11 @@ function MainMenu(props) {
           </div>
           <div className={classes["right-side"]}>
             <Image
-              src="/images/toast-pop-orange.png"
+              src={toastOrange}
               alt="test"
               // layout="fill"
-              width={356}
-              height={241}
+              width={269}
+              height={168}
             />
           </div>
         </div>

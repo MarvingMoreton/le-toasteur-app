@@ -2,6 +2,8 @@ import classes from "./MainMenu.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import logoBlue from "../../../public/images/logos/logo-toasteur-villeray-navy.png";
+import toastOrange from "../../../public/images/logos/toast-orange.png";
 
 function MainMenu(props) {
   return (
@@ -16,13 +18,13 @@ function MainMenu(props) {
               ‘LE PAIN DANS LES VOILES’
             </span>
           </div>
-          <div className={classes["right-side"]}>
+          <div className={classes["right-side-image"]}>
             <Image
-              src="/images/toast-pop-orange.png"
+              src={toastOrange}
               alt="test"
               // layout="fill"
-              width={356}
-              height={241}
+              width={269}
+              height={168}
             />
           </div>
         </div>
@@ -98,11 +100,9 @@ function MainMenu(props) {
       <div className={classes["logo-box"]}>
         <Image
           className={classes["logo-blue-transparent"]}
-          src="/images/toasteur-villeray-logo.png"
+          src={logoBlue}
           alt="test"
           // layout="fill"
-          width={207}
-          height={106}
         />
       </div>
     </section>

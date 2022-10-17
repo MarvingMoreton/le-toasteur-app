@@ -48,10 +48,9 @@
   color: #000000;
 }
 
-/* .right-side {
-  /* align-self: flex-end; */
-/* justify-self: end; */
-/* width: 80%; }*/
+.right-side-image {
+  width: 50%;
+}
 
 .title-row {
   display: flex;
@@ -103,10 +102,12 @@
 }
 
 .logo-box {
+  width: 14%;
   position: absolute;
   /* left: 50%; */
   left: 50%;
-  margin-left: -50px;
+  transform: translateX(-50%);
+  /* margin-left: -50px; */
   /* top: 50%; */
   margin-top: -50px;
   /* transform: translate(-50%, -50%); */

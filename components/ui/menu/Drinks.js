@@ -2,6 +2,8 @@ import classes from "./Drinks.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import logoBlue from "../../../public/images/logos/logo-toasteur-villeray-navy.png";
+import toastOrange from "../../../public/images/logos/illustration-house-orange.png";
 
 function MainMenu(props) {
   return (
@@ -11,13 +13,13 @@ function MainMenu(props) {
           <div className={classes["left-side"]}>
             <h2>Boissons</h2>
           </div>
-          <div className={classes["right-side"]}>
+          <div className={classes["right-side-image"]}>
             <Image
-              src="/images/toasteur-illustration.png"
+              src={toastOrange}
               alt="test"
               // layout="fill"
-              width={269}
-              height={168}
+              // width={269}
+              // height={168}
             />
           </div>
         </div>
@@ -216,11 +218,11 @@ function MainMenu(props) {
       <div className={classes["logo-box"]}>
         <Image
           className={classes["logo-blue-transparent"]}
-          src="/images/toasteur-villeray-logo.png"
+          src={logoBlue}
           alt="test"
           // layout="fill"
-          width={207}
-          height={106}
+          // width={207}
+          // height={106}
         />
       </div>
     </section>

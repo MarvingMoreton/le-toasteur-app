@@ -22,9 +22,12 @@
 }
 
 .left-side {
-  width: 95%;
+  width: 100%;
 }
 
+.right-side-image {
+  width: 30%;
+}
 .left-side > h2 {
   font-family: "Fira Sans";
   font-style: normal;
@@ -141,10 +144,12 @@
 }
 
 .logo-box {
+  width: 14%;
   position: absolute;
   /* left: 50%; */
   left: 50%;
-  margin-left: -50px;
+  transform: translateX(-50%);
+  /* margin-left: -50px; */
   /* top: 50%; */
   margin-top: -50px;
   /* transform: translate(-50%, -50%); */
