@@ -308,10 +308,14 @@ input:focus-visible {
 @media (max-width: 30em) {
   .btn-primary,
   .btn-secondary {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   h2 {
     font-size: 3rem;
+  }
+
+  .container {
+    padding: 0 2.2rem;
   }
 }

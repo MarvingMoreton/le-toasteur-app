@@ -1,6 +1,6 @@
-.section-impact-content {
+/* .section-impact-content {
   padding: 9.6rem 0;
-}
+} */
 
 .box-content {
   /* background: url(../../../public/images/impact-double-layers.png); */
@@ -26,8 +26,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
 
   text-align: center;
 
@@ -38,8 +36,8 @@
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 100px;
-  line-height: 120px;
+  font-size: 8.8rem;
+  line-height: 110px;
   text-align: center;
 
   color: #ffffff;
@@ -52,3 +50,121 @@
 /* .box-image {
   position: absolute;
 } */
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+  .title-impact {
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+  .title-impact {
+    font-size: 7rem;
+    line-height: 9rem;
+  }
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+  .section-impact-content {
+    max-width: 74rem;
+  }
+  .box-content {
+    padding: 5rem 6rem;
+  }
+  .title-impact {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+  .small-text {
+    font-size: 1.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 620px */
+/**************************/
+@media (max-width: 39em) {
+  .section-impact-content {
+    max-width: 60rem;
+  }
+
+  .box-content {
+    padding: 4rem 3.6rem;
+  }
+  .title-impact {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+  .small-text {
+    font-size: 1.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+  .section-impact-content {
+    max-width: 50rem;
+  }
+
+  .title-impact {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .small-text {
+    font-size: 1.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 400px (Mobile devices) */
+/**************************/
+
+@media (max-width: 25em) {
+  .section-impact-content {
+    max-width: 40rem;
+  }
+
+  .title-impact {
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+  }
+  .small-text {
+    font-size: 1rem;
+  }
+}
+
+/**************************/
+/* BELOW 340px (Mobile devices) */
+/**************************/
+
+@media (max-width: 21em) {
+  .section-impact-content {
+    max-width: 40rem;
+  }
+
+  .title-impact {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+}

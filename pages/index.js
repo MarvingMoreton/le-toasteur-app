@@ -14,8 +14,8 @@ export default function Home() {
     <div>
       <Hero />
       <ImageFeatured />
-      <ImpactContent />
       <BookTable />
+      <ImpactContent />
       <Testimonials />
       <br></br>
       <TestimonialsGallery />

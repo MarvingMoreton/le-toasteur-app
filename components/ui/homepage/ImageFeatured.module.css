@@ -94,6 +94,7 @@
 @media (max-width: 64em) {
   .box-buttons {
     margin-top: 4rem;
+    gap: 4rem;
   }
 }
 /**************************/
@@ -128,6 +129,6 @@
 @media (max-width: 30em) {
   .box-buttons {
     margin-top: 3rem;
-    width: 80%;
+    gap: 3rem;
   }
 }
