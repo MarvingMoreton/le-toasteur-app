@@ -244,11 +244,28 @@ input:focus-visible {
 /* BELOW 1200px (desktops) */
 /**************************/
 @media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  /* .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  } */
+
+  .container {
+    max-width: 110rem;
+  }
 }
 /**************************/
 /* BELOW 1024px (Small screens + laptops) */
 /**************************/
 @media (max-width: 64em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 52%;
+  }
 }
 /**************************/
 /* BELOW 768 (tablets) */

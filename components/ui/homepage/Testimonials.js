@@ -160,63 +160,57 @@ function BookTable() {
             </div>
           </div>
         </div>
-        <div className={classes["grid-image"]}>
+        <div className={classes["gallery"]}>
           {/* ILLUSTRATION IMAGE */}
-          <div className={classes["image"]}>
-            <Image
-              src={illustrationOne}
-              alt="test"
-              layout="responsive"
-              // width={200}
-              // height={200}
-            />
+          <div className={classes["gallery-item"]}>
+            <Image src={illustrationOne} alt="test" />
           </div>
           {/* ILLUSTRATION IMAGE */}
-          <div className={classes["image"]}>
+          <div className={classes["gallery-item"]}>
             <Image
               src={illustrationTwo}
               alt="test"
-              layout="responsive"
+              // layout="responsive"
               // width={200}
               // height={200}
             />
           </div>
           {/* ILLUSTRATION IMAGE */}
-          <div className={classes["image"]}>
+          <div className={classes["gallery-item"]}>
             <Image
               src={illustrationThree}
               alt="test"
-              layout="responsive"
+              // layout="responsive"
               // width={200}
               // height={200}
             />
           </div>
           {/* ILLUSTRATION IMAGE */}
-          <div className={classes["image"]}>
+          <div className={classes["gallery-item"]}>
             <Image
               src={illustrationFour}
               alt="test"
-              layout="responsive"
+              // layout="responsive"
               // width={200}
               // height={200}
             />
           </div>
           {/* ILLUSTRATION IMAGE */}
-          <div className={classes["image"]}>
+          <div className={classes["gallery-item"]}>
             <Image
               src={illustrationFive}
               alt="test"
-              layout="responsive"
+              // layout="responsive"
               // width={200}
               // height={200}
             />
           </div>
           {/* ILLUSTRATION IMAGE */}
-          <div className={classes["image"]}>
+          <div className={classes["gallery-item"]}>
             <Image
               src={illustrationSix}
               alt="test"
-              layout="responsive"
+              // layout="responsive"
               // width={200}
               // height={200}
             />

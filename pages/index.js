@@ -7,6 +7,7 @@ import ImageFeatured from "../components/ui/homepage/ImageFeatured";
 import ImpactContent from "../components/ui/homepage/ImpactContent";
 import BookTable from "../components/ui/homepage/BookTable";
 import Testimonials from "../components/ui/homepage/Testimonials";
+import TestimonialsGallery from "../components/ui/homepage/TestimonialsGallery";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <ImpactContent />
       <BookTable />
       <Testimonials />
+      <br></br>
+      <TestimonialsGallery />
     </div>
   );
 }
