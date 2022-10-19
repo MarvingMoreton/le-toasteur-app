@@ -8,15 +8,6 @@ import React from "react";
 function ImageFeatured() {
   return (
     <section className={`${classes["section-featured"]} ${"container"}`}>
-      <div className={classes["box-image"]}>
-        <Image
-          src={illustration}
-          alt="test"
-          layout="responsive"
-          // width={485}
-          // height={602}
-        />
-      </div>
       <div className={classes["box-text"]}>
         <span className={classes.subtitle}>Expert en Brunch</span>
         <h2 className={classes.title}>Le spécialiste des Brunchs</h2>
@@ -31,12 +22,6 @@ function ImageFeatured() {
             will be distracted by the readable content of a page when looking at
             its layout.
           </p>
-
-          <p>
-            The point of using Lor It is a long established fact that a reader
-            will be distracted by the readable content of a page when looking at
-            its layout.
-          </p>
         </div>
         <div className={classes["box-buttons"]}>
           <Link href="/menu">
@@ -46,6 +31,15 @@ function ImageFeatured() {
             <a className="btn-secondary">Notre Histoire</a>
           </Link>
         </div>
+      </div>
+      <div className={classes["box-image"]}>
+        <Image
+          src={illustration}
+          alt="test"
+          layout="responsive"
+          // width={485}
+          // height={602}
+        />
       </div>
     </section>
   );

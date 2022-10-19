@@ -21,7 +21,7 @@ html {
   font-size: 62.5%;
   /* 10px/16 px = 0.626= 62.5%; do not set a fix font-size, use % instead. *Percentage of user's browser font-size setting */
 
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   /* = All the element that overflow the viewport will be HIDDEN* - Only works if there is nothing absolutely positioned in relation to body*/
   /* des not work on Safari */
   scroll-behavior: smooth;
@@ -56,6 +56,7 @@ a {
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +65,7 @@ header {
   height: 9.6rem;
   padding: 0.5rem 6rem 0 6rem;
   z-index: 9999;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 footer {
@@ -273,15 +274,44 @@ input:focus-visible {
     /* 8px / 16px = 50% */
     font-size: 52%;
   }
+
+  .container {
+    max-width: 100rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 2.4rem;
+  }
 }
 /**************************/
-/* BELOW 768 (tablets) */
+/* BELOW 850px (tablets) */
 /**************************/
-@media (max-width: 48em) {
+@media (max-width: 53em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 50%;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  .container {
+    max-width: 90rem;
+  }
 }
 /**************************/
 /* BELOW 480px (Mobile devices) */
 /**************************/
 
 @media (max-width: 30em) {
+  .btn-primary,
+  .btn-secondary {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
 }

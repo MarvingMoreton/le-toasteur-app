@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   overflow: hidden;
   min-width: 50%;
-  height: 549px;
+  min-height: 54.9rem;
 }
 
 .box-text {
@@ -71,3 +71,41 @@
 /* .hero-section {
   position: relative;
 } */
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+  .box-text {
+    margin-left: 5rem;
+  }
+  .box-text > h1,
+  .box-text > span {
+    color: #ffff;
+  }
+
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../../../public/images/illustrations/brunch-random--2.jpg);
+    background-size: cover;
+  }
+}
+/**************************/
+/* BELOW 768 (tablets) */
+/**************************/
+@media (max-width: 48em) {
+}
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+}
