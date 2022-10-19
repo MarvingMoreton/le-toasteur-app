@@ -121,8 +121,6 @@ function Footer() {
           <FontAwesomeIcon icon={faHeart} className={classes.heart} /> &nbsp;par
           Marving Moreton
         </p>
-
-        <FontAwesomeIcon icon="fa-duotone fa-heart" />
       </div>
     </React.Fragment>
   );

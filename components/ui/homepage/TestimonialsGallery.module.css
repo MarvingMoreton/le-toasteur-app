@@ -5,6 +5,7 @@
   align-items: center;
   row-gap: 4rem;
   background: rgba(219, 200, 161, 0.2);
+  overflow-x: hidden;
 }
 
 .testimonials-container {
