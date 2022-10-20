@@ -311,7 +311,7 @@ input:focus-visible {
 
   .btn-primary,
   .btn-secondary {
-    font-size: 2rem;
+    font-size: 2.2rem;
     /* white-space: nowrap; */
   }
 }
@@ -349,7 +349,7 @@ input:focus-visible {
   }
   .btn-primary,
   .btn-secondary {
-    font-size: 1.6rem;
+    font-size: 2rem;
     /* white-space: nowrap; */
   }
 }
@@ -380,15 +380,7 @@ input:focus-visible {
 
   p,
   span {
-    font-size: 1.2rem;
-  }
-
-  .btn-primary,
-  .btn-secondary {
     font-size: 1.4rem;
-    /* display: inline-block;
-    white-space: nowrap; */
-    /* padding: 0; */
   }
 
   .container {
