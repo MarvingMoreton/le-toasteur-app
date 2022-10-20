@@ -222,12 +222,10 @@ input:focus-visible {
   font-style: normal;
   font-weight: 700;
   font-size: 4rem;
-  line-height: 58px;
   /* identical to box height */
 
   display: flex;
   align-items: center;
-  text-align: center;
 
   color: #041e42;
 }
@@ -246,7 +244,8 @@ input:focus-visible {
     font-size: 6.4rem;
   }
 
-  h2 {
+  h2,
+  .secondary-heading {
     font-size: 4rem;
   }
 
@@ -284,7 +283,8 @@ input:focus-visible {
     font-size: 5.6rem;
   }
 
-  h2 {
+  h2,
+  .secondary-heading {
     font-size: 3.6rem;
   }
 
@@ -323,7 +323,8 @@ input:focus-visible {
     font-size: 5rem;
   }
 
-  h2 {
+  h2,
+  .secondary-heading {
     font-size: 3rem;
   }
 
@@ -362,7 +363,8 @@ input:focus-visible {
     font-size: 5rem;
   }
 
-  h2 {
+  h2,
+  .secondary-heading {
     font-size: 3rem;
   }
 

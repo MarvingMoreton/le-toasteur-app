@@ -42,10 +42,26 @@ function BookTable() {
               <div className={classes["name-stars-box"]}>
                 <span>Naura Silvana</span>
                 <div className={classes["stars-list"]}>
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
                 </div>
               </div>
             </div>
@@ -75,10 +91,26 @@ function BookTable() {
               <div className={classes["name-stars-box"]}>
                 <span>Naura Silvana</span>
                 <div className={classes["stars-list"]}>
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
                 </div>
               </div>
             </div>
@@ -108,10 +140,26 @@ function BookTable() {
               <div className={classes["name-stars-box"]}>
                 <span>Naura Silvana</span>
                 <div className={classes["stars-list"]}>
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
                 </div>
               </div>
             </div>
@@ -141,10 +189,26 @@ function BookTable() {
               <div className={classes["name-stars-box"]}>
                 <span>Naura Silvana</span>
                 <div className={classes["stars-list"]}>
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
-                  <FontAwesomeIcon icon={faStar} className={classes.stars} />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faStar}
+                    className={classes.stars}
+                    size="xl"
+                  />
                 </div>
               </div>
             </div>
