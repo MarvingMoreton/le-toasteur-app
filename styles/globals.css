@@ -34,13 +34,11 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
-body,
 li {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
-
   color: #383838;
 }
 
@@ -96,27 +94,26 @@ footer {
 
 h1 {
   font-family: "Fira Sans";
-  font-size: 70px;
+  font-size: 7rem;
   font-weight: 700;
-  text-align: center;
   color: #ffffff;
 }
 
 h2 {
   font-family: "Fira Sans";
-  font-size: 40px;
+  font-size: 4.4rem;
   font-weight: 700;
 }
 
 h3 {
   font-family: "Fira Sans";
-  font-size: 24px;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 
 h4 {
   font-family: "Fira Sans";
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -124,24 +121,20 @@ h5 {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  padding-bottom: 1rem;
+  font-size: 2rem;
 }
 
 ul {
   list-style: none;
 }
 
-p {
+p,
+span {
   margin-bottom: 1rem;
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
+  font-size: 1.6rem;
 
   /* T - Dark grey */
 
@@ -252,9 +245,24 @@ input:focus-visible {
 /* BELOW 1200px (desktops) */
 /**************************/
 @media (max-width: 75em) {
-  html {
-    /* 9px / 16px  */
-    font-size: 56.25%;
+  h1 {
+    font-size: 6.4rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
   }
 
   /* .grid {
@@ -270,9 +278,29 @@ input:focus-visible {
 /* BELOW 1024px (Small screens + laptops) */
 /**************************/
 @media (max-width: 64em) {
-  html {
-    /* 8px / 16px = 50% */
-    font-size: 52%;
+  h1 {
+    font-size: 5.6rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  p,
+  span {
+    font-size: 1.4rem;
   }
 
   .container {
@@ -288,18 +316,29 @@ input:focus-visible {
 /* BELOW 850px (tablets) */
 /**************************/
 @media (max-width: 53em) {
-  html,
-  body {
-    /* 8px / 16px = 50% */
-    font-size: 50% !important;
+  h1 {
+    font-size: 5rem;
   }
 
   h2 {
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 50%;
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  p,
+  span {
+    font-size: 1.2rem;
   }
 
   .container {
@@ -311,13 +350,34 @@ input:focus-visible {
 /**************************/
 
 @media (max-width: 30em) {
-  .btn-primary,
-  .btn-secondary {
-    font-size: 1.8rem;
+  h1 {
+    font-size: 5rem;
   }
 
   h2 {
     font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  p,
+  span {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 1.8rem;
   }
 
   .container {

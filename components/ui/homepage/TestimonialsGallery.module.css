@@ -6,10 +6,11 @@
   row-gap: 4rem;
   background: rgba(219, 200, 161, 0.2);
   overflow-x: hidden;
+  padding: 4rem 2rem;
 }
 
 .testimonials-container {
-  padding: 9.6rem 6rem 9.6rem 9.6rem;
+  padding: 9.6rem 4.8rem 9.6rem 9.6rem;
   display: flex;
   /* background: rgba(239, 219, 178, 0.2); */
   gap: 4rem;

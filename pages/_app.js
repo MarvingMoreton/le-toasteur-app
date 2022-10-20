@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+
 import Layout from "../components/layout/Layout";
 import Head from "next/head";
 import { config } from "@fortawesome/fontawesome-svg-core";

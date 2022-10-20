@@ -16,8 +16,6 @@ export default function Home() {
       <ImageFeatured />
       <BookTable />
       <ImpactContent />
-      <Testimonials />
-      <br></br>
       <TestimonialsGallery />
     </div>
   );

@@ -1,6 +1,6 @@
-/* .section-impact-content {
+.section-impact-content {
   padding: 9.6rem 0;
-} */
+}
 
 .box-content {
   /* background: url(../../../public/images/impact-double-layers.png); */
@@ -32,18 +32,19 @@
   color: #ffffff;
 }
 
-.title-impact {
+.title-impact,
+.title-impact-highlighted {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 8.8rem;
-  line-height: 110px;
+  line-height: 10rem;
   text-align: center;
 
   color: #ffffff;
 }
 
-.title-impact > span {
+.title-impact-highlighted {
   color: #efdbb2;
 }
 
