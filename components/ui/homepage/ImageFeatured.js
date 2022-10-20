@@ -9,7 +9,7 @@ function ImageFeatured() {
   return (
     <section className={`${classes["section-featured"]} ${"container"}`}>
       <div className={classes["box-text"]}>
-        <span className={classes.subtitle}>Expert en Brunch</span>
+        <span className="subtitle">Expert en Brunch</span>
         <h2 className={classes.title}>Le spécialiste des Brunchs</h2>
         <div className={classes["box-paragraph"]}>
           <p>
@@ -25,7 +25,7 @@ function ImageFeatured() {
         </div>
         <div className={classes["box-buttons"]}>
           <Link href="/menu">
-            <a className="btn-primary">Notre menu</a>
+            <a className="btn-primary">Notre Menu</a>
           </Link>
           <Link href="/notre-histoire">
             <a className="btn-secondary">Notre Histoire</a>

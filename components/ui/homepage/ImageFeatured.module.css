@@ -12,16 +12,6 @@
   width: 100%;
   z-index: -1;
 }
-.subtitle {
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.8rem;
-  line-height: 26px;
-
-  color: #ff5c39;
-  margin-bottom: 0.4rem;
-}
 
 .title {
   margin-bottom: 3rem;
@@ -37,11 +27,12 @@
 .box-paragraph {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
 }
 
 .box-buttons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 5rem;
   margin-top: 5rem;
 }
@@ -84,7 +75,15 @@
 /**************************/
 @media (max-width: 75em) {
   .section-featured {
-    gap: 6rem;
+    gap: 5rem;
+  }
+
+  .box-image {
+    width: 85%;
+  }
+  .box-buttons {
+    margin-top: 4rem;
+    gap: 4rem;
   }
 }
 
@@ -92,17 +91,38 @@
 /* BELOW 1024px (Small screens + laptops) */
 /**************************/
 @media (max-width: 64em) {
-  .box-buttons {
-    margin-top: 4rem;
-    gap: 4rem;
+  .section-featured {
+    padding: 9.6rem 2rem;
   }
 }
 /**************************/
-/* BELOW 850px (tablets) */
+/* BELOW 865px (tablets) */
 /**************************/
-@media (max-width: 53em) {
+@media (max-width: 55em) {
+  .section-featured {
+    flex-direction: column;
+    text-align: center;
+    padding: 9.6rem 2rem;
+    gap: 8rem;
+  }
+
   .box-image {
-    width: 90%;
+    width: 70%;
+  }
+
+  .box-text {
+    width: 100%;
+    align-items: center;
+  }
+  .box-paragraph {
+    width: 80%;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+  }
+  .box-buttons {
+    margin-top: 2rem;
   }
 }
 
@@ -110,16 +130,6 @@
 /* BELOW 750px */
 /**************************/
 @media (max-width: 47em) {
-  .section-featured {
-    flex-direction: column;
-  }
-  .box-image {
-    width: 80%;
-  }
-
-  .box-text {
-    width: 80%;
-  }
 }
 
 /**************************/
@@ -127,8 +137,15 @@
 /**************************/
 
 @media (max-width: 30em) {
+  .section-featured {
+    padding: 9.6rem 0;
+  }
   .box-buttons {
-    margin-top: 3rem;
-    gap: 3rem;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1.4rem;
+  }
+  .box-buttons > a {
+    width: 100%;
   }
 }

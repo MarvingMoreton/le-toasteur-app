@@ -130,7 +130,7 @@ ul {
 
 p,
 span {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 400;
@@ -173,14 +173,14 @@ input:focus-visible {
   background: #041e42;
   border-radius: 0.8rem;
   padding: 1rem 2.4rem;
-  /* width: 50%; */
+  /* width: 100%; */
 
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 2.8rem;
   text-align: center;
-
+  /* white-space: nowrap; */
   color: #ffffff;
 }
 
@@ -189,7 +189,8 @@ input:focus-visible {
 
   border-radius: 0.8rem;
   padding: 1rem 2.4rem;
-  /* width: 50%; */
+  /* width: 100%; */
+
   border: 1.5px solid #041e42;
 
   font-family: "Fira Sans";
@@ -197,7 +198,7 @@ input:focus-visible {
   font-weight: 500;
   font-size: 2.8rem;
   text-align: center;
-
+  /* white-space: nowrap; */
   color: #041e42;
 }
 
@@ -209,11 +210,7 @@ input:focus-visible {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  font-size: 2.2rem;
 
   /* T - Orange */
 
@@ -271,7 +268,12 @@ input:focus-visible {
   } */
 
   .container {
-    max-width: 110rem;
+    max-width: 100rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 2.6rem;
   }
 }
 /**************************/
@@ -304,18 +306,19 @@ input:focus-visible {
   }
 
   .container {
-    max-width: 100rem;
+    max-width: 110rem;
   }
 
   .btn-primary,
   .btn-secondary {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    /* white-space: nowrap; */
   }
 }
 /**************************/
-/* BELOW 850px (tablets) */
+/* BELOW 865px (tablets) */
 /**************************/
-@media (max-width: 53em) {
+@media (max-width: 55em) {
   h1 {
     font-size: 5rem;
   }
@@ -338,11 +341,16 @@ input:focus-visible {
 
   p,
   span {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .container {
     max-width: 90rem;
+  }
+  .btn-primary,
+  .btn-secondary {
+    font-size: 1.6rem;
+    /* white-space: nowrap; */
   }
 }
 /**************************/
@@ -377,7 +385,10 @@ input:focus-visible {
 
   .btn-primary,
   .btn-secondary {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    /* display: inline-block;
+    white-space: nowrap; */
+    /* padding: 0; */
   }
 
   .container {
