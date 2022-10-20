@@ -11,11 +11,11 @@ import { faArrowRight, faHashtag } from "@fortawesome/free-solid-svg-icons";
 
 function BookTable() {
   return (
-    <section className={`${classes["section-book-table"]} ${"container"}`}>
-      <div className={classes["container-book-table"]}>
+    <section className={classes["section-book-table"]}>
+      <div className={`${classes["container-local"]} ${"container"}`}>
         <div className={classes["box-left"]}>
           <div className={classes["box-left--text"]}>
-            <h3>Réserver une table </h3>
+            <h3 className={classes["left-title"]}>Réserver une table </h3>
             <FontAwesomeIcon icon={faArrowRight} />
           </div>
         </div>

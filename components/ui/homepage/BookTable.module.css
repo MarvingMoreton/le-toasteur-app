@@ -2,7 +2,7 @@
   padding: 9.6rem 0;
 }
 
-.container-book-table {
+.container-local {
   display: flex;
   width: 100%;
 }
@@ -17,8 +17,7 @@
     url(../../../public/images/restaurant/table-toasteur.png);
   background-size: cover;
   background-repeat: no-repeat;
-
-  height: 90rem;
+  background-position: center;
   /* background: rgba(14, 14, 14, 0.1); */
   display: flex;
   justify-content: center;
@@ -41,7 +40,7 @@
   border-radius: 0px 0.8rem 0.8rem 0;
 }
 .box-right > span {
-  font-size: 8rem;
+  font-size: 9rem;
   margin-bottom: 1rem;
 }
 .box-right > h2 {
@@ -66,18 +65,90 @@
   gap: 2rem;
 }
 
-.box-left--text > H3 {
+.left-title {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 36px;
-  line-height: 58px;
-  /* identical to box height */
-
+  font-size: 3.6rem;
   display: flex;
   align-items: center;
 }
 
 .box-left--text:last-child {
   font-size: 4rem;
+}
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+  .box-right {
+    padding: 8rem 4rem;
+  }
+  .box-right > h2 {
+    font-size: 3.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+  .left-title {
+    font-size: 3.2rem;
+  }
+  .box-left--text:last-child {
+    font-size: 3.8rem;
+  }
+
+  .box-right > h2 {
+    font-size: 3.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+  .box-left--text:last-child {
+    font-size: 3.6rem;
+  }
+
+  .box-right > h2 {
+    font-size: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+}
+
+/**************************/
+/* BELOW 630px */
+/**************************/
+@media (max-width: 43em) {
+  .container-local {
+    flex-direction: column;
+  }
+  .box-left {
+    display: none;
+  }
+  .box-right {
+    padding: 6rem 4rem;
+    text-align: center;
+  }
+  .box-right > h2 {
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
 }

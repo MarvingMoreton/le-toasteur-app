@@ -288,13 +288,18 @@ input:focus-visible {
 /* BELOW 850px (tablets) */
 /**************************/
 @media (max-width: 53em) {
-  html {
+  html,
+  body {
     /* 8px / 16px = 50% */
-    font-size: 50%;
+    font-size: 50% !important;
   }
 
   h2 {
     font-size: 3.6rem;
+  }
+
+  h3 {
+    font-size: 50%;
   }
 
   .container {
