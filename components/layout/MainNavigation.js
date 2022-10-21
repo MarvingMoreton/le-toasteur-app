@@ -24,7 +24,7 @@ function MainNavigation() {
 
   // add/remove scroll event listener
   useEffect(() => {
-    var header = headerRef.current.getBoundingClientRect();
+    let header = headerRef.current.getBoundingClientRect();
     const handleScrollEvent = () => {
       handleScroll(header.top, header.height);
     };
