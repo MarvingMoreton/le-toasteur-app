@@ -393,3 +393,40 @@ input:focus-visible {
     padding: 0 2.2rem;
   }
 }
+
+/**************************/
+/* BELOW 400px (Mobile devices) */
+/**************************/
+
+@media (max-width: 25em) {
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h2,
+  .secondary-heading {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  p,
+  span,
+  a {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    padding: 0 2.2rem;
+  }
+}

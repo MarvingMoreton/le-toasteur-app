@@ -8,24 +8,56 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   gap: 1rem;
 }
 
-.banner-background H1 {
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 7.8rem;
-  line-height: 74px;
-  color: #ffff;
-}
-
 .banner-background span {
-  font-family: "Fira Sans";
+  color: #ffff;
+  /* font-family: "Fira Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 24px;
-  color: #ffff;
-  text-align: center;
+
+  text-align: center; */
+}
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+  .banner-background > span {
+    width: 80%;
+  }
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+  .banner-background > span {
+    width: 70%;
+  }
 }
