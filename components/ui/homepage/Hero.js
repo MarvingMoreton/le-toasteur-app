@@ -9,7 +9,7 @@ function Hero() {
     <section className={classes["hero-section"]}>
       <div className={classes["box-text"]}>
         <h1>
-          Le meilleur&nbsp;<strong>brunch de l’île TEST</strong>
+          Le meilleur&nbsp;<strong>brunch de l’île</strong>
         </h1>
         <span>Profiter de notre délicieux brunch</span>
         <a className="btn-primary">Notre menu</a>
