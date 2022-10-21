@@ -29,7 +29,7 @@ function ImageFeatured(props) {
           />
         </div>
         <div className={classes["box-text"]}>
-          <span className={classes.subtitle}>Le Toasteur Villeray</span>
+          <span className="subtitle">Le Toasteur Villeray</span>
           <h2 className={classes.title}>Notre Histoire</h2>
           <div className={classes["box-paragraph"]}>
             <p>

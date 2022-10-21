@@ -254,7 +254,8 @@ input:focus-visible {
     font-size: 2.6rem;
   }
 
-  h4 {
+  h4,
+  .subtitle {
     font-size: 1.8rem;
   }
 
@@ -293,7 +294,8 @@ input:focus-visible {
     font-size: 2.2rem;
   }
 
-  h4 {
+  h4,
+  .subtitle {
     font-size: 1.8rem;
   }
 
@@ -327,14 +329,15 @@ input:focus-visible {
 
   h2,
   .secondary-heading {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   h3 {
     font-size: 2rem;
   }
 
-  h4 {
+  h4,
+  .subtitle {
     font-size: 1.6rem;
   }
 
@@ -368,14 +371,15 @@ input:focus-visible {
 
   h2,
   .secondary-heading {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   h3 {
     font-size: 2rem;
   }
 
-  h4 {
+  h4,
+  .subtitle {
     font-size: 1.6rem;
   }
 
@@ -405,14 +409,15 @@ input:focus-visible {
 
   h2,
   .secondary-heading {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   h3 {
     font-size: 2rem;
   }
 
-  h4 {
+  h4,
+  .subtitle {
     font-size: 1.6rem;
   }
 
