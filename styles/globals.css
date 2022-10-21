@@ -129,8 +129,9 @@ ul {
 }
 
 p,
-span {
-  margin-bottom: 0.8rem;
+span,
+a {
+  /* margin-bottom: 0.8rem; */
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 300;
@@ -301,7 +302,8 @@ input:focus-visible {
   }
 
   p,
-  span {
+  span,
+  a {
     font-size: 1.4rem;
   }
 
@@ -341,7 +343,8 @@ input:focus-visible {
   }
 
   p,
-  span {
+  span,
+  a {
     font-size: 1.4rem;
   }
 
@@ -381,7 +384,8 @@ input:focus-visible {
   }
 
   p,
-  span {
+  span,
+  a {
     font-size: 1.4rem;
   }
 
