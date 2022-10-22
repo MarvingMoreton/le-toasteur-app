@@ -96,7 +96,14 @@
 }
 
 /**** MEDIA QUERIES ****/
-
+/**************************/
+/* ABOVE 1600px (desktops) */
+/**************************/
+@media screen and (min-width: 95em) and (orientation: landscape) {
+  .nav-logo {
+    width: 8%;
+  }
+}
 /**************************/
 /* BELOW 1200px (desktops) */
 /**************************/
