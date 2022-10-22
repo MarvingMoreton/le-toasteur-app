@@ -74,17 +74,51 @@
 }
 
 .box-left--text > H2 {
-  font-family: "Fira Sans";
-  font-style: normal;
   font-weight: 800;
-  font-size: 44px;
-  line-height: 58px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
 }
 
 .box-left--text:last-child {
   font-size: 4rem;
+}
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+  .container-book-table {
+    padding: 0 6rem;
+  }
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+  .box-right {
+    padding: 6rem 4rem;
+  }
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+  .container-book-table {
+    padding: 0 2rem;
+  }
 }
