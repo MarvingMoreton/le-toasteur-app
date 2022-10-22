@@ -51,4 +51,105 @@
 .map {
   border-radius: 1rem;
   border: 0;
+  width: 100rem;
+  height: 55rem;
+}
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+  .map {
+    width: 80rem;
+  }
+
+  .banner {
+    width: 70%;
+  }
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+  .map {
+    width: 70rem;
+  }
+
+  .pin {
+    font-size: 5rem;
+    padding-bottom: 0.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+  .map {
+    width: 50rem;
+  }
+
+  .banner {
+    width: 60%;
+  }
+}
+
+/**************************/
+/* BELOW 540px (Mobile devices) */
+/**************************/
+
+@media (max-width: 34em) {
+  .map {
+    width: 40rem;
+    height: 55rem;
+  }
+
+  .banner {
+    width: 70%;
+    padding: 3.2rem 2.8rem;
+  }
+}
+
+/**************************/
+/* BELOW 400px (Mobile devices) */
+/**************************/
+
+@media (max-width: 25em) {
+  .map {
+    width: 32rem;
+    height: 35rem;
+  }
+
+  .banner {
+    width: 70%;
+    padding: 2.8rem 2.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 300px (Mobile devices) */
+/**************************/
+
+@media (max-width: 21em) {
+  .map {
+    width: 22rem;
+    height: 40rem;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .section-map {
+    margin-top: 0rem;
+  }
 }
