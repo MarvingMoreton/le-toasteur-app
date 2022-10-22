@@ -2,25 +2,24 @@
   background: url(../../../public/images/banner-background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
   align-items: center;
-  gap: 1rem;
 }
 
-.banner-background span {
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-box span {
   color: #ffff;
-  /* font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.8rem;
-  line-height: 24px;
-
-  text-align: center; */
 }
 
 /**** MEDIA QUERIES ****/
@@ -47,7 +46,7 @@
 /* BELOW 750px */
 /**************************/
 @media (max-width: 47em) {
-  .banner-background > span {
+  .text-box > span {
     width: 80%;
   }
 }
@@ -57,7 +56,7 @@
 /**************************/
 
 @media (max-width: 30em) {
-  .banner-background > span {
+  .text-box > span {
     width: 70%;
   }
 }

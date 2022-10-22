@@ -10,7 +10,7 @@ function Values() {
         <div className={classes["card-value"]}>
           <div className={classes["value-background"]}>
             <div className={classes["emoji-box"]}>
-              <span>☕️</span>
+              <span className={classes.emoji}>☕️</span>
               <div className={classes["box-overlay"]}>
                 <Image
                   className={classes["overlay-beige"]}
@@ -31,7 +31,7 @@ function Values() {
         <div className={classes["card-value"]}>
           <div className={classes["value-background"]}>
             <div className={classes["emoji-box"]}>
-              <span>🍳</span>
+              <span className={classes.emoji}>🍳</span>
               <div className={classes["box-overlay"]}>
                 <Image
                   className={classes["overlay-beige"]}
@@ -52,7 +52,7 @@ function Values() {
         <div className={classes["card-value"]}>
           <div className={classes["value-background"]}>
             <div className={classes["emoji-box"]}>
-              <span>🌳</span>
+              <span className={classes.emoji}>🌳</span>
               <div className={classes["box-overlay"]}>
                 <Image
                   className={classes["overlay-beige"]}

@@ -6,8 +6,10 @@ import React from "react";
 function Banner(props) {
   return (
     <div className={classes["banner-background"]}>
-      <h1>{props.h1}</h1>
-      <span>{props.text}</span>
+      <div className={classes["text-box"]}>
+        <h1>{props.h1}</h1>
+        <span>{props.text}</span>
+      </div>
     </div>
   );
 }

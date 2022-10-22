@@ -14,7 +14,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
-  line-height: 72px;
   text-align: center;
 }
 
@@ -32,7 +31,7 @@
   margin-bottom: 2rem;
 }
 
-.emoji-box > span {
+.emoji {
   font-size: 5.5rem;
 }
 .box-overlay {
@@ -49,11 +48,7 @@
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  font-size: 3.8rem;
 }
 
 .value-desc {
@@ -82,23 +77,38 @@
 /* BELOW 1024px (Small screens + laptops) */
 /**************************/
 @media (max-width: 64em) {
-}
-
-/**************************/
-/* BELOW 850px (tablets) */
-/**************************/
-@media (max-width: 53em) {
+  .value-title {
+    font-size: 3.4rem;
+  }
 }
 
 /**************************/
 /* BELOW 750px */
 /**************************/
 @media (max-width: 47em) {
+  .card-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8.4rem;
+  }
+
+  .card-value {
+    width: 80%;
+  }
+  .value-desc {
+    width: 80%;
+  }
 }
 
 /**************************/
-/* BELOW 480px (Mobile devices) */
+/* BELOW 300px (Mobile devices) */
 /**************************/
 
-@media (max-width: 30em) {
+@media (max-width: 20em) {
+  .emoji {
+    font-size: 5.4rem;
+  }
+  .box-overlay {
+    top: -15%;
+  }
 }
