@@ -40,7 +40,8 @@ function Footer() {
             </div>
             <div className={classes["col-2--openings"]}>
               <span className={classes.subtitle}>Heures d’ouverture:</span>
-              <p>Jeudi au Lundi | 8H00 - 15H00 </p>
+              <p>Jeudi au Lundi:</p>
+              <p> 8H00 - 15H00</p>
             </div>
           </div>
           <div className={classes["footer-col--3"]}>
