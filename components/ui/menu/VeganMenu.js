@@ -1,4 +1,4 @@
-import classes from "./MainMenu.module.css";
+import classes from "./VeganMenu.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
@@ -7,7 +7,7 @@ import toastOrange from "../../../public/images/logos/toast-orange.png";
 
 function MainMenu(props) {
   return (
-    <section className={classes["section-main-menu"]}>
+    <section className={classes["section-vegan-menu"]}>
       <div className={`${classes["menu-grid"]} ${"container"}`}>
         <div className={classes["box-text"]}>
           <div className={classes["left-side"]}>
@@ -18,7 +18,7 @@ function MainMenu(props) {
               ‘LE PAIN DANS LES VOILES’
             </span>
           </div>
-          <div className={classes["right-side-image"]}>
+          <div className={classes["right-side-illustration"]}>
             <Image
               src={toastOrange}
               alt="test"

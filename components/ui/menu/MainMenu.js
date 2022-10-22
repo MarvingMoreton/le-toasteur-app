@@ -18,7 +18,7 @@ function MainMenu(props) {
               ‘LE PAIN DANS LES VOILES’
             </span>
           </div>
-          <div className={classes["right-side"]}>
+          <div className={classes["right-side-illustration"]}>
             <Image
               src={toastOrange}
               alt="test"

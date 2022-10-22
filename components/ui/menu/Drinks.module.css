@@ -1,13 +1,13 @@
 .section-main-menu {
   padding: 12rem 0;
-  background-color: #041e42;
+  /* background-color: #041e42; */
   position: relative;
 }
 
 .menu-grid {
   background-color: #ffff;
   border-radius: 0.8rem;
-  min-width: 1372px;
+  /* min-width: 1372px; */
   min-height: 100%;
   padding: 6rem 8rem 10rem 8rem;
 }
