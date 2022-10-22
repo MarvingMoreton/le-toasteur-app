@@ -434,4 +434,8 @@ input:focus-visible {
   .container {
     padding: 0 2.2rem;
   }
+
+  header {
+    padding: 0;
+  }
 }

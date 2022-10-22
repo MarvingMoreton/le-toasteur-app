@@ -5,6 +5,9 @@ import Image from "next/image";
 import blueLogo from "../../public/images/logos/logo-toasteur-villeray-navy.png";
 import blueToast from "../../public/images/logos/toast-blue-navy-ellipsed.svg";
 import { useRouter } from "next/router";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function MainNavigation() {
   const router = useRouter();
@@ -12,6 +15,8 @@ function MainNavigation() {
 
   const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
   const headerRef = useRef(null);
+
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   // handle scroll event
   const handleScroll = (elTopOffset, elHeight) => {
@@ -43,7 +48,7 @@ function MainNavigation() {
         ref={headerRef}
         id="sticky-header"
       >
-        <header>
+        <header className={classes["header-mobile"]}>
           <div className={classes["nav-logo"]}>
             <Link href="/">
               <a>
@@ -57,8 +62,38 @@ function MainNavigation() {
               </a>
             </Link>
           </div>
+
+          <button
+            className={classes["hamburger"]}
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          >
+            <FontAwesomeIcon icon={faBars} size="2xl" />
+
+            {/* icon from Heroicons.com */}
+            {/* <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="white"
+            >
+              <path
+                fillRule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clipRule="evenodd"
+              />
+            </svg> */}
+          </button>
+
           <div className={classes["nav-container"]}>
-            <nav className={classes["main-nav"]}>
+            <nav
+              className={`${classes["main-nav"]} ${
+                isNavExpanded
+                  ? `${classes["navigation-menu"]} ${classes["expanded"]}`
+                  : `${classes["navigation-menu"]}`
+              }`}
+            >
               <ul className={classes["main-nav-list"]}>
                 <li>
                   <Link href="/">
