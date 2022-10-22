@@ -153,6 +153,9 @@
 /**************************/
 
 @media (max-width: 44em) {
+  .section-main-menu {
+    padding: 12rem 4rem 8rem 4rem;
+  }
   .right-side-illustration {
     display: none;
   }

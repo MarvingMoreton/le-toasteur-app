@@ -1,5 +1,5 @@
 .section-vegan-menu {
-  padding: 0rem 0;
+  padding: 12rem 0;
   background-color: #041e42;
   position: relative;
 }
@@ -146,6 +146,9 @@
 /**************************/
 
 @media (max-width: 44em) {
+  .section-vegan-menu {
+    padding: 8rem 4rem;
+  }
   .right-side-illustration {
     display: none;
   }

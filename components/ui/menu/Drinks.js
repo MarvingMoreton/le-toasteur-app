@@ -7,13 +7,13 @@ import toastOrange from "../../../public/images/logos/illustration-house-orange.
 
 function MainMenu(props) {
   return (
-    <section className={classes["section-main-menu"]}>
+    <section className={classes["section-drinks-menu"]}>
       <div className={`${classes["menu-grid"]} ${"container"}`}>
         <div className={classes["box-text"]}>
           <div className={classes["left-side"]}>
             <h2>Boissons</h2>
           </div>
-          <div className={classes["right-side-image"]}>
+          <div className={classes["right-side-illustration"]}>
             <Image
               src={toastOrange}
               alt="test"
