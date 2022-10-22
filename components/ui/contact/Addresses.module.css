@@ -52,3 +52,50 @@
   text-align: center;
   margin: 6rem auto 0 auto;
 }
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+  .grid-addresses {
+    flex-direction: column;
+    row-gap: 3.8rem;
+  }
+  .card-address {
+    width: 100%;
+  }
+
+  .box-illustration {
+    width: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 400px (Mobile devices) */
+/**************************/
+
+@media (max-width: 25em) {
+  .card-address {
+    width: 80%;
+  }
+}
