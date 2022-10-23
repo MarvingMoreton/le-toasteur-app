@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .text-box span {
   color: #ffff;
@@ -57,6 +58,7 @@
 
 @media (max-width: 30em) {
   .text-box > span {
-    width: 70%;
+    width: 85%;
+    text-align: center;
   }
 }

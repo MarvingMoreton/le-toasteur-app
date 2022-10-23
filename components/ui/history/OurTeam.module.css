@@ -139,6 +139,10 @@
 /* BELOW 750px */
 /**************************/
 @media (max-width: 47em) {
+  .team-item-list {
+    margin-top: 4rem;
+  }
+
   .employee-card {
     width: 56%;
   }

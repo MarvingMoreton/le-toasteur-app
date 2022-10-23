@@ -231,7 +231,7 @@
 
 @media (max-width: 36em) {
   .nav-logo {
-    width: 34%;
+    width: 30%;
   }
 }
 
@@ -251,7 +251,7 @@
 
 @media (max-width: 30em) {
   .nav-logo {
-    width: 38%;
+    width: 35%;
   }
 }
 
@@ -261,8 +261,8 @@
 
 @media (max-width: 25em) {
   .nav-logo {
-    width: 40%;
-    margin-right: 20rem;
+    width: 30%;
+    margin-left: 2rem;
   }
 }
 
