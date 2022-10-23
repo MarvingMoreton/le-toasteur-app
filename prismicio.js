@@ -16,22 +16,22 @@ const routes = [
     path: "/",
   },
   {
-    type: "page",
+    type: "standardpage",
     lang: "ca-fr",
     path: "/menu",
   },
   {
-    type: "page",
+    type: "standardpage",
     lang: "ca-fr",
     path: "/gallerie",
   },
   {
-    type: "page",
+    type: "standardpage",
     lang: "ca-fr",
     path: "/notre-histoire",
   },
   {
-    type: "page",
+    type: "standardpage",
     lang: "ca-fr",
     path: "/contact",
   },

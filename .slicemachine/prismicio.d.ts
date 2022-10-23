@@ -30,6 +30,84 @@ interface HomepageDocumentData {
      *
      */
     slices: prismicT.SliceZone<HomepageDocumentDataSlicesSlice>;
+    /**
+     * NO INDEX field in *Homepage*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: homepage.no_index
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    no_index: prismicT.BooleanField;
+    /**
+     * Canonical URL field in *Homepage*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.canonical_url
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    canonical_url: prismicT.LinkField;
+    /**
+     * Meta title field in *Homepage*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.meta_title
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_title: prismicT.KeyTextField;
+    /**
+     * Meta description field in *Homepage*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.meta_description
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_description: prismicT.KeyTextField;
+    /**
+     * OG title field in *Homepage*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.og_title
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    og_title: prismicT.KeyTextField;
+    /**
+     * OG description field in *Homepage*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.og_description
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    og_description: prismicT.KeyTextField;
+    /**
+     * OG image field in *Homepage*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.og_image
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    og_image: prismicT.ImageField<never>;
 }
 /**
  * Slice for *Homepage → Slice Zone*
@@ -46,10 +124,10 @@ type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageGallerySlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
-/** Content for StandardPage documents */
+/** Content for Page documents */
 interface StandardpageDocumentData {
     /**
-     * Title field in *StandardPage*
+     * Title field in *Page*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -60,7 +138,7 @@ interface StandardpageDocumentData {
      */
     title: prismicT.KeyTextField;
     /**
-     * Slice Zone field in *StandardPage*
+     * Slice Zone field in *Page*
      *
      * - **Field Type**: Slice Zone
      * - **Placeholder**: *None*
@@ -70,14 +148,115 @@ interface StandardpageDocumentData {
      *
      */
     slices: prismicT.SliceZone<StandardpageDocumentDataSlicesSlice>;
+    /**
+     * NO INDEX field in *Page*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: standardpage.no_index
+     * - **Tab**: SEO tab
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    no_index: prismicT.BooleanField;
+    /**
+     * Canonical URL field in *Page*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: standardpage.canonical_url
+     * - **Tab**: SEO tab
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    canonical_url: prismicT.LinkField;
+    /**
+     * Meta title field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: standardpage.meta_title
+     * - **Tab**: SEO tab
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_title: prismicT.KeyTextField;
+    /**
+     * Meta description field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: standardpage.meta_description
+     * - **Tab**: SEO tab
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_description: prismicT.KeyTextField;
+    /**
+     * OG title field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: standardpage.og_title
+     * - **Tab**: SEO tab
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    og_title: prismicT.KeyTextField;
+    /**
+     * OG description field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: standardpage.og_description
+     * - **Tab**: SEO tab
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    og_description: prismicT.KeyTextField;
+    /**
+     * OG image field in *Page*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: standardpage.og_image
+     * - **Tab**: SEO tab
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    og_image: prismicT.ImageField<never>;
+    /**
+     * Active redirect field in *Page*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: standardpage.active_redirect
+     * - **Tab**: Redirect
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    active_redirect: prismicT.BooleanField;
+    /**
+     * Redirect link field in *Page*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: standardpage.redirect_link
+     * - **Tab**: Redirect
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    redirect_link: prismicT.LinkField;
 }
 /**
- * Slice for *StandardPage → Slice Zone*
+ * Slice for *Page → Slice Zone*
  *
  */
 type StandardpageDocumentDataSlicesSlice = HeroSliceSlice | ImageGallerySlice;
 /**
- * StandardPage document from Prismic
+ * Page document from Prismic
  *
  * - **API ID**: `standardpage`
  * - **Repeatable**: `true`
@@ -87,6 +266,71 @@ type StandardpageDocumentDataSlicesSlice = HeroSliceSlice | ImageGallerySlice;
  */
 export type StandardpageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<StandardpageDocumentData>, "standardpage", Lang>;
 export type AllDocumentTypes = HomepageDocument | StandardpageDocument;
+/**
+ * Primary content in BookTable → Primary
+ *
+ */
+interface BookTableSliceDefaultPrimary {
+    /**
+     * Title field in *BookTable → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: book_table.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *BookTable → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: book_table.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Item in BookTable → Items
+ *
+ */
+export interface BookTableSliceDefaultItem {
+    /**
+     * test field in *BookTable → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: book_table.items[].test
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    test: prismicT.RichTextField;
+}
+/**
+ * Default variation for BookTable Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `BookTable`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BookTableSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BookTableSliceDefaultPrimary>, Simplify<BookTableSliceDefaultItem>>;
+/**
+ * Slice variation for *BookTable*
+ *
+ */
+type BookTableSliceVariation = BookTableSliceDefault;
+/**
+ * BookTable Shared Slice
+ *
+ * - **API ID**: `book_table`
+ * - **Description**: `BookTable`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BookTableSlice = prismicT.SharedSlice<"book_table", BookTableSliceVariation>;
 /**
  * Primary content in HeroSlice → Primary
  *
@@ -173,6 +417,101 @@ type HeroSliceSliceVariation = HeroSliceSliceDefault;
  */
 export type HeroSliceSlice = prismicT.SharedSlice<"hero_slice", HeroSliceSliceVariation>;
 /**
+ * Primary content in ImageFeaturedStandard → Primary
+ *
+ */
+interface ImageFeaturedStandardSliceDefaultPrimary {
+    /**
+     * Secondary Heading field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: image_featured_standard.primary.secondary_heading
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    secondary_heading: prismicT.TitleField;
+    /**
+     * Subtitle field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.primary.subtitle
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    subtitle: prismicT.RichTextField;
+    /**
+     * CTA Link field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.primary.cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_link: prismicT.LinkField;
+    /**
+     * CTA Text field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.primary.cta_text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    cta_text: prismicT.KeyTextField;
+    /**
+     * Image field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+}
+/**
+ * Item in ImageFeaturedStandard → Items
+ *
+ */
+export interface ImageFeaturedStandardSliceDefaultItem {
+    /**
+     * Paragraph field in *ImageFeaturedStandard → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.items[].paragraph
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    paragraph: prismicT.RichTextField;
+}
+/**
+ * Default variation for ImageFeaturedStandard Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `ImageFeaturedStandard`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ImageFeaturedStandardSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ImageFeaturedStandardSliceDefaultPrimary>, Simplify<ImageFeaturedStandardSliceDefaultItem>>;
+/**
+ * Slice variation for *ImageFeaturedStandard*
+ *
+ */
+type ImageFeaturedStandardSliceVariation = ImageFeaturedStandardSliceDefault;
+/**
+ * ImageFeaturedStandard Shared Slice
+ *
+ * - **API ID**: `image_featured_standard`
+ * - **Description**: `ImageFeaturedStandard`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ImageFeaturedStandardSlice = prismicT.SharedSlice<"image_featured_standard", ImageFeaturedStandardSliceVariation>;
+/**
  * Primary content in ImageGallery → Primary
  *
  */
@@ -242,6 +581,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefaultItem, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefaultItem, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice };
     }
 }

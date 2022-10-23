@@ -1,35 +1,31 @@
 import React from "react";
 import { PrismicRichText } from "@prismicio/react";
-
+import { PrismicNextImage } from "@prismicio/next";
+import { PrismicLink } from "@prismicio/react";
+import RichText from "../../components/PrismicComponents/RichText";
+import Image from "next/image";
+import classes from "../../components/ui/homepage/hero.module.css";
 /**
  * @typedef {import("@prismicio/client").Content.HeroSliceSlice} HeroSliceSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<HeroSliceSlice>} HeroSliceProps
  * @param { HeroSliceProps }
  */
 const HeroSlice = ({ slice }) => (
-  <section>
-    <span className="title">
-      {slice.primary.title ? (
-        <PrismicRichText field={slice.primary.title} />
-      ) : (
-        <h2>Template slice, update me!</h2>
-      )}
-    </span>
-    {slice.primary.description ? (
+  <section className={classes["hero-section"]}>
+    {/* {JSON.stringify(slice, null, 2)} */}
+    <div className={classes["box-text"]}>
+      <PrismicRichText field={slice.primary.title} />
       <PrismicRichText field={slice.primary.description} />
-    ) : (
-      <p>start by editing this slice from inside Slice Machine!</p>
-    )}
-    <style jsx>{`
-      section {
-        max-width: 600px;
-        margin: 4em auto;
-        text-align: center;
-      }
-      .title {
-        color: #8592e0;
-      }
-    `}</style>
+
+      {/* <Image src={slice.primary.image.url} alt={slice.primary.image.alt} /> */}
+      {/* <PrismicNextImage field={slice.primary.image} /> */}
+
+      {slice.items.map((item, i) => (
+        <PrismicLink field={item.cta_link} key={i} className="btn-primary">
+          {item.cta_text}
+        </PrismicLink>
+      ))}
+    </div>
   </section>
 );
 

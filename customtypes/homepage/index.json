@@ -33,6 +33,61 @@
           }
         }
       }
+    },
+    "SEO TAB": {
+      "no_index": {
+        "type": "Boolean",
+        "config": {
+          "label": "NO INDEX",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "canonical_url": {
+        "type": "Link",
+        "config": {
+          "label": "Canonical URL",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": ""
+        }
+      },
+      "og_title": {
+        "type": "Text",
+        "config": {
+          "label": "OG title",
+          "placeholder": ""
+        }
+      },
+      "og_description": {
+        "type": "Text",
+        "config": {
+          "label": "OG description",
+          "placeholder": ""
+        }
+      },
+      "og_image": {
+        "type": "Image",
+        "config": {
+          "label": "OG image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
     }
   }
 }
