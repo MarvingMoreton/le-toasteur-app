@@ -1,0 +1,10 @@
+{
+  "_cts": {
+    "homepage": {},
+    "standardpage": {}
+  },
+  "slices": {
+    "HeroSlice": {},
+    "ImageGallery": {}
+  }
+}
