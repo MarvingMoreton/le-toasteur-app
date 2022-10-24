@@ -5,6 +5,7 @@ import HeroSlice from './HeroSlice';
 import ImageFeaturedStandard from './ImageFeaturedStandard';
 import ImageGallery from './ImageGallery';
 import LoveContent from './LoveContent';
+import TestimonialsGallery from './TestimonialsGallery';
 
 export {
 	BookTable,
@@ -12,6 +13,7 @@ export {
 	ImageFeaturedStandard,
 	ImageGallery,
 	LoveContent,
+	TestimonialsGallery,
 };
 
 export const components = {
@@ -20,4 +22,5 @@ export const components = {
 	image_featured_standard: ImageFeaturedStandard,
 	image_gallery: ImageGallery,
 	love_content: LoveContent,
+	testimonials_gallery: TestimonialsGallery,
 };

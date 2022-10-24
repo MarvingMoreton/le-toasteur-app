@@ -543,6 +543,174 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "testimonials_gallery": {
+        "library": "slices",
+        "id": "testimonials_gallery",
+        "name": "TestimonialsGallery",
+        "description": "TestimonialsGallery",
+        "model": {
+          "id": "testimonials_gallery",
+          "type": "SharedSlice",
+          "name": "TestimonialsGallery",
+          "description": "TestimonialsGallery",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TestimonialsGallery",
+              "primary": {
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "subtitle",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "image1": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image1",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "image2": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image2",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "image3": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image3",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "image4": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image4",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "image5": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image5",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "image6": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image6",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "subtitle": "suggest",
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Wrapped",
+                  "spans": []
+                }
+              ],
+              "image1": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+              },
+              "image2": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+              },
+              "image3": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db"
+              },
+              "image4": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db"
+              },
+              "image5": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+              },
+              "image6": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+              }
+            },
+            "slice_type": "testimonials_gallery"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       }
     }
   }

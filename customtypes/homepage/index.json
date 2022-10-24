@@ -35,6 +35,9 @@
             },
             "love_content": {
               "type": "SharedSlice"
+            },
+            "testimonials_gallery": {
+              "type": "SharedSlice"
             }
           }
         }

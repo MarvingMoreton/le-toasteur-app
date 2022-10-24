@@ -1,0 +1,83 @@
+{
+  "id": "testimonials_gallery",
+  "type": "SharedSlice",
+  "name": "TestimonialsGallery",
+  "description": "TestimonialsGallery",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TestimonialsGallery",
+      "primary": {
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "subtitle",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "image1": {
+          "type": "Image",
+          "config": {
+            "label": "Image1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image2": {
+          "type": "Image",
+          "config": {
+            "label": "Image2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image3": {
+          "type": "Image",
+          "config": {
+            "label": "Image3",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image4": {
+          "type": "Image",
+          "config": {
+            "label": "Image4",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image5": {
+          "type": "Image",
+          "config": {
+            "label": "Image5",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image6": {
+          "type": "Image",
+          "config": {
+            "label": "Image6",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

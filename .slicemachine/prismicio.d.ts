@@ -113,7 +113,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSlice | BookTableSlice | LoveContentSlice;
+type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSlice | BookTableSlice | LoveContentSlice | TestimonialsGallerySlice;
 /**
  * Homepage document from Prismic
  *
@@ -675,11 +675,120 @@ type LoveContentSliceVariation = LoveContentSliceDefault;
  *
  */
 export type LoveContentSlice = prismicT.SharedSlice<"love_content", LoveContentSliceVariation>;
+/**
+ * Primary content in TestimonialsGallery → Primary
+ *
+ */
+interface TestimonialsGallerySliceDefaultPrimary {
+    /**
+     * subtitle field in *TestimonialsGallery → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: testimonials_gallery.primary.subtitle
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    subtitle: prismicT.KeyTextField;
+    /**
+     * Title field in *TestimonialsGallery → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: testimonials_gallery.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Image1 field in *TestimonialsGallery → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: testimonials_gallery.primary.image1
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image1: prismicT.ImageField<never>;
+    /**
+     * Image2 field in *TestimonialsGallery → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: testimonials_gallery.primary.image2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image2: prismicT.ImageField<never>;
+    /**
+     * Image3 field in *TestimonialsGallery → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: testimonials_gallery.primary.image3
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image3: prismicT.ImageField<never>;
+    /**
+     * Image4 field in *TestimonialsGallery → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: testimonials_gallery.primary.image4
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image4: prismicT.ImageField<never>;
+    /**
+     * Image5 field in *TestimonialsGallery → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: testimonials_gallery.primary.image5
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image5: prismicT.ImageField<never>;
+    /**
+     * Image6 field in *TestimonialsGallery → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: testimonials_gallery.primary.image6
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image6: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for TestimonialsGallery Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `TestimonialsGallery`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TestimonialsGallerySliceDefault = prismicT.SharedSliceVariation<"default", Simplify<TestimonialsGallerySliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *TestimonialsGallery*
+ *
+ */
+type TestimonialsGallerySliceVariation = TestimonialsGallerySliceDefault;
+/**
+ * TestimonialsGallery Shared Slice
+ *
+ * - **API ID**: `testimonials_gallery`
+ * - **Description**: `TestimonialsGallery`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TestimonialsGallerySlice = prismicT.SharedSlice<"testimonials_gallery", TestimonialsGallerySliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefaultItem, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefaultItem, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice };
     }
 }

@@ -63,6 +63,18 @@
           }
         }
       }
+    },
+    "TestimonialsGallery": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }
