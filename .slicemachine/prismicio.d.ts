@@ -113,7 +113,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSlice | BookTableSlice;
+type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSlice | BookTableSlice | LoveContentSlice;
 /**
  * Homepage document from Prismic
  *
@@ -626,11 +626,60 @@ type ImageGallerySliceVariation = ImageGallerySliceDefault;
  *
  */
 export type ImageGallerySlice = prismicT.SharedSlice<"image_gallery", ImageGallerySliceVariation>;
+/**
+ * Primary content in LoveContent → Primary
+ *
+ */
+interface LoveContentSliceDefaultPrimary {
+    /**
+     * TitleImpact field in *LoveContent → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: love_content.primary.titleimpact
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    titleimpact: prismicT.RichTextField;
+    /**
+     * Sentence field in *LoveContent → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: love_content.primary.sentence
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    sentence: prismicT.KeyTextField;
+}
+/**
+ * Default variation for LoveContent Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `LoveContent`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type LoveContentSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<LoveContentSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *LoveContent*
+ *
+ */
+type LoveContentSliceVariation = LoveContentSliceDefault;
+/**
+ * LoveContent Shared Slice
+ *
+ * - **API ID**: `love_content`
+ * - **Description**: `LoveContent`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type LoveContentSlice = prismicT.SharedSlice<"love_content", LoveContentSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefaultItem, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefaultItem, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice };
     }
 }

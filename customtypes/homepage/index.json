@@ -32,6 +32,9 @@
             },
             "book_table": {
               "type": "SharedSlice"
+            },
+            "love_content": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -51,6 +51,18 @@
         },
         "items": {}
       }
+    },
+    "LoveContent": {
+      "default": {
+        "primary": {
+          "titleimpact": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }

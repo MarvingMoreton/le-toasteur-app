@@ -4,12 +4,14 @@ import BookTable from './BookTable';
 import HeroSlice from './HeroSlice';
 import ImageFeaturedStandard from './ImageFeaturedStandard';
 import ImageGallery from './ImageGallery';
+import LoveContent from './LoveContent';
 
 export {
 	BookTable,
 	HeroSlice,
 	ImageFeaturedStandard,
 	ImageGallery,
+	LoveContent,
 };
 
 export const components = {
@@ -17,4 +19,5 @@ export const components = {
 	hero_slice: HeroSlice,
 	image_featured_standard: ImageFeaturedStandard,
 	image_gallery: ImageGallery,
+	love_content: LoveContent,
 };
