@@ -4,30 +4,42 @@
     "version": "sktwi1xtmkfgx8626",
     "items": [
       {
-        "test": [
+        "paragraph": [
           {
             "type": "paragraph",
-            "text": "Tempor nostrud et adipisicing anim commodo enim incididunt.",
+            "text": "Aute laborum dolore voluptate eu velit eu ex exercitation velit. Aute eu nostrud exercitation velit eiusmod duis occaecat elit consectetur. Quis cillum elit qui aliquip aliquip et incididunt minim eiusmod aute.",
             "spans": []
           }
         ]
       }
     ],
     "primary": {
+      "emoji": "mistake",
       "title": [
         {
-          "type": "heading1",
-          "text": "Visitor",
+          "type": "heading2",
+          "text": "Event",
           "spans": []
         }
       ],
-      "description": [
+      "booktable": [
         {
-          "type": "paragraph",
-          "text": "Incididunt officia ad qui dolore nostrud eiusmod nostrud tempor sunt id nostrud. Laboris cillum fugiat ex culpa minim incididunt et adipisicing.",
+          "type": "heading3",
+          "text": "Beyond",
           "spans": []
         }
-      ]
+      ],
+      "cta_internal": {
+        "id": "mock_document_id",
+        "link_type": "Document",
+        "type": "mock",
+        "tags": [],
+        "lang": "en-us",
+        "slug": null,
+        "first_publication_date": "1970-01-01T00:00:01+0000",
+        "last_publication_date": "1970-01-01T01:00:00+0000"
+      },
+      "cta_text": "zoo"
     },
     "slice_type": "book_table"
   }

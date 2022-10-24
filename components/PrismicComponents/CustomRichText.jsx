@@ -1,13 +1,14 @@
 import { PrismicRichText } from '@prismicio/react'
+import React from 'react';
 
-const RichText = ({ field, className }) => {
+const CustomRichText = ({ field, className }) => {
   return (
     field && (
       <div className={className}>
         <PrismicRichText field={field} />
-      </div>
+        </div>
     )
   )
 }
 
-export default RichText;
+export default CustomRichText;

@@ -2,7 +2,7 @@ import React from "react";
 import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicLink } from "@prismicio/react";
-import RichText from "../../components/PrismicComponents/RichText";
+import CustomRichText from "../../components/PrismicComponents/CustomRichText";
 import Image from "next/image";
 import classes from "../../components/ui/homepage/hero.module.css";
 /**

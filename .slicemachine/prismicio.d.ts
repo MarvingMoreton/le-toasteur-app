@@ -113,7 +113,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageGallerySlice;
+type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSlice | BookTableSlice;
 /**
  * Homepage document from Prismic
  *
@@ -272,6 +272,16 @@ export type AllDocumentTypes = HomepageDocument | StandardpageDocument;
  */
 interface BookTableSliceDefaultPrimary {
     /**
+     * emoji field in *BookTable → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: book_table.primary.emoji
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    emoji: prismicT.KeyTextField;
+    /**
      * Title field in *BookTable → Primary*
      *
      * - **Field Type**: Title
@@ -282,15 +292,35 @@ interface BookTableSliceDefaultPrimary {
      */
     title: prismicT.TitleField;
     /**
-     * Description field in *BookTable → Primary*
+     * BookTable field in *BookTable → Primary*
      *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: book_table.primary.description
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: book_table.primary.booktable
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    description: prismicT.RichTextField;
+    booktable: prismicT.TitleField;
+    /**
+     * CTA internal field in *BookTable → Primary*
+     *
+     * - **Field Type**: Content Relationship
+     * - **Placeholder**: *None*
+     * - **API ID Path**: book_table.primary.cta_internal
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_internal: prismicT.RelationField;
+    /**
+     * CTA Text field in *BookTable → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: book_table.primary.cta_text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    cta_text: prismicT.KeyTextField;
 }
 /**
  * Item in BookTable → Items
@@ -298,15 +328,15 @@ interface BookTableSliceDefaultPrimary {
  */
 export interface BookTableSliceDefaultItem {
     /**
-     * test field in *BookTable → Items*
+     * paragraph field in *BookTable → Items*
      *
      * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: book_table.items[].test
+     * - **API ID Path**: book_table.items[].paragraph
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    test: prismicT.RichTextField;
+    paragraph: prismicT.RichTextField;
 }
 /**
  * Default variation for BookTable Slice
@@ -422,6 +452,16 @@ export type HeroSliceSlice = prismicT.SharedSlice<"hero_slice", HeroSliceSliceVa
  */
 interface ImageFeaturedStandardSliceDefaultPrimary {
     /**
+     * subtitle field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.primary.subtitle
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    subtitle: prismicT.KeyTextField;
+    /**
      * Secondary Heading field in *ImageFeaturedStandard → Primary*
      *
      * - **Field Type**: Title
@@ -431,16 +471,6 @@ interface ImageFeaturedStandardSliceDefaultPrimary {
      *
      */
     secondary_heading: prismicT.TitleField;
-    /**
-     * Subtitle field in *ImageFeaturedStandard → Primary*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: image_featured_standard.primary.subtitle
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    subtitle: prismicT.RichTextField;
     /**
      * CTA Link field in *ImageFeaturedStandard → Primary*
      *
@@ -471,6 +501,26 @@ interface ImageFeaturedStandardSliceDefaultPrimary {
      *
      */
     image: prismicT.ImageField<never>;
+    /**
+     * CTA Internal field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Content Relationship
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.primary.cta_internal
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_internal: prismicT.RelationField;
+    /**
+     * CTA internal text field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.primary.cta_internal_text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    cta_internal_text: prismicT.KeyTextField;
 }
 /**
  * Item in ImageFeaturedStandard → Items

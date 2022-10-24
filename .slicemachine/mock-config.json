@@ -20,19 +20,31 @@
       }
     },
     "ImageGallery": {},
-    "BookTable": {},
+    "BookTable": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "booktable": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
+    },
     "ImageFeaturedStandard": {
       "default": {
         "primary": {
           "secondary_heading": {
             "config": {
               "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "subtitle": {
-            "config": {
-              "patternType": "PARAGRAPH",
               "blocks": 1
             }
           }

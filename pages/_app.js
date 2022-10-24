@@ -13,9 +13,10 @@ import { letoasteur } from "../prismicio";
 function MyApp({ Component, pageProps }) {
   return (
     <PrismicProvider
-      internalLinkComponent={({ href, ...props }) => (
+      internalLinkComponent={({ href, children, ...props }) => (
         <Link href={href}>
           <a {...props} />
+          {children}
         </Link>
       )}
     >

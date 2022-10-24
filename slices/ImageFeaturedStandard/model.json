@@ -11,6 +11,13 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ImageFeaturedStandard",
       "primary": {
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "subtitle",
+            "placeholder": ""
+          }
+        },
         "secondary_heading": {
           "type": "StructuredText",
           "config": {
@@ -18,15 +25,6 @@
             "placeholder": "This is where it all begins...",
             "allowTargetBlank": true,
             "single": "heading2"
-          }
-        },
-        "subtitle": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Subtitle",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "cta_link": {
@@ -50,6 +48,20 @@
             "label": "Image",
             "constraint": {},
             "thumbnails": []
+          }
+        },
+        "cta_internal": {
+          "type": "Link",
+          "config": {
+            "label": "CTA Internal",
+            "select": "document"
+          }
+        },
+        "cta_internal_text": {
+          "type": "Text",
+          "config": {
+            "label": "CTA internal text",
+            "placeholder": ""
           }
         }
       },

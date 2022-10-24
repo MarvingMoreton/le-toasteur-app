@@ -27,7 +27,10 @@
             "hero_slice": {
               "type": "SharedSlice"
             },
-            "image_gallery": {
+            "image_featured_standard": {
+              "type": "SharedSlice"
+            },
+            "book_table": {
               "type": "SharedSlice"
             }
           }
