@@ -1,0 +1,21 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {
+        "valueicon": "solve",
+        "valuetitle": [
+          {
+            "type": "heading3",
+            "text": "Reason",
+            "spans": []
+          }
+        ],
+        "valuedescription": "state"
+      }
+    ],
+    "primary": {},
+    "slice_type": "values_list"
+  }
+]

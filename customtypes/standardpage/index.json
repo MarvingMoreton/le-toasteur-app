@@ -1,6 +1,6 @@
 {
   "id": "standardpage",
-  "label": "Page",
+  "label": "standardpage",
   "repeatable": true,
   "status": true,
   "json": {
@@ -28,6 +28,9 @@
               "type": "SharedSlice"
             },
             "image_gallery": {
+              "type": "SharedSlice"
+            },
+            "banner": {
               "type": "SharedSlice"
             }
           }

@@ -1,0 +1,34 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {
+        "paragraph": [
+          {
+            "type": "paragraph",
+            "text": "Qui aliqua ipsum nisi irure ex deserunt velit aute culpa dolor ullamco velit. Lorem do et aliquip anim proident dolor velit id eiusmod qui mollit aliqua ea laborum.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Familiar",
+          "spans": []
+        }
+      ],
+      "bottomtitle": [
+        {
+          "type": "heading3",
+          "text": "Official",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "allergy_box"
+  }
+]

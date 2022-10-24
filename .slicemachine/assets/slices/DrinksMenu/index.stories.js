@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/DrinksMenu';
+
+export default {
+  title: 'slices/DrinksMenu'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"drinktitle":[{"type":"heading2","text":"Clothes","spans":[]}],"price":97,"description":"know"}],"primary":{"title":[{"type":"heading1","text":"Member","spans":[]}],"illustration":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1600804931749-2da4ce26c869"},"simpledouble":"measure","instruction":"except"},"slice_type":"drinks_menu","id":"_Default"}} />
+_Default.storyName = ''

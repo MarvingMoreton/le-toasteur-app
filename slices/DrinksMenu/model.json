@@ -1,0 +1,73 @@
+{
+  "id": "drinks_menu",
+  "type": "SharedSlice",
+  "name": "DrinksMenu",
+  "description": "DrinksMenu",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "DrinksMenu",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "illustration": {
+          "type": "Image",
+          "config": {
+            "label": "Illustration",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "simpledouble": {
+          "type": "Text",
+          "config": {
+            "label": "SimpleDouble",
+            "placeholder": ""
+          }
+        },
+        "instruction": {
+          "type": "Text",
+          "config": {
+            "label": "Instruction",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "drinktitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "DrinkTitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "price": {
+          "type": "Number",
+          "config": {
+            "label": "Price",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

@@ -11,17 +11,17 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "title": "neighborhood",
+    "title": "battle",
     "slices": [],
-    "no_index": false,
+    "no_index": true,
     "canonical_url": {
       "link_type": "Web",
       "url": "https://prismic.io"
     },
-    "meta_title": "took",
-    "meta_description": "stranger",
-    "og_title": "beside",
-    "og_description": "slave",
+    "meta_title": "research",
+    "meta_description": "yard",
+    "og_title": "imagine",
+    "og_description": "experience",
     "og_image": {
       "dimensions": {
         "width": 900,
@@ -34,7 +34,7 @@
     "active_redirect": true,
     "redirect_link": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "http://google.com"
     }
   }
 }

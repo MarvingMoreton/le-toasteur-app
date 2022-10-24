@@ -1,6 +1,278 @@
 {
   "slices": {
     "components": {
+      "addresses_box": {
+        "library": "slices",
+        "id": "addresses_box",
+        "name": "AddressesBox",
+        "description": "AddressesBox",
+        "model": {
+          "id": "addresses_box",
+          "type": "SharedSlice",
+          "name": "AddressesBox",
+          "description": "AddressesBox",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "AddressesBox",
+              "primary": {
+                "illustration": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Illustration",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Thread",
+                    "spans": []
+                  }
+                ],
+                "description": "future"
+              }
+            ],
+            "primary": {
+              "illustration": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f"
+              }
+            },
+            "slice_type": "addresses_box"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/AddressesBox/default/preview.png",
+            "width": 1064,
+            "height": 700
+          }
+        }
+      },
+      "allergy_box": {
+        "library": "slices",
+        "id": "allergy_box",
+        "name": "AllergyBox",
+        "description": "AllergyBox",
+        "model": {
+          "id": "allergy_box",
+          "type": "SharedSlice",
+          "name": "AllergyBox",
+          "description": "AllergyBox",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "AllergyBox",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "bottomtitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "BottomTitle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                }
+              },
+              "items": {
+                "paragraph": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "paragraph",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "paragraph": [
+                  {
+                    "type": "paragraph",
+                    "text": "Qui aliqua ipsum nisi irure ex deserunt velit aute culpa dolor ullamco velit. Lorem do et aliquip anim proident dolor velit id eiusmod qui mollit aliqua ea laborum.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Familiar",
+                  "spans": []
+                }
+              ],
+              "bottomtitle": [
+                {
+                  "type": "heading3",
+                  "text": "Official",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "allergy_box"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/AllergyBox/default/preview.png",
+            "width": 1170,
+            "height": 594
+          }
+        }
+      },
+      "banner": {
+        "library": "slices",
+        "id": "banner",
+        "name": "Banner",
+        "description": "Banner",
+        "model": {
+          "id": "banner",
+          "type": "SharedSlice",
+          "name": "Banner",
+          "description": "Banner",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Banner",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "description",
+                    "placeholder": ""
+                  }
+                },
+                "backgroundimage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "BackgroundImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Using",
+                  "spans": []
+                }
+              ],
+              "description": "typical",
+              "backgroundimage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+              }
+            },
+            "slice_type": "banner"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "book_table": {
         "library": "slices",
         "id": "book_table",
@@ -125,6 +397,201 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "drinks_menu": {
+        "library": "slices",
+        "id": "drinks_menu",
+        "name": "DrinksMenu",
+        "description": "DrinksMenu",
+        "model": {
+          "id": "drinks_menu",
+          "type": "SharedSlice",
+          "name": "DrinksMenu",
+          "description": "DrinksMenu",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "DrinksMenu",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "illustration": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Illustration",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "simpledouble": {
+                  "type": "Text",
+                  "config": {
+                    "label": "SimpleDouble",
+                    "placeholder": ""
+                  }
+                },
+                "instruction": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Instruction",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "drinktitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "DrinkTitle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "price": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Price",
+                    "placeholder": ""
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "drinktitle": [
+                  {
+                    "type": "heading2",
+                    "text": "Clothes",
+                    "spans": []
+                  }
+                ],
+                "price": 97,
+                "description": "know"
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Member",
+                  "spans": []
+                }
+              ],
+              "illustration": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869"
+              },
+              "simpledouble": "measure",
+              "instruction": "except"
+            },
+            "slice_type": "drinks_menu"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/DrinksMenu/default/preview.png",
+            "width": 1216,
+            "height": 591
+          }
+        }
+      },
+      "gallery_list": {
+        "library": "slices",
+        "id": "gallery_list",
+        "name": "GalleryList",
+        "description": "GalleryList",
+        "model": {
+          "id": "gallery_list",
+          "type": "SharedSlice",
+          "name": "GalleryList",
+          "description": "GalleryList",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "GalleryList",
+              "primary": {},
+              "items": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764"
+                }
+              }
+            ],
+            "primary": {},
+            "slice_type": "gallery_list"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/GalleryList/default/preview.png",
+            "width": 1009,
+            "height": 953
+          }
+        }
       },
       "hero_slice": {
         "library": "slices",
@@ -544,6 +1011,439 @@
         },
         "screenshotPaths": {}
       },
+      "main_menu": {
+        "library": "slices",
+        "id": "main_menu",
+        "name": "MainMenu",
+        "description": "MainMenu",
+        "model": {
+          "id": "main_menu",
+          "type": "SharedSlice",
+          "name": "MainMenu",
+          "description": "MainMenu",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "MainMenu",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                },
+                "illustration": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Illustration",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {
+                "breakfasttitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "BreakfastTitle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                },
+                "price": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Price",
+                    "placeholder": ""
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "em,paragraph,list-item,o-list-item,strong"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "breakfasttitle": [
+                  {
+                    "type": "heading3",
+                    "text": "Situation",
+                    "spans": []
+                  }
+                ],
+                "price": 93,
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Pariatur dolor esse proident laborum dolore minim minim commodo.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Instance",
+                  "spans": []
+                }
+              ],
+              "description": "pass",
+              "illustration": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72"
+              }
+            },
+            "slice_type": "main_menu"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/MainMenu/default/preview.png",
+            "width": 1130,
+            "height": 985
+          }
+        }
+      },
+      "map_box": {
+        "library": "slices",
+        "id": "map_box",
+        "name": "MapBox",
+        "description": "MapBox",
+        "model": {
+          "id": "map_box",
+          "type": "SharedSlice",
+          "name": "MapBox",
+          "description": "MapBox",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "MapBox",
+              "primary": {
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "map": {
+                  "type": "Embed",
+                  "config": {
+                    "label": "Map",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "map": {
+                  "embed_url": "https://twitter.com/prismicio/status/1356293316158095361",
+                  "author_name": "Prismic",
+                  "author_url": "https://twitter.com/prismicio",
+                  "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Gatsby is a popular choice for Prismic users and we work hard on delivering a CMS that plays to its strengths.<br><br>But, what makes <a href=\"https://twitter.com/GatsbyJS?ref_src=twsrc%5Etfw\">@GatsbyJS</a> so popular?<br><br>Here are some of <a href=\"https://twitter.com/mxstbr?ref_src=twsrc%5Etfw\">@mxstbr</a>&#39;s thoughts on Gatsby&#39;s success and how they&#39;re improving developer experience.<a href=\"https://t.co/ZjCPvsWWUD\">https://t.co/ZjCPvsWWUD</a> <a href=\"https://t.co/EQqzJpeNKl\">pic.twitter.com/EQqzJpeNKl</a></p>&mdash; Prismic (@prismicio) <a href=\"https://twitter.com/prismicio/status/1356293316158095361?ref_src=twsrc%5Etfw\">February 1, 2021</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n",
+                  "width": 550,
+                  "height": null,
+                  "type": "rich",
+                  "cache_age": "3153600000",
+                  "provider_name": "Twitter",
+                  "provider_url": "http://www.twitter.com/",
+                  "version": "1.0"
+                }
+              }
+            ],
+            "primary": {
+              "description": "greater"
+            },
+            "slice_type": "map_box"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/MapBox/default/preview.png",
+            "width": 1173,
+            "height": 692
+          }
+        }
+      },
+      "story_featured": {
+        "library": "slices",
+        "id": "story_featured",
+        "name": "StoryFeatured",
+        "description": "StoryFeatured",
+        "model": {
+          "id": "story_featured",
+          "type": "SharedSlice",
+          "name": "StoryFeatured",
+          "description": "StoryFeatured",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "StoryFeatured",
+              "primary": {
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subtitle",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {
+                "paragraph": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "paragraph",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,hyperlink,image,list-item,o-list-item,rtl,embed,em,strong,preformatted"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "paragraph": [
+                  {
+                    "type": "paragraph",
+                    "text": "Officia deserunt reprehenderit labore duis nostrud dolor aliquip Lorem dolor duis enim excepteur do. Aliquip sunt cillum cupidatat labore duis dolor nostrud. Non dolore id officia mollit cillum eu commodo nostrud.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "subtitle": "education",
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Prize",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
+              }
+            },
+            "slice_type": "story_featured"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/StoryFeatured/default/preview.png",
+            "width": 1124,
+            "height": 510
+          }
+        }
+      },
+      "team_slice": {
+        "library": "slices",
+        "id": "team_slice",
+        "name": "TeamSlice",
+        "description": "TeamSlice",
+        "model": {
+          "id": "team_slice",
+          "type": "SharedSlice",
+          "name": "TeamSlice",
+          "description": "TeamSlice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TeamSlice",
+              "primary": {
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "subtitle",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                }
+              },
+              "items": {
+                "photo": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Photo",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "name": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Name",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,em,hyperlink,embed,list-item,o-list-item,strong,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "photo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+                },
+                "name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Mollit non sunt ullamco adipisicing veniam ad culpa veniam laboris elit nulla enim excepteur irure aliquip. Minim sint anim sunt adipisicing aute sint. Nisi deserunt eu officia reprehenderit anim.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Occaecat qui amet nulla incididunt deserunt nostrud proident ut cillum nostrud reprehenderit non veniam amet voluptate. Voluptate officia irure exercitation veniam elit ipsum aute minim occaecat ex officia est minim.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "subtitle": "someone",
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "National",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "team_slice"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "testimonials_gallery": {
         "library": "slices",
         "id": "testimonials_gallery",
@@ -711,6 +1611,209 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "values_list": {
+        "library": "slices",
+        "id": "values_list",
+        "name": "ValuesList",
+        "description": "ValuesList",
+        "model": {
+          "id": "values_list",
+          "type": "SharedSlice",
+          "name": "ValuesList",
+          "description": "ValuesList",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ValuesList",
+              "primary": {},
+              "items": {
+                "valueicon": {
+                  "type": "Text",
+                  "config": {
+                    "label": "ValueIcon",
+                    "placeholder": ""
+                  }
+                },
+                "valuetitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "ValueTitle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                },
+                "valuedescription": {
+                  "type": "Text",
+                  "config": {
+                    "label": "ValueDescription",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "valueicon": "solve",
+                "valuetitle": [
+                  {
+                    "type": "heading3",
+                    "text": "Reason",
+                    "spans": []
+                  }
+                ],
+                "valuedescription": "state"
+              }
+            ],
+            "primary": {},
+            "slice_type": "values_list"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/ValuesList/default/preview.png",
+            "width": 1174,
+            "height": 325
+          }
+        }
+      },
+      "vegan_menu": {
+        "library": "slices",
+        "id": "vegan_menu",
+        "name": "VeganMenu",
+        "description": "VeganMenu",
+        "model": {
+          "id": "vegan_menu",
+          "type": "SharedSlice",
+          "name": "VeganMenu",
+          "description": "VeganMenu",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "VeganMenu",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                },
+                "illustration": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Illustration",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {
+                "breakfasttitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "BreakfastTitle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "price": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Price",
+                    "placeholder": ""
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "breakfasttitle": [
+                  {
+                    "type": "heading2",
+                    "text": "Honor",
+                    "spans": []
+                  }
+                ],
+                "price": 39,
+                "description": "having"
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Recognize",
+                  "spans": []
+                }
+              ],
+              "description": "weak",
+              "illustration": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da"
+              }
+            },
+            "slice_type": "vegan_menu"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/VeganMenu/default/preview.png",
+            "width": 1202,
+            "height": 650
+          }
+        }
       }
     }
   }

@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/TeamSlice';
+
+export default {
+  title: 'slices/TeamSlice'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"photo":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"},"name":[{"type":"paragraph","text":"Mollit non sunt ullamco adipisicing veniam ad culpa veniam laboris elit nulla enim excepteur irure aliquip. Minim sint anim sunt adipisicing aute sint. Nisi deserunt eu officia reprehenderit anim.","spans":[]}],"description":[{"type":"paragraph","text":"Occaecat qui amet nulla incididunt deserunt nostrud proident ut cillum nostrud reprehenderit non veniam amet voluptate. Voluptate officia irure exercitation veniam elit ipsum aute minim occaecat ex officia est minim.","spans":[]}]}],"primary":{"subtitle":"someone","title":[{"type":"heading2","text":"National","spans":[]}]},"slice_type":"team_slice","id":"_Default"}} />
+_Default.storyName = ''
