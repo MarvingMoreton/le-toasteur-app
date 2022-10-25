@@ -110,13 +110,13 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "AllergyBox",
               "primary": {
-                "uppertitle": {
+                "allergiestitle": {
                   "type": "StructuredText",
                   "config": {
-                    "label": "ImageTitle",
+                    "label": "AllergiesTitle",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "single": "heading3"
+                    "single": "heading2"
                   }
                 },
                 "emoji": {
@@ -160,25 +160,25 @@
                 "paragraph": [
                   {
                     "type": "paragraph",
-                    "text": "Enim aliquip reprehenderit aute enim aute. Sunt veniam culpa aute in.",
+                    "text": "Ad ea deserunt fugiat nisi occaecat fugiat velit cillum. Incididunt Lorem culpa ad ad cillum. Consequat reprehenderit ullamco et pariatur culpa aliquip aute adipisicing eiusmod.",
                     "spans": []
                   }
                 ]
               }
             ],
             "primary": {
-              "uppertitle": [
+              "allergiestitle": [
                 {
-                  "type": "heading3",
-                  "text": "Alphabet",
+                  "type": "heading2",
+                  "text": "Satellites",
                   "spans": []
                 }
               ],
-              "emoji": "zipper",
+              "emoji": "bent",
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Vertical",
+                  "text": "Compound",
                   "spans": []
                 }
               ]

@@ -11,13 +11,13 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "AllergyBox",
       "primary": {
-        "uppertitle": {
+        "allergiestitle": {
           "type": "StructuredText",
           "config": {
-            "label": "ImageTitle",
+            "label": "AllergiesTitle",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading3"
+            "single": "heading2"
           }
         },
         "emoji": {

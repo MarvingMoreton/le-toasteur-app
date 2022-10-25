@@ -1,5 +1,12 @@
-import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import React from "react";
+import { PrismicRichText } from "@prismicio/react";
+import Link from "next/link";
+import Image from "next/image";
+import classes from "../../components/ui/Shared/Announcement.module.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandDots } from "@fortawesome/free-solid-svg-icons";
 
 /**
  * @typedef {import("@prismicio/client").Content.AllergyBoxSlice} AllergyBoxSlice
@@ -7,30 +14,25 @@ import { PrismicRichText } from '@prismicio/react'
  * @param { AllergyBoxProps }
  */
 const AllergyBox = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
+  <section className={`${classes["section-book-table"]} ${"container"}`}>
+    <div className={classes["container-book-table"]}>
+      <div className={classes["box-left"]}>
+        <div className={classes["box-left--text"]}>
+          <PrismicRichText field={slice.primary.allergiestitle} />
+          <FontAwesomeIcon icon={faHandDots} />
+        </div>
+      </div>
+      <div className={classes["box-right"]}>
+        <span>{slice.primary.emoji}</span>
+        <PrismicRichText field={slice.primary.title} />
+        <div className={classes["box-right-paragraphs"]}>
+          {slice?.items?.map((item, i) => (
+            <PrismicRichText field={item.paragraph} key={i} />
+          ))}
+        </div>
+      </div>
+    </div>
   </section>
-)
+);
 
-export default AllergyBox
+export default AllergyBox;

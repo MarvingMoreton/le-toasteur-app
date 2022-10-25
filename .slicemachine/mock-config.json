@@ -213,7 +213,7 @@
               "blocks": 1
             }
           },
-          "uppertitle": {
+          "allergiestitle": {
             "config": {
               "patternType": "HEADING",
               "blocks": 1

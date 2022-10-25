@@ -478,15 +478,15 @@ export type AddressesBoxSlice = prismicT.SharedSlice<"addresses_box", AddressesB
  */
 interface AllergyBoxSliceDefaultPrimary {
     /**
-     * ImageTitle field in *AllergyBox → Primary*
+     * AllergiesTitle field in *AllergyBox → Primary*
      *
      * - **Field Type**: Title
      * - **Placeholder**: *None*
-     * - **API ID Path**: allergy_box.primary.uppertitle
+     * - **API ID Path**: allergy_box.primary.allergiestitle
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    uppertitle: prismicT.TitleField;
+    allergiestitle: prismicT.TitleField;
     /**
      * Emoji field in *AllergyBox → Primary*
      *
