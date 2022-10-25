@@ -8,21 +8,23 @@ import classes from "../../components/ui/Shared/Banner.module.css";
  * @param { BannerProps }
  */
 const Banner = ({ slice }) => (
-  <div
-    className={classes["banner-background"]}
-    style={{
-      background: `url(${slice.primary.backgroundimage.url})`,
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      backgroundPosition: "50%",
-      textAlign: "center",
-    }}
-  >
-    <div className={classes["text-box"]}>
-      <PrismicRichText field={slice.primary.title} />
-      <span>{slice.primary.description}</span>
+  <React.Fragment>
+    <div
+      className={classes["banner-background"]}
+      style={{
+        background: `url(${slice.primary.backgroundimage.url})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "50%",
+        textAlign: "center",
+      }}
+    >
+      <div className={classes["text-box"]}>
+        <PrismicRichText field={slice.primary.title} />
+        <span>{slice.primary.description}</span>
+      </div>
     </div>
-  </div>
+  </React.Fragment>
 );
 
 export default Banner;

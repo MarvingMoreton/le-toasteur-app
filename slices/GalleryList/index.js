@@ -14,31 +14,20 @@ const GalleryList = ({ slice }) => (
     <div className={classes["gallery"]}>
       {/* FIGURE */}
 
-      {slice.items.map((item, i) => (
-        <PrismicNextImage
-          key={i}
-          src={item.image.url}
-          alt={item.image.alt}
-          className="image"
-        />
-      ))}
-
       {slice?.items?.map((item, i) => (
-        <PrismicNextImage src={item.image.url} alt={item.image.alt} key={i} />
+        <React.Fragment key={i}>
+          <figure className={classes["gallery-item"]}>
+            <div className={`${classes["image-box"]} ${classes["zoom"]}`}>
+              <PrismicNextImage
+                field={item.image}
+                alt={item.image.alt}
+                className="image"
+                layout="responsive"
+              />
+            </div>
+          </figure>
+        </React.Fragment>
       ))}
-
-      {/* {slice?.items?.map((item, i) => (
-        <figure className={classes["gallery-item"]}>
-          <div className={`${classes["image-box"]} ${classes["zoom"]}`}>
-            <PrismicNextImage
-              key={i}
-              src={item.image.url}
-              alt={item.image.alt}
-              className="image"
-            />
-          </div>
-        </figure>
-      ))} */}
     </div>
   </section>
 );
