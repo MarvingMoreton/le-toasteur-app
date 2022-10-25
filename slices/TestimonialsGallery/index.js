@@ -239,53 +239,58 @@ const TestimonialsGallery = ({ slice }) => (
     </div>
 
     <div className={classes["gallery"]}>
-      <div className={classes["gallery-item"]}>
-        {/* <Image
-          className={classes["image-radius"]}
-          src={illustrationOne}
-          alt="test"
-        /> */}
-
+      <figure className={classes["gallery-item"]}>
         <PrismicNextImage
           field={slice.primary.image1}
           // src={slice.primary.image1.url}
           alt={slice.primary.image1.alt}
           className={classes["image-radius"]}
         />
-      </div>
-      <figure className={classes["gallery-item"]}>
-        <Image
-          className={classes["image-radius"]}
-          src={illustrationTwo}
-          alt="test"
-        />{" "}
       </figure>
+
+      {/*  */}
       <figure className={classes["gallery-item"]}>
-        <Image
+        <PrismicNextImage
+          field={slice.primary.image2}
+          // src={slice.primary.image1.url}
+          alt={slice.primary.image2.alt}
           className={classes["image-radius"]}
-          src={illustrationThree}
-          alt="test"
-        />{" "}
+        />
       </figure>
+      {/*  */}
       <figure className={classes["gallery-item"]}>
-        <Image
+        <PrismicNextImage
+          field={slice.primary.image3}
+          // src={slice.primary.image1.url}
+          alt={slice.primary.image3.alt}
           className={classes["image-radius"]}
-          src={illustrationFour}
-          alt="test"
-        />{" "}
+        />
       </figure>
+      {/*  */}
       <figure className={classes["gallery-item"]}>
-        <Image
+        <PrismicNextImage
+          field={slice.primary.image4}
+          // src={slice.primary.image1.url}
+          alt={slice.primary.image4.alt}
           className={classes["image-radius"]}
-          src={illustrationFive}
-          alt="test"
-        />{" "}
+        />
       </figure>
+      {/*  */}
       <figure className={classes["gallery-item"]}>
-        <Image
+        <PrismicNextImage
+          field={slice.primary.image5}
+          // src={slice.primary.image1.url}
+          alt={slice.primary.image5.alt}
           className={classes["image-radius"]}
-          src={illustrationSix}
-          alt="test"
+        />
+      </figure>
+      {/*  */}
+      <figure className={classes["gallery-item"]}>
+        <PrismicNextImage
+          field={slice.primary.image6}
+          // src={slice.primary.image1.url}
+          alt={slice.primary.image6.alt}
+          className={classes["image-radius"]}
         />
       </figure>
     </div>
