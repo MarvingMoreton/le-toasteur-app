@@ -14,7 +14,7 @@ const Banner = ({ slice }) => (
       background: `url(${slice.primary.backgroundimage.url})`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
-      backgroundPosition: "center",
+      backgroundPosition: "50%",
       textAlign: "center",
     }}
   >
