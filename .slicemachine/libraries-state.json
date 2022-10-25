@@ -1379,13 +1379,13 @@
                     "thumbnails": []
                   }
                 },
-                "name": {
+                "names": {
                   "type": "StructuredText",
                   "config": {
-                    "label": "Name",
+                    "label": "Names",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "single": "heading4"
                   }
                 },
                 "position_title": {
@@ -1422,31 +1422,31 @@
                   },
                   "alt": null,
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a"
+                  "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
                 },
-                "name": [
+                "names": [
                   {
-                    "type": "paragraph",
-                    "text": "Anim proident qui non.",
+                    "type": "heading4",
+                    "text": "Sheep",
                     "spans": []
                   }
                 ],
-                "position_title": "draw",
+                "position_title": "burst",
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Commodo est aliquip cupidatat amet consectetur ipsum aliquip cupidatat labore duis. Officia nisi dolor enim occaecat do officia mollit pariatur Lorem minim adipisicing mollit cupidatat sint Lorem.",
+                    "text": "Nulla sint qui nulla reprehenderit.",
                     "spans": []
                   }
                 ]
               }
             ],
             "primary": {
-              "subtitle": "sure",
+              "subtitle": "stiff",
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Eaten",
+                  "text": "Tightly",
                   "spans": []
                 }
               ]

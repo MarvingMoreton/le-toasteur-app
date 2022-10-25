@@ -30,14 +30,7 @@ const TeamSlice = ({ slice }) => (
               </div>
 
               <div className={classes["employee-text-box"]}>
-                <PrismicRichText
-                  field={item.name}
-                  components={{
-                    heading4: ({ children }) => (
-                      <h4 className={classes.title}>{children}</h4>
-                    ),
-                  }}
-                />
+                <PrismicRichText field={item.names} />
                 <span className={classes.position}>{item.position_title}</span>
                 <PrismicRichText field={item.description} />
               </div>

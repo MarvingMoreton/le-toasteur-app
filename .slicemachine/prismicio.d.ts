@@ -1426,15 +1426,15 @@ export interface TeamSliceSliceDefaultItem {
      */
     photo: prismicT.ImageField<never>;
     /**
-     * Name field in *TeamSlice → Items*
+     * Names field in *TeamSlice → Items*
      *
-     * - **Field Type**: Rich Text
+     * - **Field Type**: Title
      * - **Placeholder**: *None*
-     * - **API ID Path**: team_slice.items[].name
+     * - **API ID Path**: team_slice.items[].names
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    name: prismicT.RichTextField;
+    names: prismicT.TitleField;
     /**
      * Position Title field in *TeamSlice → Items*
      *

@@ -37,13 +37,13 @@
             "thumbnails": []
           }
         },
-        "name": {
+        "names": {
           "type": "StructuredText",
           "config": {
-            "label": "Name",
+            "label": "Names",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "single": "heading4"
           }
         },
         "position_title": {

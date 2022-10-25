@@ -156,6 +156,12 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "names": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
           }
         }
       }
