@@ -21,28 +21,29 @@ const TeamSlice = ({ slice }) => (
 
         */}
         {/* EMPLOYEE CARD TO BE ITERATIVE THROUGH PRISMIC */}
-        <div className={classes["employee-card"]}>
-          <div className={classes["image-box"]}>{/* IMAGE */}</div>
-          <div className={classes["employee-text-box"]}>
-            {/* <h4>John Doe</h4> */}
-            {/* NAME */}
 
-            <span className={classes.position}>Serveuse</span>
-            {/* JOB TITLE */}
+        {slice?.items?.map((item, i) => (
+          <React.Fragment key={i}>
+            <div className={classes["employee-card"]}>
+              <div className={classes["image-box"]}>
+                <PrismicNextImage field={item.photo} alt={item.photo.alt} />
+              </div>
 
-            {/* DESCRIPTION */}
-            {/* <p>
-              Après avoir travaillé plusieurs années dans différentes
-              boucheries, Félix est maintenant bien en selle chez PLB depuis
-              plusieurs années.
-            </p>
-            <p>
-              Étant un artiste dans l’âme et soucieux du détail, il est souvent
-              derrière plusieurs confections raffinées que vous trouverez dans
-              notre vitrine au fil des saisons.
-            </p> */}
-          </div>
-        </div>
+              <div className={classes["employee-text-box"]}>
+                <PrismicRichText
+                  field={item.name}
+                  components={{
+                    heading4: ({ children }) => (
+                      <h4 className={classes.title}>{children}</h4>
+                    ),
+                  }}
+                />
+                <span className={classes.position}>{item.position_title}</span>
+                <PrismicRichText field={item.description} />
+              </div>
+            </div>
+          </React.Fragment>
+        ))}
       </div>
     </div>
   </section>
