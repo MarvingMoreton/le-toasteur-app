@@ -10,32 +10,78 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "ValuesList",
-      "primary": {},
-      "items": {
-        "valueicon": {
+      "primary": {
+        "valueicon1": {
           "type": "Text",
           "config": {
-            "label": "ValueIcon",
+            "label": "ValueIcon1",
             "placeholder": ""
           }
         },
-        "valuetitle": {
+        "valuetitle1": {
           "type": "StructuredText",
           "config": {
-            "label": "ValueTitle",
+            "label": "ValueTitle1",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "heading3"
           }
         },
-        "valuedescription": {
+        "valuedescription1": {
           "type": "Text",
           "config": {
-            "label": "ValueDescription",
+            "label": "ValueDescription1",
+            "placeholder": ""
+          }
+        },
+        "valueicon2": {
+          "type": "Text",
+          "config": {
+            "label": "ValueIcon2",
+            "placeholder": ""
+          }
+        },
+        "valuetitle2": {
+          "type": "StructuredText",
+          "config": {
+            "label": "ValueTitle2",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "valuedescription2": {
+          "type": "Text",
+          "config": {
+            "label": "ValueDescription2",
+            "placeholder": ""
+          }
+        },
+        "valueicon3": {
+          "type": "Text",
+          "config": {
+            "label": "ValueIcon3",
+            "placeholder": ""
+          }
+        },
+        "valuetitle3": {
+          "type": "StructuredText",
+          "config": {
+            "label": "ValueTitle3",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "valuedescription3": {
+          "type": "Text",
+          "config": {
+            "label": "ValueDescription3",
             "placeholder": ""
           }
         }
       },
+      "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

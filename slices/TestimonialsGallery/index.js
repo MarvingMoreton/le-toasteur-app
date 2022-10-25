@@ -247,7 +247,8 @@ const TestimonialsGallery = ({ slice }) => (
         /> */}
 
         <PrismicNextImage
-          src={slice.primary.image1.url}
+          field={slice.primary.image1}
+          // src={slice.primary.image1.url}
           alt={slice.primary.image1.alt}
           className={classes["image-radius"]}
         />

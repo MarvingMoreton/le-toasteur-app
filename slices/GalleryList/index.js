@@ -1,5 +1,8 @@
-import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import React from "react";
+import { PrismicRichText } from "@prismicio/react";
+import Image from "next/image";
+import classes from "../../components/ui/gallery/GalleryList.module.css";
+import { PrismicNextImage } from "@prismicio/next";
 
 /**
  * @typedef {import("@prismicio/client").Content.GalleryListSlice} GalleryListSlice
@@ -7,30 +10,37 @@ import { PrismicRichText } from '@prismicio/react'
  * @param { GalleryListProps }
  */
 const GalleryList = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
-  </section>
-)
+  <section className={`${classes["section-gallery"]} ${"container"} `}>
+    <div className={classes["gallery"]}>
+      {/* FIGURE */}
 
-export default GalleryList
+      {slice.items.map((item, i) => (
+        <PrismicNextImage
+          key={i}
+          src={item.image.url}
+          alt={item.image.alt}
+          className="image"
+        />
+      ))}
+
+      {slice?.items?.map((item, i) => (
+        <PrismicNextImage src={item.image.url} alt={item.image.alt} key={i} />
+      ))}
+
+      {/* {slice?.items?.map((item, i) => (
+        <figure className={classes["gallery-item"]}>
+          <div className={`${classes["image-box"]} ${classes["zoom"]}`}>
+            <PrismicNextImage
+              key={i}
+              src={item.image.url}
+              alt={item.image.alt}
+              className="image"
+            />
+          </div>
+        </figure>
+      ))} */}
+    </div>
+  </section>
+);
+
+export default GalleryList;

@@ -11,6 +11,30 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "slices": []
+    "title": "plane",
+    "slices": [],
+    "no_index": false,
+    "canonical_url": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "meta_title": "sum",
+    "meta_description": "pot",
+    "og_title": "tape",
+    "og_description": "characteristic",
+    "og_image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468"
+    },
+    "active_redirect": false,
+    "redirect_link": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    }
   }
 }

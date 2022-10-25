@@ -2,7 +2,7 @@
 
 import AddressesBox from './AddressesBox';
 import AllergyBox from './AllergyBox';
-import Banner from './Banner';
+import BannerSlice from './BannerSlice';
 import BookTable from './BookTable';
 import DrinksMenu from './DrinksMenu';
 import GalleryList from './GalleryList';
@@ -21,7 +21,7 @@ import VeganMenu from './VeganMenu';
 export {
 	AddressesBox,
 	AllergyBox,
-	Banner,
+	BannerSlice,
 	BookTable,
 	DrinksMenu,
 	GalleryList,
@@ -41,7 +41,7 @@ export {
 export const components = {
 	addresses_box: AddressesBox,
 	allergy_box: AllergyBox,
-	banner: Banner,
+	banner: BannerSlice,
 	book_table: BookTable,
 	drinks_menu: DrinksMenu,
 	gallery_list: GalleryList,

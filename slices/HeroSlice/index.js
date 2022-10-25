@@ -20,11 +20,11 @@ const HeroSlice = ({ slice }) => (
       {/* <Image src={slice.primary.image.url} alt={slice.primary.image.alt} /> */}
       {/* <PrismicNextImage field={slice.primary.image} /> */}
 
-      {slice.items.map((item, i) => (
+      {/* {slice.items.map((item, i) => (
         <PrismicLink field={item.cta_link} key={i} className="btn-primary">
           {item.cta_text}
         </PrismicLink>
-      ))}
+      ))} */}
     </div>
   </section>
 );

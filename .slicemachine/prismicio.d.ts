@@ -127,6 +127,17 @@ export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDoc
 /** Content for Page documents */
 interface PageDocumentData {
     /**
+     * Title field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    title: prismicT.KeyTextField;
+    /**
      * Slice Zone field in *Page*
      *
      * - **Field Type**: Slice Zone
@@ -137,12 +148,113 @@ interface PageDocumentData {
      *
      */
     slices: prismicT.SliceZone<PageDocumentDataSlicesSlice>;
+    /**
+     * NO INDEX field in *Page*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: page.no_index
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    no_index: prismicT.BooleanField;
+    /**
+     * Canonical URL field in *Page*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.canonical_url
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    canonical_url: prismicT.LinkField;
+    /**
+     * Meta title field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.meta_title
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_title: prismicT.KeyTextField;
+    /**
+     * Meta description field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.meta_description
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_description: prismicT.KeyTextField;
+    /**
+     * OG title field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.og_title
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    og_title: prismicT.KeyTextField;
+    /**
+     * OG description field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.og_description
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    og_description: prismicT.KeyTextField;
+    /**
+     * OG image field in *Page*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.og_image
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    og_image: prismicT.ImageField<never>;
+    /**
+     * Active redirect field in *Page*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: page.active_redirect
+     * - **Tab**: Redirect
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    active_redirect: prismicT.BooleanField;
+    /**
+     * Redirect link field in *Page*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.redirect_link
+     * - **Tab**: Redirect
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    redirect_link: prismicT.LinkField;
 }
 /**
  * Slice for *Page → Slice Zone*
  *
  */
-type PageDocumentDataSlicesSlice = BannerSlice;
+type PageDocumentDataSlicesSlice = BannerSlice | AddressesBoxSlice | AllergyBoxSlice | DrinksMenuSlice | BookTableSlice | GalleryListSlice | ImageGallerySlice | ImageFeaturedStandardSlice | HeroSliceSlice | LoveContentSlice | MainMenuSlice | MapBoxSlice | TestimonialsGallerySlice | TeamSliceSlice | StoryFeaturedSlice | ValuesListSlice | VeganMenuSlice;
 /**
  * Page document from Prismic
  *
@@ -152,11 +264,11 @@ type PageDocumentDataSlicesSlice = BannerSlice;
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type PageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<PageDocumentData>, "page", Lang>;
-/** Content for standardpage documents */
+export type PageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
+/** Content for OLDCUSTOMTYPE documents */
 interface StandardpageDocumentData {
     /**
-     * Title field in *standardpage*
+     * Title field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -167,7 +279,7 @@ interface StandardpageDocumentData {
      */
     title: prismicT.KeyTextField;
     /**
-     * Slice Zone field in *standardpage*
+     * Slice Zone field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Slice Zone
      * - **Placeholder**: *None*
@@ -178,7 +290,7 @@ interface StandardpageDocumentData {
      */
     slices: prismicT.SliceZone<StandardpageDocumentDataSlicesSlice>;
     /**
-     * NO INDEX field in *standardpage*
+     * NO INDEX field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Boolean
      * - **Placeholder**: *None*
@@ -190,7 +302,7 @@ interface StandardpageDocumentData {
      */
     no_index: prismicT.BooleanField;
     /**
-     * Canonical URL field in *standardpage*
+     * Canonical URL field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Link
      * - **Placeholder**: *None*
@@ -201,7 +313,7 @@ interface StandardpageDocumentData {
      */
     canonical_url: prismicT.LinkField;
     /**
-     * Meta title field in *standardpage*
+     * Meta title field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -212,7 +324,7 @@ interface StandardpageDocumentData {
      */
     meta_title: prismicT.KeyTextField;
     /**
-     * Meta description field in *standardpage*
+     * Meta description field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -223,7 +335,7 @@ interface StandardpageDocumentData {
      */
     meta_description: prismicT.KeyTextField;
     /**
-     * OG title field in *standardpage*
+     * OG title field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -234,7 +346,7 @@ interface StandardpageDocumentData {
      */
     og_title: prismicT.KeyTextField;
     /**
-     * OG description field in *standardpage*
+     * OG description field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -245,7 +357,7 @@ interface StandardpageDocumentData {
      */
     og_description: prismicT.KeyTextField;
     /**
-     * OG image field in *standardpage*
+     * OG image field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Image
      * - **Placeholder**: *None*
@@ -256,7 +368,7 @@ interface StandardpageDocumentData {
      */
     og_image: prismicT.ImageField<never>;
     /**
-     * Active redirect field in *standardpage*
+     * Active redirect field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Boolean
      * - **Placeholder**: *None*
@@ -268,7 +380,7 @@ interface StandardpageDocumentData {
      */
     active_redirect: prismicT.BooleanField;
     /**
-     * Redirect link field in *standardpage*
+     * Redirect link field in *OLDCUSTOMTYPE*
      *
      * - **Field Type**: Link
      * - **Placeholder**: *None*
@@ -280,12 +392,12 @@ interface StandardpageDocumentData {
     redirect_link: prismicT.LinkField;
 }
 /**
- * Slice for *standardpage → Slice Zone*
+ * Slice for *OLDCUSTOMTYPE → Slice Zone*
  *
  */
 type StandardpageDocumentDataSlicesSlice = HeroSliceSlice | ImageGallerySlice | BannerSlice;
 /**
- * standardpage document from Prismic
+ * OLDCUSTOMTYPE document from Prismic
  *
  * - **API ID**: `standardpage`
  * - **Repeatable**: `true`
@@ -366,6 +478,26 @@ export type AddressesBoxSlice = prismicT.SharedSlice<"addresses_box", AddressesB
  */
 interface AllergyBoxSliceDefaultPrimary {
     /**
+     * ImageTitle field in *AllergyBox → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: allergy_box.primary.uppertitle
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    uppertitle: prismicT.TitleField;
+    /**
+     * Emoji field in *AllergyBox → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: allergy_box.primary.emoji
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    emoji: prismicT.KeyTextField;
+    /**
      * Title field in *AllergyBox → Primary*
      *
      * - **Field Type**: Title
@@ -375,16 +507,6 @@ interface AllergyBoxSliceDefaultPrimary {
      *
      */
     title: prismicT.TitleField;
-    /**
-     * BottomTitle field in *AllergyBox → Primary*
-     *
-     * - **Field Type**: Title
-     * - **Placeholder**: *None*
-     * - **API ID Path**: allergy_box.primary.bottomtitle
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    bottomtitle: prismicT.TitleField;
 }
 /**
  * Item in AllergyBox → Items
@@ -426,12 +548,12 @@ type AllergyBoxSliceVariation = AllergyBoxSliceDefault;
  */
 export type AllergyBoxSlice = prismicT.SharedSlice<"allergy_box", AllergyBoxSliceVariation>;
 /**
- * Primary content in Banner → Primary
+ * Primary content in BannerSlice → Primary
  *
  */
 interface BannerSliceDefaultPrimary {
     /**
-     * Title field in *Banner → Primary*
+     * Title field in *BannerSlice → Primary*
      *
      * - **Field Type**: Title
      * - **Placeholder**: This is where it all begins...
@@ -441,7 +563,7 @@ interface BannerSliceDefaultPrimary {
      */
     title: prismicT.TitleField;
     /**
-     * description field in *Banner → Primary*
+     * description field in *BannerSlice → Primary*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -451,7 +573,7 @@ interface BannerSliceDefaultPrimary {
      */
     description: prismicT.KeyTextField;
     /**
-     * BackgroundImage field in *Banner → Primary*
+     * BackgroundImage field in *BannerSlice → Primary*
      *
      * - **Field Type**: Image
      * - **Placeholder**: *None*
@@ -462,7 +584,7 @@ interface BannerSliceDefaultPrimary {
     backgroundimage: prismicT.ImageField<never>;
 }
 /**
- * Default variation for Banner Slice
+ * Default variation for BannerSlice Slice
  *
  * - **API ID**: `default`
  * - **Description**: `Banner`
@@ -471,12 +593,12 @@ interface BannerSliceDefaultPrimary {
  */
 export type BannerSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BannerSliceDefaultPrimary>, never>;
 /**
- * Slice variation for *Banner*
+ * Slice variation for *BannerSlice*
  *
  */
 type BannerSliceVariation = BannerSliceDefault;
 /**
- * Banner Shared Slice
+ * BannerSlice Shared Slice
  *
  * - **API ID**: `banner`
  * - **Description**: `Banner`
@@ -643,13 +765,13 @@ export interface DrinksMenuSliceDefaultItem {
     /**
      * Price field in *DrinksMenu → Items*
      *
-     * - **Field Type**: Number
+     * - **Field Type**: Text
      * - **Placeholder**: *None*
      * - **API ID Path**: drinks_menu.items[].price
-     * - **Documentation**: https://prismic.io/docs/core-concepts/number
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    price: prismicT.NumberField;
+    price: prismicT.KeyTextField;
     /**
      * Description field in *DrinksMenu → Items*
      *
@@ -1314,6 +1436,16 @@ export interface TeamSliceSliceDefaultItem {
      */
     name: prismicT.RichTextField;
     /**
+     * Position Title field in *TeamSlice → Items*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: team_slice.items[].position_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    position_title: prismicT.KeyTextField;
+    /**
      * Description field in *TeamSlice → Items*
      *
      * - **Field Type**: Rich Text
@@ -1457,40 +1589,100 @@ type TestimonialsGallerySliceVariation = TestimonialsGallerySliceDefault;
  */
 export type TestimonialsGallerySlice = prismicT.SharedSlice<"testimonials_gallery", TestimonialsGallerySliceVariation>;
 /**
- * Item in ValuesList → Items
+ * Primary content in ValuesList → Primary
  *
  */
-export interface ValuesListSliceDefaultItem {
+interface ValuesListSliceDefaultPrimary {
     /**
-     * ValueIcon field in *ValuesList → Items*
+     * ValueIcon1 field in *ValuesList → Primary*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: values_list.items[].valueicon
+     * - **API ID Path**: values_list.primary.valueicon1
      * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    valueicon: prismicT.KeyTextField;
+    valueicon1: prismicT.KeyTextField;
     /**
-     * ValueTitle field in *ValuesList → Items*
+     * ValueTitle1 field in *ValuesList → Primary*
      *
      * - **Field Type**: Title
      * - **Placeholder**: *None*
-     * - **API ID Path**: values_list.items[].valuetitle
+     * - **API ID Path**: values_list.primary.valuetitle1
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    valuetitle: prismicT.TitleField;
+    valuetitle1: prismicT.TitleField;
     /**
-     * ValueDescription field in *ValuesList → Items*
+     * ValueDescription1 field in *ValuesList → Primary*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: values_list.items[].valuedescription
+     * - **API ID Path**: values_list.primary.valuedescription1
      * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    valuedescription: prismicT.KeyTextField;
+    valuedescription1: prismicT.KeyTextField;
+    /**
+     * ValueIcon2 field in *ValuesList → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: values_list.primary.valueicon2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    valueicon2: prismicT.KeyTextField;
+    /**
+     * ValueTitle2 field in *ValuesList → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: values_list.primary.valuetitle2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    valuetitle2: prismicT.TitleField;
+    /**
+     * ValueDescription2 field in *ValuesList → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: values_list.primary.valuedescription2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    valuedescription2: prismicT.KeyTextField;
+    /**
+     * ValueIcon3 field in *ValuesList → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: values_list.primary.valueicon3
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    valueicon3: prismicT.KeyTextField;
+    /**
+     * ValueTitle3 field in *ValuesList → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: values_list.primary.valuetitle3
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    valuetitle3: prismicT.TitleField;
+    /**
+     * ValueDescription3 field in *ValuesList → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: values_list.primary.valuedescription3
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    valuedescription3: prismicT.KeyTextField;
 }
 /**
  * Default variation for ValuesList Slice
@@ -1500,7 +1692,7 @@ export interface ValuesListSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type ValuesListSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<ValuesListSliceDefaultItem>>;
+export type ValuesListSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ValuesListSliceDefaultPrimary>, never>;
 /**
  * Slice variation for *ValuesList*
  *
@@ -1615,6 +1807,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefaultItem, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefaultItem, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, ValuesListSliceDefaultItem, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefaultItem, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefaultItem, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, ValuesListSliceDefaultPrimary, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
     }
 }

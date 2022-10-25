@@ -117,15 +117,27 @@
     },
     "ValuesList": {
       "default": {
-        "primary": {},
-        "items": {
-          "valuetitle": {
+        "primary": {
+          "valuetitle2": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "valuetitle1": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "valuetitle3": {
             "config": {
               "patternType": "HEADING",
               "blocks": 1
             }
           }
-        }
+        },
+        "items": {}
       }
     },
     "TeamSlice": {
@@ -201,7 +213,7 @@
               "blocks": 1
             }
           },
-          "bottomtitle": {
+          "uppertitle": {
             "config": {
               "patternType": "HEADING",
               "blocks": 1

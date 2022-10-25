@@ -53,7 +53,7 @@
           }
         },
         "price": {
-          "type": "Number",
+          "type": "Text",
           "config": {
             "label": "Price",
             "placeholder": ""

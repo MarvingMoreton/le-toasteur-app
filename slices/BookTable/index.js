@@ -45,9 +45,9 @@ const BookTable = ({ slice }) => (
           ))}
         </div>
         {/* LINK */}
-        <PrismicLink document={slice.primary.cta_internal}>
+        {/* <PrismicLink document={slice.primary.cta_internal}>
           {slice.primary.cta_text}
-        </PrismicLink>
+        </PrismicLink> */}
       </div>
     </div>
   </section>

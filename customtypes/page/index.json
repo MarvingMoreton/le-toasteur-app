@@ -5,6 +5,20 @@
   "status": true,
   "json": {
     "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Slug",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
@@ -12,8 +26,130 @@
           "choices": {
             "banner": {
               "type": "SharedSlice"
+            },
+            "addresses_box": {
+              "type": "SharedSlice"
+            },
+            "allergy_box": {
+              "type": "SharedSlice"
+            },
+            "drinks_menu": {
+              "type": "SharedSlice"
+            },
+            "book_table": {
+              "type": "SharedSlice"
+            },
+            "gallery_list": {
+              "type": "SharedSlice"
+            },
+            "image_gallery": {
+              "type": "SharedSlice"
+            },
+            "image_featured_standard": {
+              "type": "SharedSlice"
+            },
+            "hero_slice": {
+              "type": "SharedSlice"
+            },
+            "love_content": {
+              "type": "SharedSlice"
+            },
+            "main_menu": {
+              "type": "SharedSlice"
+            },
+            "map_box": {
+              "type": "SharedSlice"
+            },
+            "testimonials_gallery": {
+              "type": "SharedSlice"
+            },
+            "team_slice": {
+              "type": "SharedSlice"
+            },
+            "story_featured": {
+              "type": "SharedSlice"
+            },
+            "values_list": {
+              "type": "SharedSlice"
+            },
+            "vegan_menu": {
+              "type": "SharedSlice"
             }
           }
+        }
+      }
+    },
+    "SEO TAB": {
+      "no_index": {
+        "type": "Boolean",
+        "config": {
+          "label": "NO INDEX",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "canonical_url": {
+        "type": "Link",
+        "config": {
+          "label": "Canonical URL",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": ""
+        }
+      },
+      "og_title": {
+        "type": "Text",
+        "config": {
+          "label": "OG title",
+          "placeholder": ""
+        }
+      },
+      "og_description": {
+        "type": "Text",
+        "config": {
+          "label": "OG description",
+          "placeholder": ""
+        }
+      },
+      "og_image": {
+        "type": "Image",
+        "config": {
+          "label": "OG image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    },
+    "Redirect": {
+      "active_redirect": {
+        "type": "Boolean",
+        "config": {
+          "label": "Active redirect",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "redirect_link": {
+        "type": "Link",
+        "config": {
+          "label": "Redirect link",
+          "placeholder": "",
+          "select": null
         }
       }
     }

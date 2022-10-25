@@ -7,19 +7,19 @@
         "drinktitle": [
           {
             "type": "heading2",
-            "text": "Clothes",
+            "text": "Mirror",
             "spans": []
           }
         ],
-        "price": 97,
-        "description": "know"
+        "price": "difference",
+        "description": "book"
       }
     ],
     "primary": {
       "title": [
         {
           "type": "heading1",
-          "text": "Member",
+          "text": "Satisfied",
           "spans": []
         }
       ],
@@ -30,10 +30,10 @@
         },
         "alt": null,
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869"
+        "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
       },
-      "simpledouble": "measure",
-      "instruction": "except"
+      "simpledouble": "stream",
+      "instruction": "history"
     },
     "slice_type": "drinks_menu"
   }

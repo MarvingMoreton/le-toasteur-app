@@ -11,6 +11,22 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "AllergyBox",
       "primary": {
+        "uppertitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "ImageTitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "emoji": {
+          "type": "Text",
+          "config": {
+            "label": "Emoji",
+            "placeholder": ""
+          }
+        },
         "title": {
           "type": "StructuredText",
           "config": {
@@ -18,15 +34,6 @@
             "placeholder": "This is where it all begins...",
             "allowTargetBlank": true,
             "single": "heading2"
-          }
-        },
-        "bottomtitle": {
-          "type": "StructuredText",
-          "config": {
-            "label": "BottomTitle",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading3"
           }
         }
       },
