@@ -3,7 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { PrismicRichText } from "@prismicio/react";
-import toastOrange from "../../public/images/logos/toast-orange.png";
+import { PrismicNextImage } from "@prismicio/next";
+
+// import toastOrange from "../../public/images/logos/toast-orange.png";
 import logoBlue from "../../public/images/logos/logo-toasteur-villeray-navy.png";
 import classes from "../../components/ui/Menu/MainMenu.module.css";
 
@@ -21,12 +23,9 @@ const MainMenu = ({ slice }) => (
           <span>{slice.primary.description}</span>
         </div>
         <div className={classes["right-side-illustration"]}>
-          <Image
-            src={toastOrange}
-            alt="test"
-            // layout="fill"
-            width={269}
-            height={168}
+          <PrismicNextImage
+            field={slice.primary.illustration}
+            alt={slice.primary.illustration.alt}
           />
         </div>
       </div>
