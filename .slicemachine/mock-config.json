@@ -192,6 +192,18 @@
               "patternType": "HEADING",
               "blocks": 1
             }
+          },
+          "highlightedbreakfastdescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "highlightedbreakfasttitle": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
           }
         },
         "items": {

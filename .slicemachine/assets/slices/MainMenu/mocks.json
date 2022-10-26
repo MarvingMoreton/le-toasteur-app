@@ -7,15 +7,15 @@
         "breakfasttitle": [
           {
             "type": "heading3",
-            "text": "Situation",
+            "text": "Company",
             "spans": []
           }
         ],
-        "price": 93,
+        "price": 64,
         "description": [
           {
             "type": "paragraph",
-            "text": "Pariatur dolor esse proident laborum dolore minim minim commodo.",
+            "text": "Dolor proident nostrud est.",
             "spans": []
           }
         ]
@@ -25,11 +25,11 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Instance",
+          "text": "Drink",
           "spans": []
         }
       ],
-      "description": "pass",
+      "description": "shelter",
       "illustration": {
         "dimensions": {
           "width": 900,
@@ -37,8 +37,23 @@
         },
         "alt": null,
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72"
-      }
+        "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
+      },
+      "highlightedbreakfasttitle": [
+        {
+          "type": "heading3",
+          "text": "Primitive",
+          "spans": []
+        }
+      ],
+      "highlightedbreakfastprice": 12,
+      "highlightedbreakfastdescription": [
+        {
+          "type": "paragraph",
+          "text": "Proident incididunt nulla ea occaecat. Cupidatat nostrud aliqua in amet in consectetur.",
+          "spans": []
+        }
+      ]
     },
     "slice_type": "main_menu"
   }

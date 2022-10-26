@@ -1194,6 +1194,36 @@ interface MainMenuSliceDefaultPrimary {
      *
      */
     illustration: prismicT.ImageField<never>;
+    /**
+     * HighlightedBreakfastTitle field in *MainMenu → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: main_menu.primary.highlightedbreakfasttitle
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    highlightedbreakfasttitle: prismicT.TitleField;
+    /**
+     * HighlightedBreakfastPrice field in *MainMenu → Primary*
+     *
+     * - **Field Type**: Number
+     * - **Placeholder**: *None*
+     * - **API ID Path**: main_menu.primary.highlightedbreakfastprice
+     * - **Documentation**: https://prismic.io/docs/core-concepts/number
+     *
+     */
+    highlightedbreakfastprice: prismicT.NumberField;
+    /**
+     * HighlightedBreakfastDescription field in *MainMenu → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: main_menu.primary.highlightedbreakfastdescription
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    highlightedbreakfastdescription: prismicT.RichTextField;
 }
 /**
  * Item in MainMenu → Items

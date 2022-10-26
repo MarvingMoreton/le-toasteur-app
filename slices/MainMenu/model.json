@@ -34,6 +34,31 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "highlightedbreakfasttitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "HighlightedBreakfastTitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "highlightedbreakfastprice": {
+          "type": "Number",
+          "config": {
+            "label": "HighlightedBreakfastPrice",
+            "placeholder": ""
+          }
+        },
+        "highlightedbreakfastdescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "HighlightedBreakfastDescription",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,hyperlink,em,image,embed,list-item,o-list-item,rtl,strong"
+          }
         }
       },
       "items": {
