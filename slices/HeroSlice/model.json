@@ -14,18 +14,17 @@
         "title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1,strong,embed"
           }
         },
         "description": {
-          "type": "StructuredText",
+          "type": "Text",
           "config": {
             "label": "Description",
-            "placeholder": "A nice description of your feature",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "placeholder": ""
           }
         },
         "image": {

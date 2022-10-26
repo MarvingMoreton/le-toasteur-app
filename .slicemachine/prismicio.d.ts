@@ -1114,23 +1114,23 @@ interface HeroSliceSliceDefaultPrimary {
     /**
      * Title field in *HeroSlice → Primary*
      *
-     * - **Field Type**: Title
+     * - **Field Type**: Rich Text
      * - **Placeholder**: This is where it all begins...
      * - **API ID Path**: hero_slice.primary.title
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    title: prismicT.TitleField;
+    title: prismicT.RichTextField;
     /**
      * Description field in *HeroSlice → Primary*
      *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
      * - **API ID Path**: hero_slice.primary.description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    description: prismicT.RichTextField;
+    description: prismicT.KeyTextField;
     /**
      * image field in *HeroSlice → Primary*
      *

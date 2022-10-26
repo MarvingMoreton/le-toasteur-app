@@ -58,7 +58,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffff;
+  /* background-color: #ffff; */
+  background: rgba(239, 219, 178, 0.45);
+
   /* adding height bcoz we want header to be sticky later */
   height: 8.8rem;
   padding: 0 6rem;

@@ -12,9 +12,9 @@
           "image": {
             "content": "https://images.unsplash.com/photo-1534759926787-89fa60f35848"
           },
-          "description": {
+          "title": {
             "config": {
-              "patternType": "PARAGRAPH",
+              "patternType": "HEADING",
               "blocks": 1
             }
           }
