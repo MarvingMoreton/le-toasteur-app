@@ -117,6 +117,9 @@ function MainNavigation() {
                       className={`${classes["main-nav-link"]} ${
                         currentRoute === "/" ? "active" : ""
                       }`}
+                      onClick={() => {
+                        setIsNavExpanded(!isNavExpanded);
+                      }}
                     >
                       Home
                     </a>
@@ -128,6 +131,9 @@ function MainNavigation() {
                       className={`${classes["main-nav-link"]} ${
                         currentRoute === "/" ? "active" : ""
                       }`}
+                      onClick={() => {
+                        setIsNavExpanded(!isNavExpanded);
+                      }}
                     >
                       Menu
                     </a>
@@ -152,6 +158,9 @@ function MainNavigation() {
                       className={`${classes["main-nav-link"]} ${
                         currentRoute === "/" ? "active" : ""
                       }`}
+                      onClick={() => {
+                        setIsNavExpanded(!isNavExpanded);
+                      }}
                     >
                       Photos
                     </a>
@@ -163,6 +172,9 @@ function MainNavigation() {
                       className={`${classes["main-nav-link"]} ${
                         currentRoute === "/" ? "active" : ""
                       }`}
+                      onClick={() => {
+                        setIsNavExpanded(!isNavExpanded);
+                      }}
                     >
                       Notre Histoire
                     </a>
