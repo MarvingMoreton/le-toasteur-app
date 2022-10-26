@@ -5,7 +5,6 @@ import Image from "next/image";
 import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 
-// import toastOrange from "../../public/images/logos/toast-orange.png";
 import logoBlue from "../../public/images/logos/logo-toasteur-villeray-navy.png";
 import classes from "../../components/ui/Menu/MainMenu.module.css";
 

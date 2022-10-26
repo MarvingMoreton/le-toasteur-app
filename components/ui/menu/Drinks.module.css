@@ -64,6 +64,7 @@
 
 .title-row {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 1rem;
   gap: 15rem;
 }
@@ -112,7 +113,7 @@
 
 .title-row-right {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-bottom: 0.6rem;
   gap: 25rem;
 }
