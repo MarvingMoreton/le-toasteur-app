@@ -1,6 +1,6 @@
 .section-drinks-menu {
   padding: 12rem 0 18rem 0;
-  /* background-color: #041e42; */
+  background-color: #041e42;
   position: relative;
 }
 
@@ -23,6 +23,7 @@
 
 .left-side {
   width: 100%;
+  padding-left: 7rem;
 }
 
 .right-side-illustration {
@@ -42,7 +43,7 @@
   flex-wrap: wrap;
   /* align-items: center; */
   justify-content: center;
-  gap: 30rem;
+  gap: 20rem;
   row-gap: 4rem;
   /* column-gap: 8rem; */
   margin: 8rem auto;
@@ -82,6 +83,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
+  margin-top: 8rem;
 }
 .upper-box > span {
   text-align: end;

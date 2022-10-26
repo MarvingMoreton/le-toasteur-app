@@ -324,17 +324,17 @@
                     "single": "heading3"
                   }
                 },
-                "cta_internal": {
+                "cta_internal_link": {
                   "type": "Link",
                   "config": {
-                    "label": "CTA internal",
+                    "label": "CTA Internal Link",
                     "select": "document"
                   }
                 },
-                "cta_text": {
+                "cta_text_internal_link": {
                   "type": "Text",
                   "config": {
-                    "label": "CTA Text",
+                    "label": "CTA Text Internal Link",
                     "placeholder": ""
                   }
                 }
@@ -363,29 +363,29 @@
                 "paragraph": [
                   {
                     "type": "paragraph",
-                    "text": "Aute laborum dolore voluptate eu velit eu ex exercitation velit. Aute eu nostrud exercitation velit eiusmod duis occaecat elit consectetur. Quis cillum elit qui aliquip aliquip et incididunt minim eiusmod aute.",
+                    "text": "Incididunt pariatur velit magna officia labore reprehenderit ipsum mollit adipisicing incididunt tempor nisi enim minim. Proident qui et occaecat cillum nisi officia reprehenderit eiusmod commodo eiusmod.",
                     "spans": []
                   }
                 ]
               }
             ],
             "primary": {
-              "emoji": "mistake",
+              "emoji": "connected",
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Event",
+                  "text": "Range",
                   "spans": []
                 }
               ],
               "booktable": [
                 {
                   "type": "heading3",
-                  "text": "Beyond",
+                  "text": "Constantly",
                   "spans": []
                 }
               ],
-              "cta_internal": {
+              "cta_internal_link": {
                 "id": "mock_document_id",
                 "link_type": "Document",
                 "type": "mock",
@@ -395,7 +395,7 @@
                 "first_publication_date": "1970-01-01T00:00:01+0000",
                 "last_publication_date": "1970-01-01T01:00:00+0000"
               },
-              "cta_text": "zoo"
+              "cta_text_internal_link": "poetry"
             },
             "slice_type": "book_table"
           }
@@ -404,7 +404,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/BookTable/default/preview.png",
+            "width": 2096,
+            "height": 1120
+          }
+        }
       },
       "drinks_menu": {
         "library": "slices",
@@ -884,25 +890,23 @@
                     "constraint": {},
                     "thumbnails": []
                   }
-                }
-              },
-              "items": {
-                "cta_link": {
+                },
+                "cta_internal_link": {
                   "type": "Link",
                   "config": {
-                    "label": "CTA Link",
-                    "placeholder": "",
-                    "select": null
+                    "label": "CTA Internal Link",
+                    "select": "document"
                   }
                 },
                 "cta_text": {
                   "type": "Text",
                   "config": {
-                    "label": "CTA Text",
+                    "label": "CTA text",
                     "placeholder": ""
                   }
                 }
               },
+              "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
@@ -912,26 +916,20 @@
             "variation": "default",
             "version": "sktwi1xtmkfgx8626",
             "items": [
-              {
-                "cta_link": {
-                  "link_type": "Web",
-                  "url": "http://google.com"
-                },
-                "cta_text": "whom"
-              }
+              {}
             ],
             "primary": {
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Believed",
+                  "text": "Somebody",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Cillum cillum eu nulla aliqua ipsum. Ex ad sunt dolor cillum occaecat ex nisi incididunt id tempor laboris pariatur. Minim labore consequat laboris tempor voluptate occaecat est id aliqua commodo.",
+                  "text": "Nisi eiusmod sint sunt nostrud sit duis duis dolor sunt anim nulla in dolore.",
                   "spans": []
                 }
               ],
@@ -943,7 +941,18 @@
                 "alt": null,
                 "copyright": null,
                 "url": "https://images.unsplash.com/photo-1534759926787-89fa60f35848"
-              }
+              },
+              "cta_internal_link": {
+                "id": "mock_document_id",
+                "link_type": "Document",
+                "type": "mock",
+                "tags": [],
+                "lang": "en-us",
+                "slug": null,
+                "first_publication_date": "1970-01-01T00:00:01+0000",
+                "last_publication_date": "1970-01-01T01:00:00+0000"
+              },
+              "cta_text": "numeral"
             },
             "slice_type": "hero_slice"
           }
@@ -975,7 +984,7 @@
                 "subtitle": {
                   "type": "Text",
                   "config": {
-                    "label": "subtitle",
+                    "label": "Subtitle",
                     "placeholder": ""
                   }
                 },
@@ -988,21 +997,6 @@
                     "single": "heading2"
                   }
                 },
-                "cta_link": {
-                  "type": "Link",
-                  "config": {
-                    "label": "CTA Link",
-                    "placeholder": "",
-                    "select": null
-                  }
-                },
-                "cta_text": {
-                  "type": "Text",
-                  "config": {
-                    "label": "CTA Text",
-                    "placeholder": ""
-                  }
-                },
                 "image": {
                   "type": "Image",
                   "config": {
@@ -1011,17 +1005,31 @@
                     "thumbnails": []
                   }
                 },
-                "cta_internal": {
+                "cta_internal_link": {
                   "type": "Link",
                   "config": {
-                    "label": "CTA Internal",
+                    "label": "CTA Internal Link",
                     "select": "document"
                   }
                 },
-                "cta_internal_text": {
+                "cta_text_link": {
                   "type": "Text",
                   "config": {
-                    "label": "CTA internal text",
+                    "label": "CTA Text Link",
+                    "placeholder": ""
+                  }
+                },
+                "cta_internal_link_2": {
+                  "type": "Link",
+                  "config": {
+                    "label": "CTA Internal Link 2",
+                    "select": "document"
+                  }
+                },
+                "cta_text_link_2": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA Text Link 2",
                     "placeholder": ""
                   }
                 }
@@ -1050,26 +1058,21 @@
                 "paragraph": [
                   {
                     "type": "paragraph",
-                    "text": "Qui consectetur incididunt cupidatat duis minim dolore esse sunt laborum duis occaecat fugiat. Sit reprehenderit amet id enim in.",
+                    "text": "Anim tempor aute quis in aliqua in tempor laborum est dolore cillum officia exercitation culpa. Anim veniam mollit reprehenderit ut. Laborum quis dolore Lorem velit minim.",
                     "spans": []
                   }
                 ]
               }
             ],
             "primary": {
-              "subtitle": "stranger",
+              "subtitle": "terrible",
               "secondary_heading": [
                 {
                   "type": "heading2",
-                  "text": "Declared",
+                  "text": "Company",
                   "spans": []
                 }
               ],
-              "cta_link": {
-                "link_type": "Web",
-                "url": "http://twitter.com"
-              },
-              "cta_text": "fill",
               "image": {
                 "dimensions": {
                   "width": 900,
@@ -1077,9 +1080,9 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e"
+                "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636"
               },
-              "cta_internal": {
+              "cta_internal_link": {
                 "id": "mock_document_id",
                 "link_type": "Document",
                 "type": "mock",
@@ -1089,7 +1092,18 @@
                 "first_publication_date": "1970-01-01T00:00:01+0000",
                 "last_publication_date": "1970-01-01T01:00:00+0000"
               },
-              "cta_internal_text": "cup"
+              "cta_text_link": "trunk",
+              "cta_internal_link_2": {
+                "id": "mock_document_id",
+                "link_type": "Document",
+                "type": "mock",
+                "tags": [],
+                "lang": "en-us",
+                "slug": null,
+                "first_publication_date": "1970-01-01T00:00:01+0000",
+                "last_publication_date": "1970-01-01T01:00:00+0000"
+              },
+              "cta_text_link_2": "guide"
             },
             "slice_type": "image_featured_standard"
           }
@@ -1098,7 +1112,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/ImageFeaturedStandard/default/preview.png",
+            "width": 2242,
+            "height": 1280
+          }
+        }
       },
       "image_gallery": {
         "library": "slices",

@@ -35,25 +35,23 @@
             "constraint": {},
             "thumbnails": []
           }
-        }
-      },
-      "items": {
-        "cta_link": {
+        },
+        "cta_internal_link": {
           "type": "Link",
           "config": {
-            "label": "CTA Link",
-            "placeholder": "",
-            "select": null
+            "label": "CTA Internal Link",
+            "select": "document"
           }
         },
         "cta_text": {
           "type": "Text",
           "config": {
-            "label": "CTA Text",
+            "label": "CTA text",
             "placeholder": ""
           }
         }
       },
+      "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

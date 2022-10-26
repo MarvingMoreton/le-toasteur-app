@@ -14,7 +14,7 @@
         "subtitle": {
           "type": "Text",
           "config": {
-            "label": "subtitle",
+            "label": "Subtitle",
             "placeholder": ""
           }
         },
@@ -27,21 +27,6 @@
             "single": "heading2"
           }
         },
-        "cta_link": {
-          "type": "Link",
-          "config": {
-            "label": "CTA Link",
-            "placeholder": "",
-            "select": null
-          }
-        },
-        "cta_text": {
-          "type": "Text",
-          "config": {
-            "label": "CTA Text",
-            "placeholder": ""
-          }
-        },
         "image": {
           "type": "Image",
           "config": {
@@ -50,17 +35,31 @@
             "thumbnails": []
           }
         },
-        "cta_internal": {
+        "cta_internal_link": {
           "type": "Link",
           "config": {
-            "label": "CTA Internal",
+            "label": "CTA Internal Link",
             "select": "document"
           }
         },
-        "cta_internal_text": {
+        "cta_text_link": {
           "type": "Text",
           "config": {
-            "label": "CTA internal text",
+            "label": "CTA Text Link",
+            "placeholder": ""
+          }
+        },
+        "cta_internal_link_2": {
+          "type": "Link",
+          "config": {
+            "label": "CTA Internal Link 2",
+            "select": "document"
+          }
+        },
+        "cta_text_link_2": {
+          "type": "Text",
+          "config": {
+            "label": "CTA Text Link 2",
             "placeholder": ""
           }
         }

@@ -32,10 +32,19 @@ const ImageFeaturedStandard = ({ slice }) => (
         ))}
       </div>
       <div className={classes["box-buttons"]}>
-        {/* <PrismicLink document={slice.primary.cta_internal}></PrismicLink>
-        {slice.primary.cta_internal_text}
+        <PrismicLink
+          document={slice.primary.cta_internal_link}
+          className="btn-primary"
+        >
+          {slice.primary.cta_text_link}
+        </PrismicLink>
 
-        <PrismicLink field={slice.primary.cta_link}>My Link</PrismicLink> */}
+        <PrismicLink
+          document={slice.primary.cta_internal_link_2}
+          className="btn-secondary"
+        >
+          {slice.primary.cta_text_link_2}
+        </PrismicLink>
       </div>
     </div>
 

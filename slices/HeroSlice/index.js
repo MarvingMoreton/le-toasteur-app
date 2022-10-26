@@ -17,14 +17,12 @@ const HeroSlice = ({ slice }) => (
       <PrismicRichText field={slice.primary.title} />
       <PrismicRichText field={slice.primary.description} />
 
-      {/* <Image src={slice.primary.image.url} alt={slice.primary.image.alt} /> */}
-      {/* <PrismicNextImage field={slice.primary.image} /> */}
-
-      {/* {slice.items.map((item, i) => (
-        <PrismicLink field={item.cta_link} key={i} className="btn-primary">
-          {item.cta_text}
-        </PrismicLink>
-      ))} */}
+      <PrismicLink
+        document={slice.primary.cta_internal_link}
+        className="btn-primary"
+      >
+        {slice.primary.cta_text}
+      </PrismicLink>
     </div>
   </section>
 );

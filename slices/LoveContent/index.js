@@ -12,14 +12,21 @@ const LoveContent = ({ slice }) => (
   <section className={classes["section-impact-content"]}>
     <div className="container">
       <div className={classes["box-content"]}>
-        <PrismicRichText
+        {/* <PrismicRichText
           field={slice.primary.titleimpact}
           components={{
             heading2: ({ children }) => (
               <h2 className={classes["title-impact"]}>{children}</h2>
             ),
           }}
-        />
+        /> */}
+
+        <h2 className={classes["title-impact"]}>
+          Notre nourriture est faite à{" "}
+          <span className={classes["title-impact-highlighted"]}>
+            100% avec amour!
+          </span>
+        </h2>
         <span className={classes["small-text"]}>{slice.primary.sentence}</span>
       </div>
     </div>

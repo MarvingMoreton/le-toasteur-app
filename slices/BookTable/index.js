@@ -44,10 +44,12 @@ const BookTable = ({ slice }) => (
             <PrismicRichText field={item.paragraph} key={i} />
           ))}
         </div>
-        {/* LINK */}
-        {/* <PrismicLink document={slice.primary.cta_internal}>
-          {slice.primary.cta_text}
-        </PrismicLink> */}
+        <PrismicLink
+          document={slice.primary.cta_internal_link}
+          className="btn-primary"
+        >
+          {slice.primary.cta_text_internal_link}
+        </PrismicLink>
       </div>
     </div>
   </section>

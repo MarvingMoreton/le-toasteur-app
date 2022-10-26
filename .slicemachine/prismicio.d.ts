@@ -124,6 +124,67 @@ type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSli
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
+/** Content for Menu documents */
+interface MenuDocumentData {
+    /**
+     * `title` field in *Menu*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: Menu title...
+     * - **API ID Path**: menu.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Menu Links field in *Menu*
+     *
+     * - **Field Type**: Group
+     * - **Placeholder**: *None*
+     * - **API ID Path**: menu.menuLinks[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/group
+     *
+     */
+    menuLinks: prismicT.GroupField<Simplify<MenuDocumentDataMenuLinksItem>>;
+}
+/**
+ * Item in Menu → Menu Links
+ *
+ */
+export interface MenuDocumentDataMenuLinksItem {
+    /**
+     * Link Label field in *Menu → Menu Links*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: Link Label...
+     * - **API ID Path**: menu.menuLinks[].label
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    label: prismicT.RichTextField;
+    /**
+     * Link field in *Menu → Menu Links*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: Select a Link...
+     * - **API ID Path**: menu.menuLinks[].link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    link: prismicT.LinkField;
+}
+/**
+ * Menu document from Prismic
+ *
+ * - **API ID**: `menu`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type MenuDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<MenuDocumentData>, "menu", Lang>;
 /** Content for Page documents */
 interface PageDocumentData {
     /**
@@ -406,7 +467,7 @@ type StandardpageDocumentDataSlicesSlice = HeroSliceSlice | ImageGallerySlice | 
  * @typeParam Lang - Language API ID of the document.
  */
 export type StandardpageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<StandardpageDocumentData>, "standardpage", Lang>;
-export type AllDocumentTypes = HomepageDocument | PageDocument | StandardpageDocument;
+export type AllDocumentTypes = HomepageDocument | MenuDocument | PageDocument | StandardpageDocument;
 /**
  * Primary content in AddressesBox → Primary
  *
@@ -642,25 +703,25 @@ interface BookTableSliceDefaultPrimary {
      */
     booktable: prismicT.TitleField;
     /**
-     * CTA internal field in *BookTable → Primary*
+     * CTA Internal Link field in *BookTable → Primary*
      *
      * - **Field Type**: Content Relationship
      * - **Placeholder**: *None*
-     * - **API ID Path**: book_table.primary.cta_internal
+     * - **API ID Path**: book_table.primary.cta_internal_link
      * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
      *
      */
-    cta_internal: prismicT.RelationField;
+    cta_internal_link: prismicT.RelationField;
     /**
-     * CTA Text field in *BookTable → Primary*
+     * CTA Text Internal Link field in *BookTable → Primary*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: book_table.primary.cta_text
+     * - **API ID Path**: book_table.primary.cta_text_internal_link
      * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    cta_text: prismicT.KeyTextField;
+    cta_text_internal_link: prismicT.KeyTextField;
 }
 /**
  * Item in BookTable → Items
@@ -1080,28 +1141,22 @@ interface HeroSliceSliceDefaultPrimary {
      *
      */
     image: prismicT.ImageField<never>;
-}
-/**
- * Item in HeroSlice → Items
- *
- */
-export interface HeroSliceSliceDefaultItem {
     /**
-     * CTA Link field in *HeroSlice → Items*
+     * CTA Internal Link field in *HeroSlice → Primary*
      *
-     * - **Field Type**: Link
+     * - **Field Type**: Content Relationship
      * - **Placeholder**: *None*
-     * - **API ID Path**: hero_slice.items[].cta_link
+     * - **API ID Path**: hero_slice.primary.cta_internal_link
      * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
      *
      */
-    cta_link: prismicT.LinkField;
+    cta_internal_link: prismicT.RelationField;
     /**
-     * CTA Text field in *HeroSlice → Items*
+     * CTA text field in *HeroSlice → Primary*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: hero_slice.items[].cta_text
+     * - **API ID Path**: hero_slice.primary.cta_text
      * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
@@ -1115,7 +1170,7 @@ export interface HeroSliceSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type HeroSliceSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<HeroSliceSliceDefaultPrimary>, Simplify<HeroSliceSliceDefaultItem>>;
+export type HeroSliceSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<HeroSliceSliceDefaultPrimary>, never>;
 /**
  * Slice variation for *HeroSlice*
  *
@@ -1136,7 +1191,7 @@ export type HeroSliceSlice = prismicT.SharedSlice<"hero_slice", HeroSliceSliceVa
  */
 interface ImageFeaturedStandardSliceDefaultPrimary {
     /**
-     * subtitle field in *ImageFeaturedStandard → Primary*
+     * Subtitle field in *ImageFeaturedStandard → Primary*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -1156,26 +1211,6 @@ interface ImageFeaturedStandardSliceDefaultPrimary {
      */
     secondary_heading: prismicT.TitleField;
     /**
-     * CTA Link field in *ImageFeaturedStandard → Primary*
-     *
-     * - **Field Type**: Link
-     * - **Placeholder**: *None*
-     * - **API ID Path**: image_featured_standard.primary.cta_link
-     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
-     *
-     */
-    cta_link: prismicT.LinkField;
-    /**
-     * CTA Text field in *ImageFeaturedStandard → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: image_featured_standard.primary.cta_text
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    cta_text: prismicT.KeyTextField;
-    /**
      * Image field in *ImageFeaturedStandard → Primary*
      *
      * - **Field Type**: Image
@@ -1186,25 +1221,45 @@ interface ImageFeaturedStandardSliceDefaultPrimary {
      */
     image: prismicT.ImageField<never>;
     /**
-     * CTA Internal field in *ImageFeaturedStandard → Primary*
+     * CTA Internal Link field in *ImageFeaturedStandard → Primary*
      *
      * - **Field Type**: Content Relationship
      * - **Placeholder**: *None*
-     * - **API ID Path**: image_featured_standard.primary.cta_internal
+     * - **API ID Path**: image_featured_standard.primary.cta_internal_link
      * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
      *
      */
-    cta_internal: prismicT.RelationField;
+    cta_internal_link: prismicT.RelationField;
     /**
-     * CTA internal text field in *ImageFeaturedStandard → Primary*
+     * CTA Text Link field in *ImageFeaturedStandard → Primary*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: image_featured_standard.primary.cta_internal_text
+     * - **API ID Path**: image_featured_standard.primary.cta_text_link
      * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    cta_internal_text: prismicT.KeyTextField;
+    cta_text_link: prismicT.KeyTextField;
+    /**
+     * CTA Internal Link 2 field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Content Relationship
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.primary.cta_internal_link_2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_internal_link_2: prismicT.RelationField;
+    /**
+     * CTA Text Link 2 field in *ImageFeaturedStandard → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_standard.primary.cta_text_link_2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    cta_text_link_2: prismicT.KeyTextField;
 }
 /**
  * Item in ImageFeaturedStandard → Items
@@ -2037,6 +2092,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefaultItem, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefaultItem, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, ValuesListSliceDefaultPrimary, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, MenuDocumentData, MenuDocumentDataMenuLinksItem, MenuDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefaultItem, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, ValuesListSliceDefaultPrimary, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
     }
 }

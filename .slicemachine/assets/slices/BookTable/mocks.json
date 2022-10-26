@@ -7,29 +7,29 @@
         "paragraph": [
           {
             "type": "paragraph",
-            "text": "Aute laborum dolore voluptate eu velit eu ex exercitation velit. Aute eu nostrud exercitation velit eiusmod duis occaecat elit consectetur. Quis cillum elit qui aliquip aliquip et incididunt minim eiusmod aute.",
+            "text": "Incididunt pariatur velit magna officia labore reprehenderit ipsum mollit adipisicing incididunt tempor nisi enim minim. Proident qui et occaecat cillum nisi officia reprehenderit eiusmod commodo eiusmod.",
             "spans": []
           }
         ]
       }
     ],
     "primary": {
-      "emoji": "mistake",
+      "emoji": "connected",
       "title": [
         {
           "type": "heading2",
-          "text": "Event",
+          "text": "Range",
           "spans": []
         }
       ],
       "booktable": [
         {
           "type": "heading3",
-          "text": "Beyond",
+          "text": "Constantly",
           "spans": []
         }
       ],
-      "cta_internal": {
+      "cta_internal_link": {
         "id": "mock_document_id",
         "link_type": "Document",
         "type": "mock",
@@ -39,7 +39,7 @@
         "first_publication_date": "1970-01-01T00:00:01+0000",
         "last_publication_date": "1970-01-01T01:00:00+0000"
       },
-      "cta_text": "zoo"
+      "cta_text_internal_link": "poetry"
     },
     "slice_type": "book_table"
   }

@@ -36,17 +36,17 @@
             "single": "heading3"
           }
         },
-        "cta_internal": {
+        "cta_internal_link": {
           "type": "Link",
           "config": {
-            "label": "CTA internal",
+            "label": "CTA Internal Link",
             "select": "document"
           }
         },
-        "cta_text": {
+        "cta_text_internal_link": {
           "type": "Text",
           "config": {
-            "label": "CTA Text",
+            "label": "CTA Text Internal Link",
             "placeholder": ""
           }
         }
