@@ -38,7 +38,7 @@ li {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #383838;
 }
 
@@ -103,7 +103,7 @@ h1 {
 
 h2 {
   font-family: "Fira Sans";
-  font-size: 4.4rem;
+  font-size: 3.8rem;
   font-weight: 700;
 }
 
@@ -213,7 +213,7 @@ input:focus-visible {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.2rem;
+  font-size: 2rem;
 
   /* T - Orange */
 
@@ -249,7 +249,7 @@ input:focus-visible {
 
   h2,
   .secondary-heading {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
 
   h3 {
@@ -289,20 +289,11 @@ input:focus-visible {
 
   h2,
   .secondary-heading {
-    font-size: 3.6rem;
+    font-size: 3.4rem;
   }
 
   h3 {
     font-size: 2.2rem;
-  }
-
-  h4,
-  .subtitle {
-    font-size: 1.8rem;
-  }
-
-  h5 {
-    font-size: 1.8rem;
   }
 
   p,
@@ -326,7 +317,7 @@ input:focus-visible {
 /**************************/
 @media (max-width: 55em) {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   h2,
@@ -367,34 +358,6 @@ input:focus-visible {
 /**************************/
 
 @media (max-width: 30em) {
-  h1 {
-    font-size: 5rem;
-  }
-
-  h2,
-  .secondary-heading {
-    font-size: 2.8rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4,
-  .subtitle {
-    font-size: 1.6rem;
-  }
-
-  h5 {
-    font-size: 1.6rem;
-  }
-
-  p,
-  span,
-  a {
-    font-size: 1.4rem;
-  }
-
   .container {
     padding: 0 2.2rem;
   }
@@ -405,38 +368,6 @@ input:focus-visible {
 /**************************/
 
 @media (max-width: 25em) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2,
-  .secondary-heading {
-    font-size: 2.8rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4,
-  .subtitle {
-    font-size: 1.6rem;
-  }
-
-  h5 {
-    font-size: 1.6rem;
-  }
-
-  p,
-  span,
-  a {
-    font-size: 1.4rem;
-  }
-
-  .container {
-    padding: 0 2.2rem;
-  }
-
   header {
     padding: 0;
   }

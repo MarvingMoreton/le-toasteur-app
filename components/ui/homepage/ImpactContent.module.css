@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
 
   border-radius: 0.8rem;
-  padding: 5rem 10rem;
+  padding: 10rem;
   font-size: 50px;
   color: white;
 
@@ -31,7 +31,7 @@
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 8.8rem;
+  font-size: 7.8rem;
   line-height: 10rem;
   text-align: center;
 
@@ -54,7 +54,7 @@
 @media (max-width: 75em) {
   .title-impact,
   .title-impact-highlighted {
-    font-size: 8rem;
+    font-size: 7.6rem;
     line-height: 9rem;
   }
 }
@@ -74,7 +74,7 @@
   }
   .title-impact,
   .title-impact-highlighted {
-    font-size: 7rem;
+    font-size: 6rem;
     line-height: 8rem;
   }
 }
@@ -110,11 +110,7 @@
   .box-content {
     padding: 3rem 3rem;
   }
-  .title-impact,
-  .title-impact-highlighted {
-    font-size: 5rem;
-    line-height: 7rem;
-  }
+
   .small-text {
     font-size: 1.4rem;
   }

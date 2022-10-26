@@ -48,15 +48,11 @@
   flex-direction: column;
 }
 .box-excerpt > p {
-  font-family: "Fira Sans";
+  /* font-family: "Fira Sans";
   font-style: normal;
+  font-size: 18px;*/
   font-weight: 400;
-  font-size: 18px;
-
-  /* T - Dark grey */
-
   color: #383838;
-  margin-bottom: 0;
 }
 
 .see-more {
@@ -78,8 +74,13 @@
   align-items: center;
   gap: 2rem;
 }
-/* .image-testimonial {
-} */
+
+.name-stars-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
 .name-stars-box > span {
   font-family: "Fira Sans";
   font-style: normal;
@@ -191,6 +192,11 @@
   }
   .gallery {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .name-stars-box__4f8wZ > span {
+    font-size: 1.8rem;
+    line-height: 20px;
   }
 }
 
