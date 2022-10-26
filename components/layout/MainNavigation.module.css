@@ -95,6 +95,36 @@
   border: none;
 }
 
+/* .icon--close {
+  display: none;
+} */
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon--close.hidden {
+  display: none;
+}
+
+.icon--open.hidden {
+  display: none;
+}
+
+.icon-close {
+  z-index: 999;
+  text-align: center;
+  margin-left: 5rem;
+}
+/* .icon--close,
+.icon--open {
+
+} */
+
 /**** MEDIA QUERIES ****/
 /**************************/
 /* ABOVE 1600px (desktops) */

@@ -7,7 +7,7 @@ import blueToast from "../../public/images/logos/toast-blue-navy-ellipsed.svg";
 import { useRouter } from "next/router";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 function MainNavigation() {
   const router = useRouter();
@@ -69,8 +69,24 @@ function MainNavigation() {
               setIsNavExpanded(!isNavExpanded);
             }}
           >
-            <FontAwesomeIcon icon={faBars} size="2xl" />
-
+            <FontAwesomeIcon
+              icon={faBars}
+              size="2xl"
+              className={`${classes["icon--open"]} ${
+                isNavExpanded ? `${classes["hidden"]}` : `${classes["visible"]}`
+              }`}
+            />
+            <div className={classes["centering"]}>
+              <FontAwesomeIcon
+                icon={faX}
+                size="2xl"
+                className={`${classes["icon--close"]} ${
+                  isNavExpanded
+                    ? `${classes["visible"]}`
+                    : `${classes["hidden"]}`
+                }`}
+              />
+            </div>
             {/* icon from Heroicons.com */}
             {/* <svg
               xmlns="http://www.w3.org/2000/svg"
