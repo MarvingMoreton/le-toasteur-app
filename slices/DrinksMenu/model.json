@@ -35,13 +35,6 @@
             "placeholder": ""
           }
         },
-        "instruction": {
-          "type": "Text",
-          "config": {
-            "label": "Instruction",
-            "placeholder": ""
-          }
-        },
         "stddrinktitle1": {
           "type": "StructuredText",
           "config": {
@@ -199,6 +192,13 @@
           "type": "Text",
           "config": {
             "label": "stdDrinkPrice10",
+            "placeholder": ""
+          }
+        },
+        "instruction": {
+          "type": "Text",
+          "config": {
+            "label": "Instruction",
             "placeholder": ""
           }
         }

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { setPreviewData, redirectToPreviewURL } from "@prismicio/next";
 import { createClient } from "../../prismicio";
 

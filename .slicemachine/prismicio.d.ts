@@ -798,16 +798,6 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     simpledouble: prismicT.KeyTextField;
     /**
-     * Instruction field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.instruction
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    instruction: prismicT.KeyTextField;
-    /**
      * stdDrinkTitle1 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1007,6 +997,16 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     stddrinkprice10: prismicT.KeyTextField;
+    /**
+     * Instruction field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.instruction
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    instruction: prismicT.KeyTextField;
 }
 /**
  * Item in DrinksMenu → Items
