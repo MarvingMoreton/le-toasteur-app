@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 // import toastOrange from "../../public/images/logos/toast-orange.png";
 import logoBlue from "../../public/images/logos/logo-toasteur-villeray-navy.png";
-import classes from "../../components/ui/Menu/VeganMenu.module.css";
+import classes from "../../components/ui/menu/VeganMenu.module.css";
 
 /**
  * @typedef {import("@prismicio/client").Content.VeganMenuSlice} VeganMenuSlice

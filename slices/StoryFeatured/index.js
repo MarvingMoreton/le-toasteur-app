@@ -4,7 +4,7 @@ import { PrismicNextImage } from "@prismicio/next";
 
 import Link from "next/link";
 import Image from "next/image";
-import classes from "../../components/ui/History/ImageFeatured.module.css";
+import classes from "../../components/ui/history/ImageFeatured.module.css";
 
 /**
  * @typedef {import("@prismicio/client").Content.StoryFeaturedSlice} StoryFeaturedSlice

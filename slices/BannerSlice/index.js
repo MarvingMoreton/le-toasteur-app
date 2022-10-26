@@ -1,6 +1,6 @@
 import React from "react";
 import { PrismicRichText } from "@prismicio/react";
-import classes from "../../components/ui/Shared/Banner.module.css";
+import classes from "../../components/ui/shared/Banner.module.css";
 
 /**
  * @typedef {import("@prismicio/client").Content.BannerSlice} BannerSlice

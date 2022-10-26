@@ -1,0 +1,129 @@
+.section-gallery {
+  padding: 14.4rem 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  row-gap: 8rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-box {
+  width: 80%;
+  filter: drop-shadow(0px 2px 2px rgba(4, 30, 66, 0.1));
+}
+
+.zoom {
+  /* padding: 20px; */
+  /* background-color: green; */
+  transition: transform 0.2s; /* Animation */
+  /* width: 200px;
+  height: 200px; */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  border-radius: 0.8rem;
+}
+
+.gallery-item > image {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+/* .gallery-item:child {
+  width: 100%;
+} */
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+}
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+  .gallery {
+    row-gap: 4rem;
+    column-gap: 1.8rem;
+  }
+
+  .section-gallery {
+    padding: 4.8rem;
+  }
+  .image-box {
+    width: 90%;
+  }
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+  .gallery {
+    row-gap: 3rem;
+    column-gap: 1.8rem;
+  }
+  .btn-box {
+    margin: 3rem auto;
+  }
+}
+
+/**************************/
+/* BELOW 410px (Mobile devices) */
+/**************************/
+
+@media (max-width: 26em) {
+  .section-gallery {
+    padding: 1rem;
+  }
+  .gallery {
+    row-gap: 2.6rem;
+    column-gap: 1.6rem;
+  }
+  .image-box {
+    width: 100%;
+  }
+  .btn-box {
+    margin: 1.4rem auto;
+  }
+
+  .btn-box > a {
+    font-size: 1.8rem;
+  }
+}

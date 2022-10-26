@@ -2,7 +2,7 @@ import React from "react";
 import { PrismicRichText } from "@prismicio/react";
 import Link from "next/link";
 import Image from "next/image";
-import classes from "../../components/ui/Shared/Announcement.module.css";
+import classes from "../../components/ui/shared/Announcement.module.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -6,7 +6,7 @@ import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 
 import logoBlue from "../../public/images/logos/logo-toasteur-villeray-navy.png";
-import classes from "../../components/ui/Menu/Drinks.module.css";
+import classes from "../../components/ui/menu/Drinks.module.css";
 /**
  * @typedef {import("@prismicio/client").Content.DrinksMenuSlice} DrinksMenuSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<DrinksMenuSlice>} DrinksMenuProps
