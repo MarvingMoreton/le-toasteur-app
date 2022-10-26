@@ -1,36 +1,32 @@
-import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
-
+import React from "react";
+import { PrismicRichText } from "@prismicio/react";
+import { PrismicNextImage } from "@prismicio/next";
+import Image from "next/image";
+import classes from "../../components/ui/contact/Addresses.module.css";
 /**
  * @typedef {import("@prismicio/client").Content.AddressesBoxSlice} AddressesBoxSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<AddressesBoxSlice>} AddressesBoxProps
  * @param { AddressesBoxProps }
  */
 const AddressesBox = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
+  <section className={`${classes["section-addresses"]} ${"container"}`}>
+    <div className={classes["grid-addresses"]}>
+      {slice?.items?.map((item, i) => (
+        <React.Fragment key={i}>
+          <div className={classes["card-address"]}>
+            <PrismicRichText field={item.title} />
+            <PrismicRichText field={item.description} />
+          </div>
+        </React.Fragment>
+      ))}
+    </div>
+    <div className={classes["box-illustration"]}>
+      <PrismicNextImage
+        field={slice.primary.illustration}
+        alt={slice.primary.illustration.alt}
+      />
+    </div>
   </section>
-)
+);
 
-export default AddressesBox
+export default AddressesBox;

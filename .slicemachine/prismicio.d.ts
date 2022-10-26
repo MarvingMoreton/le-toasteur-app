@@ -502,13 +502,13 @@ export interface AddressesBoxSliceDefaultItem {
     /**
      * Description field in *AddressesBox → Items*
      *
-     * - **Field Type**: Text
+     * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
      * - **API ID Path**: addresses_box.items[].description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    description: prismicT.KeyTextField;
+    description: prismicT.RichTextField;
 }
 /**
  * Default variation for AddressesBox Slice

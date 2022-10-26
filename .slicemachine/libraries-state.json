@@ -39,10 +39,12 @@
                   }
                 },
                 "description": {
-                  "type": "Text",
+                  "type": "StructuredText",
                   "config": {
                     "label": "Description",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 }
               },
@@ -59,11 +61,17 @@
                 "title": [
                   {
                     "type": "heading2",
-                    "text": "Thread",
+                    "text": "Nervous",
                     "spans": []
                   }
                 ],
-                "description": "future"
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "In eiusmod sunt enim tempor velit et excepteur pariatur nisi fugiat mollit non anim consectetur nostrud. Sunt sunt officia ipsum ullamco consequat pariatur ut esse qui exercitation sit ut et consequat exercitation. Mollit aliquip culpa nisi et minim fugiat pariatur consequat aliquip id nostrud dolor ea.",
+                    "spans": []
+                  }
+                ]
               }
             ],
             "primary": {
@@ -74,7 +82,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f"
+                "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
               }
             },
             "slice_type": "addresses_box"
