@@ -6,7 +6,7 @@ import CustomRichText from "../../components/PrismicComponents/CustomRichText";
 import Image from "next/image";
 import illustration from "../../public/images/illustrations/hero-img-dummy.webp";
 
-import classes from "../../components/ui/homepage/hero.module.css";
+import classes from "../../components/ui/homepage/Hero.module.css";
 /**
  * @typedef {import("@prismicio/client").Content.HeroSliceSlice} HeroSliceSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<HeroSliceSlice>} HeroSliceProps

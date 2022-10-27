@@ -183,7 +183,8 @@
     },
     "MapBox": {
       "default": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       }
     },
     "MainMenu": {
