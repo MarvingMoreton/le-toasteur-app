@@ -304,4 +304,8 @@
   .nav-logo {
     display: none;
   }
+  .hamburger {
+    margin-right: 0;
+    right: inherit;
+  }
 }
