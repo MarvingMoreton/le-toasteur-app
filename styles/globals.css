@@ -133,7 +133,6 @@ ul {
 p,
 span,
 a {
-  /* margin-bottom: 0.8rem; */
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 300;
@@ -144,6 +143,16 @@ a {
   color: #383838;
 }
 
+.marving {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+
+  /* T - Dark grey */
+
+  color: #383838;
+}
 /* ************************ */
 /* GENERAL REUSABLE COMPONENTS */
 /* ************************ */

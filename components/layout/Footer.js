@@ -153,8 +153,12 @@ function Footer() {
       <div className={classes["copyright-box"]}>
         <p>
           Copyright © 2022 Le Toasteur | Fait avec&nbsp;
-          <FontAwesomeIcon icon={faHeart} className={classes.heart} /> &nbsp;par
-          Marving Moreton
+          <FontAwesomeIcon icon={faHeart} className={classes.heart} /> par&nbsp;
+          <Link href="https://marving.io/">
+            <a className="marving" target="_blank" rel="noopener noreferrer">
+              Marving Moreton
+            </a>
+          </Link>
         </p>
       </div>
     </React.Fragment>
