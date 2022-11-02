@@ -100,7 +100,7 @@
 } */
 
 .visible {
-  display: block;
+  display: inline;
 }
 
 .hidden {

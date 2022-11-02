@@ -72,7 +72,7 @@ function MainNavigation() {
             <FontAwesomeIcon
               icon={faBars}
               size="2xl"
-              className={`${classes["icon--open"]} ${
+              className={`${classes["icon--open"]} ${classes["centering"]} ${
                 isNavExpanded ? `${classes["hidden"]}` : `${classes["visible"]}`
               }`}
             />
