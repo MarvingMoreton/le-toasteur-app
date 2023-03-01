@@ -52,6 +52,8 @@
 
 .menu-list {
   display: flex;
+  flex-direction: column;
+  max-height: 1500px;
   flex-wrap: wrap;
   /* align-items: center; */
   /* justify-content: center; */
@@ -170,6 +172,7 @@
   }
   .menu-list {
     flex-direction: column;
+    max-height: 100%;
   }
 
   .item-card {
