@@ -1,7 +1,7 @@
-import React from "react";
-import { PrismicRichText } from "@prismicio/react";
-import classes from "../../components/ui/homepage/ImpactContent.module.css";
-import Link from "next/link";
+import React from 'react';
+import { PrismicRichText } from '@prismicio/react';
+import classes from '../../components/ui/homepage/ImpactContent.module.css';
+import Link from 'next/link';
 
 /**
  * @typedef {import("@prismicio/client").Content.LoveContentSlice} LoveContentSlice
@@ -9,9 +9,9 @@ import Link from "next/link";
  * @param { LoveContentProps }
  */
 const LoveContent = ({ slice }) => (
-  <section className={classes["section-impact-content"]}>
+  <section className={classes['section-impact-content']}>
     <div className="container">
-      <div className={classes["box-content"]}>
+      <div className={classes['box-content']}>
         {/* <PrismicRichText
           field={slice.primary.titleimpact}
           components={{
@@ -21,13 +21,13 @@ const LoveContent = ({ slice }) => (
           }}
         /> */}
 
-        <h2 className={classes["title-impact"]}>
-          Notre nourriture est faite à{" "}
-          <span className={classes["title-impact-highlighted"]}>
-            100% avec amour!
+        <h2 className={classes['title-impact']}>
+          If we like it then <br />
+          <span className={classes['title-impact-highlighted']}>
+            we put an egg on it!
           </span>
         </h2>
-        <span className={classes["small-text"]}>{slice.primary.sentence}</span>
+        <span className={classes['small-text']}>{slice.primary.sentence}</span>
       </div>
     </div>
   </section>
