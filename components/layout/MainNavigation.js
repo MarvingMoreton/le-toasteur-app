@@ -1,13 +1,13 @@
-import React, { useState, useRef, useEffect } from "react";
-import classes from "./MainNavigation.module.css";
-import Link from "next/link";
-import Image from "next/image";
-import blueLogo from "../../public/images/logos/logo-toasteur-villeray-navy.png";
-import blueToast from "../../public/images/logos/toast-blue-navy-ellipsed.svg";
-import { useRouter } from "next/router";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useRef, useEffect } from 'react';
+import classes from './MainNavigation.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
+import blueLogo from '../../public/images/logos/logo-toasteur-villeray-navy.png';
+import blueToast from '../../public/images/logos/toast-blue-navy-ellipsed.svg';
+import { useRouter } from 'next/router';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
 function MainNavigation() {
   const router = useRouter();
@@ -34,22 +34,22 @@ function MainNavigation() {
       handleScroll(header.top, header.height);
     };
 
-    window.addEventListener("scroll", handleScrollEvent);
+    window.addEventListener('scroll', handleScrollEvent);
 
     return () => {
-      window.removeEventListener("scroll", handleScrollEvent);
+      window.removeEventListener('scroll', handleScrollEvent);
     };
   }, []);
 
   return (
     <React.Fragment>
       <div
-        className={`${classes["navbar"]} ${sticky.isSticky ? " sticky" : ""}`}
+        className={`${classes['navbar']} ${sticky.isSticky ? ' sticky' : ''}`}
         ref={headerRef}
         id="sticky-header"
       >
-        <header className={classes["header-mobile"]}>
-          <div className={classes["nav-logo"]}>
+        <header className={classes['header-mobile']}>
+          <div className={classes['nav-logo']}>
             <Link href="/">
               <a>
                 <Image
@@ -64,7 +64,7 @@ function MainNavigation() {
           </div>
 
           <button
-            className={classes["hamburger"]}
+            className={classes['hamburger']}
             onClick={() => {
               setIsNavExpanded(!isNavExpanded);
             }}
@@ -72,18 +72,18 @@ function MainNavigation() {
             <FontAwesomeIcon
               icon={faBars}
               size="2xl"
-              className={`${classes["icon--open"]} ${classes["centering"]} ${
-                isNavExpanded ? `${classes["hidden"]}` : `${classes["visible"]}`
+              className={`${classes['icon--open']} ${classes['centering']} ${
+                isNavExpanded ? `${classes['hidden']}` : `${classes['visible']}`
               }`}
             />
-            <div className={classes["centering"]}>
+            <div className={classes['centering']}>
               <FontAwesomeIcon
                 icon={faX}
                 size="2xl"
-                className={`${classes["icon--close"]} ${
+                className={`${classes['icon--close']} ${
                   isNavExpanded
-                    ? `${classes["visible"]}`
-                    : `${classes["hidden"]}`
+                    ? `${classes['visible']}`
+                    : `${classes['hidden']}`
                 }`}
               />
             </div>
@@ -102,20 +102,20 @@ function MainNavigation() {
             </svg> */}
           </button>
 
-          <div className={classes["nav-container"]}>
+          <div className={classes['nav-container']}>
             <nav
-              className={`${classes["main-nav"]} ${
+              className={`${classes['main-nav']} ${
                 isNavExpanded
-                  ? `${classes["navigation-menu"]} ${classes["expanded"]}`
-                  : `${classes["navigation-menu"]}`
+                  ? `${classes['navigation-menu']} ${classes['expanded']}`
+                  : `${classes['navigation-menu']}`
               }`}
             >
-              <ul className={classes["main-nav-list"]}>
+              <ul className={classes['main-nav-list']}>
                 <li>
                   <Link href="/">
                     <a
-                      className={`${classes["main-nav-link"]} ${
-                        currentRoute === "/" ? "active" : ""
+                      className={`${classes['main-nav-link']} ${
+                        currentRoute === '/' ? 'active' : ''
                       }`}
                       onClick={() => {
                         setIsNavExpanded(!isNavExpanded);
@@ -125,11 +125,11 @@ function MainNavigation() {
                     </a>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/menu">
                     <a
-                      className={`${classes["main-nav-link"]} ${
-                        currentRoute === "/" ? "active" : ""
+                      className={`${classes['main-nav-link']} ${
+                        currentRoute === '/' ? 'active' : ''
                       }`}
                       onClick={() => {
                         setIsNavExpanded(!isNavExpanded);
@@ -138,8 +138,8 @@ function MainNavigation() {
                       Menu
                     </a>
                   </Link>
-                </li>
-                <li className={classes["image-toast"]}>
+                </li> */}
+                <li className={classes['image-toast']}>
                   <Link href="/">
                     <a>
                       <Image
@@ -152,11 +152,11 @@ function MainNavigation() {
                     </a>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/gallerie">
                     <a
-                      className={`${classes["main-nav-link"]} ${
-                        currentRoute === "/" ? "active" : ""
+                      className={`${classes['main-nav-link']} ${
+                        currentRoute === '/' ? 'active' : ''
                       }`}
                       onClick={() => {
                         setIsNavExpanded(!isNavExpanded);
@@ -165,18 +165,48 @@ function MainNavigation() {
                       Photos
                     </a>
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link href="/notre-histoire">
                     <a
-                      className={`${classes["main-nav-link"]} ${
-                        currentRoute === "/" ? "active" : ""
+                      className={`${classes['main-nav-link']} ${
+                        currentRoute === '/' ? 'active' : ''
                       }`}
                       onClick={() => {
                         setIsNavExpanded(!isNavExpanded);
                       }}
                     >
                       Notre Histoire
+                    </a>
+                  </Link>
+                </li> */}
+
+                <li>
+                  <Link href="/menu">
+                    <a
+                      className={`${classes['main-nav-link']} ${
+                        currentRoute === '/menu' ? 'active' : ''
+                      }`}
+                      onClick={() => {
+                        setIsNavExpanded(!isNavExpanded);
+                      }}
+                    >
+                      Menu
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/contact">
+                    <a
+                      className={`${classes['main-nav-link']} ${
+                        currentRoute === '/' ? 'active' : ''
+                      }`}
+                      onClick={() => {
+                        setIsNavExpanded(!isNavExpanded);
+                      }}
+                    >
+                      Contact
                     </a>
                   </Link>
                 </li>
