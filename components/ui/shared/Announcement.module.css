@@ -14,9 +14,9 @@
 
   overflow: hidden;
   /* background: #rgba(4, 30, 66, 1);  fallback for old browsers */
-  background: linear-gradient(rgb(14, 14, 14, 0.5), rgb(14, 14, 14, 0.6)),
-    url(../../../public/images/illustrations/food-allergies--3.jpg);
-
+  /* background: linear-gradient(rgb(14, 14, 14, 0.5), rgb(14, 14, 14, 0.6)),
+    url(../../../public/images/illustrations/food-allergies--3.jpg); */
+  background-color: #041e42;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;

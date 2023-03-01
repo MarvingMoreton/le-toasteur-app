@@ -46,6 +46,9 @@
   margin-bottom: 1rem;
 }
 
+.title-row > h2 {
+  font-size: 2.8rem;
+}
 /* Menu list section */
 
 .menu-list {
@@ -72,7 +75,7 @@
 }
 
 .title-row > span {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 2.6rem;

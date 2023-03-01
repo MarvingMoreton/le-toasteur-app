@@ -158,7 +158,7 @@ function Footer() {
         <p>
           Copyright © 2022 Le Toasteur | Fait avec&nbsp;
           <FontAwesomeIcon icon={faHeart} className={classes.heart} /> par&nbsp;
-          <Link href="https://marving.io/">
+          <Link href="https://marvingmoreton.com/">
             <a className="marving" target="_blank" rel="noopener noreferrer">
               Marving Moreton
             </a>
