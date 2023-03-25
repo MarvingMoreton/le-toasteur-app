@@ -28,7 +28,7 @@ const HeroSlice = ({ slice }) => (
         </PrismicLink>
       </div>
 
-      {/* dynamic image */}
+      {/* dynamic image zz*/}
       <div className={classes['hero-img-box']}>
         <PrismicNextImage
           field={slice.primary.image}
