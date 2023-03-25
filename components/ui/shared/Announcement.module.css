@@ -65,6 +65,9 @@
   gap: 1.4rem;
   width: 80%;
 }
+.box-right-paragraphs > p {
+  font-size: 1.8rem;
+}
 .box-left--text {
   display: flex;
   color: #ffffff;
