@@ -1,5 +1,9 @@
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Colors */
 
@@ -31,11 +35,11 @@ html,
 body {
   /* padding: 0;
   margin: 0; */
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 li {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -95,32 +99,32 @@ footer {
 }
 
 h1 {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-size: 7rem;
   font-weight: 700;
   color: #ffffff;
 }
 
 h2 {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-size: 3.8rem;
   font-weight: 700;
 }
 
 h3 {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-size: 2.8rem;
   font-weight: 700;
 }
 
 h4 {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-size: 2rem;
   font-weight: 500;
 }
 
 h5 {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -133,7 +137,7 @@ ul {
 p,
 span,
 a {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 1.6rem;
@@ -144,7 +148,7 @@ a {
 }
 
 .marving {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
@@ -187,7 +191,7 @@ input:focus-visible {
   padding: 1rem 2.4rem;
   /* width: 100%; */
 
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 2.8rem;
@@ -205,7 +209,7 @@ input:focus-visible {
 
   border: 1.5px solid #041e42;
 
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 2.8rem;
@@ -219,7 +223,7 @@ input:focus-visible {
 }
 
 .subtitle {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
@@ -230,7 +234,7 @@ input:focus-visible {
 }
 
 .secondary-heading {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 4rem;
