@@ -1148,16 +1148,6 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     topdrinkdescription11: prismicT.KeyTextField;
     /**
-     * Instruction field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.instruction
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    instruction: prismicT.KeyTextField;
-    /**
      * BtmDrinkTitle1 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1167,16 +1157,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle1: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription1 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription1
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription1: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice1 field in *DrinksMenu → Primary*
      *
@@ -1188,6 +1168,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice1: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription1 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription1
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription1: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle2 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1197,16 +1187,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle2: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription2 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription2
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription2: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice2 field in *DrinksMenu → Primary*
      *
@@ -1218,6 +1198,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice2: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription2 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription2: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle3 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1227,16 +1217,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle3: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription3 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription3
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription3: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice3 field in *DrinksMenu → Primary*
      *
@@ -1248,6 +1228,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice3: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription3 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription3
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription3: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle4 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1257,16 +1247,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle4: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription4 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription4
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription4: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice4 field in *DrinksMenu → Primary*
      *
@@ -1278,6 +1258,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice4: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription4 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription4
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription4: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle5 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1287,16 +1277,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle5: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription5 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription5
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription5: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice5 field in *DrinksMenu → Primary*
      *
@@ -1308,6 +1288,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice5: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription5 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription5
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription5: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle6 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1317,16 +1307,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle6: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription6 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription6
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription6: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice6 field in *DrinksMenu → Primary*
      *
@@ -1338,6 +1318,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice6: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription6 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription6
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription6: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle7 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1347,16 +1337,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle7: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription7 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription7
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription7: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice7 field in *DrinksMenu → Primary*
      *
@@ -1368,6 +1348,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice7: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription7 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription7
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription7: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle8 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1377,16 +1367,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle8: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription8 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription8
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription8: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice8 field in *DrinksMenu → Primary*
      *
@@ -1398,6 +1378,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice8: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription8 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription8
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription8: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle9 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1407,16 +1397,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle9: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription9 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription9
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription9: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice9 field in *DrinksMenu → Primary*
      *
@@ -1428,6 +1408,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice9: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription9 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription9
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription9: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle10 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1437,16 +1427,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle10: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription10 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription10
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription10: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice10 field in *DrinksMenu → Primary*
      *
@@ -1458,6 +1438,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice10: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription10 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription10
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription10: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle11 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1467,16 +1457,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle11: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription11 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription11
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription11: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice11 field in *DrinksMenu → Primary*
      *
@@ -1488,6 +1468,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice11: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription11 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription11
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription11: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle12 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1497,16 +1487,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle12: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription12 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription12
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription12: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice12 field in *DrinksMenu → Primary*
      *
@@ -1518,6 +1498,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice12: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription12 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription12
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription12: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle13 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1527,16 +1517,6 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle13: prismicT.TitleField;
-    /**
-     * BtmDrinkDescription13 field in *DrinksMenu → Primary*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription13
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    btmdrinkdescription13: prismicT.KeyTextField;
     /**
      * BtmDrinkPrice13 field in *DrinksMenu → Primary*
      *
@@ -1548,6 +1528,16 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkprice13: prismicT.KeyTextField;
     /**
+     * BtmDrinkDescription13 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkdescription13
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkdescription13: prismicT.KeyTextField;
+    /**
      * BtmDrinkTitle14 field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Title
@@ -1557,6 +1547,16 @@ interface DrinksMenuSliceDefaultPrimary {
      *
      */
     btmdrinktitle14: prismicT.TitleField;
+    /**
+     * BtmDrinkPrice14 field in *DrinksMenu → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: drinks_menu.primary.btmdrinkprice14
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    btmdrinkprice14: prismicT.KeyTextField;
     /**
      * BtmDrinkDescription14 field in *DrinksMenu → Primary*
      *
@@ -1568,15 +1568,15 @@ interface DrinksMenuSliceDefaultPrimary {
      */
     btmdrinkdescription14: prismicT.KeyTextField;
     /**
-     * BtmDrinkPrice14 field in *DrinksMenu → Primary*
+     * Instruction field in *DrinksMenu → Primary*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
-     * - **API ID Path**: drinks_menu.primary.btmdrinkprice14
+     * - **API ID Path**: drinks_menu.primary.instruction
      * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    btmdrinkprice14: prismicT.KeyTextField;
+    instruction: prismicT.KeyTextField;
 }
 /**
  * Item in DrinksMenu → Items
