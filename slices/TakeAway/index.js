@@ -1,5 +1,4 @@
 import React from 'react';
-import { PrismicRichText } from '@prismicio/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { PrismicRichText, PrismicLink } from '@prismicio/react';
