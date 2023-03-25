@@ -1,22 +1,22 @@
-import React from "react";
-import { PrismicRichText } from "@prismicio/react";
-import { PrismicNextImage } from "@prismicio/next";
-import { PrismicLink } from "@prismicio/react";
-import CustomRichText from "../../components/PrismicComponents/CustomRichText";
-import Image from "next/image";
-import illustration from "../../public/images/illustrations/hero-img-dummy.webp";
+import React from 'react';
+import { PrismicRichText } from '@prismicio/react';
+import { PrismicNextImage } from '@prismicio/next';
+import { PrismicLink } from '@prismicio/react';
+import CustomRichText from '../../components/PrismicComponents/CustomRichText';
+import Image from 'next/image';
+import illustration from '../../public/images/illustrations/hero-img-dummy.webp';
 
-import classes from "../../components/ui/homepage/Hero.module.css";
+import classes from '../../components/ui/homepage/Hero.module.css';
 /**
  * @typedef {import("@prismicio/client").Content.HeroSliceSlice} HeroSliceSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<HeroSliceSlice>} HeroSliceProps
  * @param { HeroSliceProps }
  */
 const HeroSlice = ({ slice }) => (
-  <section className={classes["hero-section"]}>
-    <div className={classes["hero"]}>
+  <section className={classes['hero-section']}>
+    <div className={classes['hero']}>
       {/* {JSON.stringify(slice, null, 2)} */}
-      <div className={classes["box-text"]}>
+      <div className={classes['box-text']}>
         <PrismicRichText field={slice.primary.title} />
         <span>{slice.primary.description}</span>
 
@@ -28,11 +28,11 @@ const HeroSlice = ({ slice }) => (
         </PrismicLink>
       </div>
 
-      <div className={classes["hero-img-box"]}>
-        <Image
-          src={illustration}
-          className={classes["hero-img-box"]}
-          alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+      <div className={classes['hero-img-box']}>
+        <PrismicNextImage
+          field={slice.primary.image}
+          className={classes['hero-img-box']}
+          alt={slice.primary.image.alt}
         />
       </div>
     </div>

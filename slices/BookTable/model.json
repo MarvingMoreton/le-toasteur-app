@@ -49,6 +49,14 @@
             "label": "CTA Text Internal Link",
             "placeholder": ""
           }
+        },
+        "backgroundimage": {
+          "type": "Image",
+          "config": {
+            "label": "backgroundImage",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {

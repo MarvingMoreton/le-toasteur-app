@@ -1,0 +1,90 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "subtitle": {
+        "__TYPE__": "FieldContent",
+        "value": "ball",
+        "type": "Text"
+      },
+      "secondary_heading": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading2",
+            "content": {
+              "text": "However"
+            }
+          }
+        ]
+      },
+      "image": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+          "width": 3882,
+          "height": 2584
+        },
+        "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+        "width": 3882,
+        "height": 2584,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      },
+      "cta_internal_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "DocumentLink",
+          "id": "mock_document_id"
+        }
+      },
+      "cta_text_link": {
+        "__TYPE__": "FieldContent",
+        "value": "half",
+        "type": "Text"
+      },
+      "cta_internal_link_2": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "DocumentLink",
+          "id": "mock_document_id"
+        }
+      },
+      "cta_text_link_2": {
+        "__TYPE__": "FieldContent",
+        "value": "obtain",
+        "type": "Text"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "paragraph",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Duis cillum tempor qui ipsum cillum consequat fugiat anim pariatur consequat. Laborum pariatur commodo enim voluptate dolore. Aute dolore voluptate veniam fugiat ut aliquip consequat aliqua non dolor."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

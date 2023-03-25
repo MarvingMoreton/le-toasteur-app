@@ -345,6 +345,14 @@
                     "label": "CTA Text Internal Link",
                     "placeholder": ""
                   }
+                },
+                "backgroundimage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "backgroundImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
                 }
               },
               "items": {
@@ -371,25 +379,25 @@
                 "paragraph": [
                   {
                     "type": "paragraph",
-                    "text": "Incididunt pariatur velit magna officia labore reprehenderit ipsum mollit adipisicing incididunt tempor nisi enim minim. Proident qui et occaecat cillum nisi officia reprehenderit eiusmod commodo eiusmod.",
+                    "text": "Mollit in eiusmod excepteur ullamco. Incididunt nisi aliquip nulla dolor Lorem minim ut culpa ipsum amet sit commodo velit dolor sit.",
                     "spans": []
                   }
                 ]
               }
             ],
             "primary": {
-              "emoji": "connected",
+              "emoji": "nothing",
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Range",
+                  "text": "Discuss",
                   "spans": []
                 }
               ],
               "booktable": [
                 {
                   "type": "heading3",
-                  "text": "Constantly",
+                  "text": "Yellow",
                   "spans": []
                 }
               ],
@@ -403,7 +411,16 @@
                 "first_publication_date": "1970-01-01T00:00:01+0000",
                 "last_publication_date": "1970-01-01T01:00:00+0000"
               },
-              "cta_text_internal_link": "poetry"
+              "cta_text_internal_link": "guess",
+              "backgroundimage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+              }
             },
             "slice_type": "book_table"
           }
@@ -962,7 +979,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/marving/code/le-toasteur-app/slices/HeroSlice/default/preview.png",
+            "width": 2826,
+            "height": 1242
+          }
+        }
       },
       "image_featured_standard": {
         "library": "slices",

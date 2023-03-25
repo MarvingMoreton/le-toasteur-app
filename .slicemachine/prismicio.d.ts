@@ -722,6 +722,16 @@ interface BookTableSliceDefaultPrimary {
      *
      */
     cta_text_internal_link: prismicT.KeyTextField;
+    /**
+     * backgroundImage field in *BookTable → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: book_table.primary.backgroundimage
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    backgroundimage: prismicT.ImageField<never>;
 }
 /**
  * Item in BookTable → Items
