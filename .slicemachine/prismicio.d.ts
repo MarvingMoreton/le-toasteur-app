@@ -113,7 +113,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSlice | BookTableSlice | LoveContentSlice | TestimonialsGallerySlice;
+type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSlice | BookTableSlice | LoveContentSlice | TestimonialsGallerySlice | TakeAwaySlice;
 /**
  * Homepage document from Prismic
  *
@@ -148,6 +148,17 @@ interface MenuDocumentData {
      *
      */
     menuLinks: prismicT.GroupField<Simplify<MenuDocumentDataMenuLinksItem>>;
+    /**
+     * Slice Zone field in *Menu*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: menu.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<MenuDocumentDataSlicesSlice>;
 }
 /**
  * Item in Menu → Menu Links
@@ -175,6 +186,11 @@ export interface MenuDocumentDataMenuLinksItem {
      */
     link: prismicT.LinkField;
 }
+/**
+ * Slice for *Menu → Slice Zone*
+ *
+ */
+type MenuDocumentDataSlicesSlice = TakeAwaySlice | ValuesListSlice | BookTableSlice;
 /**
  * Menu document from Prismic
  *
@@ -315,7 +331,7 @@ interface PageDocumentData {
  * Slice for *Page → Slice Zone*
  *
  */
-type PageDocumentDataSlicesSlice = BannerSlice | AddressesBoxSlice | AllergyBoxSlice | DrinksMenuSlice | BookTableSlice | GalleryListSlice | ImageGallerySlice | ImageFeaturedStandardSlice | HeroSliceSlice | LoveContentSlice | MainMenuSlice | MapBoxSlice | TestimonialsGallerySlice | TeamSliceSlice | StoryFeaturedSlice | ValuesListSlice | VeganMenuSlice;
+type PageDocumentDataSlicesSlice = BannerSlice | AddressesBoxSlice | AllergyBoxSlice | DrinksMenuSlice | BookTableSlice | GalleryListSlice | ImageGallerySlice | ImageFeaturedStandardSlice | HeroSliceSlice | LoveContentSlice | MainMenuSlice | MapBoxSlice | TestimonialsGallerySlice | TeamSliceSlice | StoryFeaturedSlice | ValuesListSlice | VeganMenuSlice | TakeAwaySlice;
 /**
  * Page document from Prismic
  *
@@ -2224,6 +2240,111 @@ type StoryFeaturedSliceVariation = StoryFeaturedSliceDefault;
  */
 export type StoryFeaturedSlice = prismicT.SharedSlice<"story_featured", StoryFeaturedSliceVariation>;
 /**
+ * Primary content in TakeAway → Primary
+ *
+ */
+interface TakeAwaySliceDefaultPrimary {
+    /**
+     * emoji field in *TakeAway → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: take_away.primary.emoji
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    emoji: prismicT.KeyTextField;
+    /**
+     * Title field in *TakeAway → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: take_away.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * TakeAwayTitleOverlay field in *TakeAway → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: take_away.primary.takeawaytitleoverlay
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    takeawaytitleoverlay: prismicT.TitleField;
+    /**
+     * CTA Internal Link field in *TakeAway → Primary*
+     *
+     * - **Field Type**: Content Relationship
+     * - **Placeholder**: *None*
+     * - **API ID Path**: take_away.primary.cta_internal_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_internal_link: prismicT.RelationField;
+    /**
+     * CTA Text Internal Link field in *TakeAway → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: take_away.primary.cta_text_internal_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    cta_text_internal_link: prismicT.KeyTextField;
+    /**
+     * backgroundImage field in *TakeAway → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: take_away.primary.backgroundimage
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    backgroundimage: prismicT.ImageField<never>;
+}
+/**
+ * Item in TakeAway → Items
+ *
+ */
+export interface TakeAwaySliceDefaultItem {
+    /**
+     * paragraph field in *TakeAway → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: take_away.items[].paragraph
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    paragraph: prismicT.RichTextField;
+}
+/**
+ * Default variation for TakeAway Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `TakeAway`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TakeAwaySliceDefault = prismicT.SharedSliceVariation<"default", Simplify<TakeAwaySliceDefaultPrimary>, Simplify<TakeAwaySliceDefaultItem>>;
+/**
+ * Slice variation for *TakeAway*
+ *
+ */
+type TakeAwaySliceVariation = TakeAwaySliceDefault;
+/**
+ * TakeAway Shared Slice
+ *
+ * - **API ID**: `take_away`
+ * - **Description**: `TakeAway`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TakeAwaySlice = prismicT.SharedSlice<"take_away", TakeAwaySliceVariation>;
+/**
  * Primary content in TeamSlice → Primary
  *
  */
@@ -2646,6 +2767,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, MenuDocumentData, MenuDocumentDataMenuLinksItem, MenuDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, ValuesListSliceDefaultPrimary, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, MenuDocumentData, MenuDocumentDataMenuLinksItem, MenuDocumentDataSlicesSlice, MenuDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TakeAwaySliceDefaultPrimary, TakeAwaySliceDefaultItem, TakeAwaySliceDefault, TakeAwaySliceVariation, TakeAwaySlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, ValuesListSliceDefaultPrimary, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
     }
 }

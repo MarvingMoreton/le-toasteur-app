@@ -74,6 +74,9 @@
             },
             "vegan_menu": {
               "type": "SharedSlice"
+            },
+            "take_away": {
+              "type": "SharedSlice"
             }
           }
         }

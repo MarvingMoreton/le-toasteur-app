@@ -13,6 +13,7 @@ import LoveContent from './LoveContent';
 import MainMenu from './MainMenu';
 import MapBox from './MapBox';
 import StoryFeatured from './StoryFeatured';
+import TakeAway from './TakeAway';
 import TeamSlice from './TeamSlice';
 import TestimonialsGallery from './TestimonialsGallery';
 import ValuesList from './ValuesList';
@@ -32,6 +33,7 @@ export {
 	MainMenu,
 	MapBox,
 	StoryFeatured,
+	TakeAway,
 	TeamSlice,
 	TestimonialsGallery,
 	ValuesList,
@@ -52,6 +54,7 @@ export const components = {
 	main_menu: MainMenu,
 	map_box: MapBox,
 	story_featured: StoryFeatured,
+	take_away: TakeAway,
 	team_slice: TeamSlice,
 	testimonials_gallery: TestimonialsGallery,
 	values_list: ValuesList,

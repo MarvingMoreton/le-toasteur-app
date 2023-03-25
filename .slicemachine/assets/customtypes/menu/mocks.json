@@ -5,7 +5,7 @@
       {
         "type": "heading1",
         "content": {
-          "text": "Necessary"
+          "text": "Again"
         }
       }
     ]
@@ -24,7 +24,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Pariatur voluptate irure ut irure cillum duis commodo minim."
+                    "text": "Sint tempor occaecat non occaecat incididunt sunt ipsum aute et sit pariatur deserunt incididunt consequat. Adipisicing incididunt velit fugiat ipsum labore eu tempor eiusmod cillum et aliqua eiusmod velit incididunt pariatur."
                   }
                 }
               ]
@@ -36,11 +36,277 @@
               "__TYPE__": "LinkContent",
               "value": {
                 "__TYPE__": "ExternalLink",
-                "url": "https://slicemachine.dev"
+                "url": "https://prismic.io"
               }
             }
           ]
         ]
+      }
+    ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "take_away$5fd05169-2be7-488b-997f-0c962a89480b",
+        "name": "take_away",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "emoji": {
+              "__TYPE__": "FieldContent",
+              "value": "shade",
+              "type": "Text"
+            },
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ipsum ea laborum officia reprehenderit labore adipisicing cupidatat ad labore laboris ea exercitation et culpa."
+                  }
+                }
+              ]
+            },
+            "takeawaytitleoverlay": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading3",
+                  "content": {
+                    "text": "Smoke"
+                  }
+                }
+              ]
+            },
+            "cta_internal_link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "DocumentLink",
+                "id": "mock_document_id"
+              }
+            },
+            "cta_text_internal_link": {
+              "__TYPE__": "FieldContent",
+              "value": "monkey",
+              "type": "Text"
+            },
+            "backgroundimage": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
+                "width": 3212,
+                "height": 3880
+              },
+              "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
+              "width": 3212,
+              "height": 3880,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "paragraph",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Adipisicing sit mollit tempor ipsum occaecat commodo proident ut esse proident sint excepteur cupidatat dolor fugiat."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "values_list$24457fab-bebd-45ec-a3b3-89bc8f23dcb7",
+        "name": "values_list",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "valueicon1": {
+              "__TYPE__": "FieldContent",
+              "value": "ground",
+              "type": "Text"
+            },
+            "valuetitle1": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading3",
+                  "content": {
+                    "text": "Phrase"
+                  }
+                }
+              ]
+            },
+            "valuedescription1": {
+              "__TYPE__": "FieldContent",
+              "value": "sheet",
+              "type": "Text"
+            },
+            "valueicon2": {
+              "__TYPE__": "FieldContent",
+              "value": "finest",
+              "type": "Text"
+            },
+            "valuetitle2": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading3",
+                  "content": {
+                    "text": "Everywhere"
+                  }
+                }
+              ]
+            },
+            "valuedescription2": {
+              "__TYPE__": "FieldContent",
+              "value": "trouble",
+              "type": "Text"
+            },
+            "valueicon3": {
+              "__TYPE__": "FieldContent",
+              "value": "driven",
+              "type": "Text"
+            },
+            "valuetitle3": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading3",
+                  "content": {
+                    "text": "Young"
+                  }
+                }
+              ]
+            },
+            "valuedescription3": {
+              "__TYPE__": "FieldContent",
+              "value": "belt",
+              "type": "Text"
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "book_table$dfbe819d-da90-42ff-801a-0fa213573d3e",
+        "name": "book_table",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "emoji": {
+              "__TYPE__": "FieldContent",
+              "value": "limited",
+              "type": "Text"
+            },
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading2",
+                  "content": {
+                    "text": "Climate"
+                  }
+                }
+              ]
+            },
+            "booktable": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading3",
+                  "content": {
+                    "text": "Proud"
+                  }
+                }
+              ]
+            },
+            "cta_internal_link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "DocumentLink",
+                "id": "mock_document_id"
+              }
+            },
+            "cta_text_internal_link": {
+              "__TYPE__": "FieldContent",
+              "value": "tonight",
+              "type": "Text"
+            },
+            "backgroundimage": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+                "width": 3424,
+                "height": 3424
+              },
+              "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+              "width": 3424,
+              "height": 3424,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "paragraph",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Laboris officia veniam consequat sit. Enim ea proident est sunt consequat non."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
       }
     ]
   }
