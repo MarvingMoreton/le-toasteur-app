@@ -165,7 +165,7 @@
 /**************************/
 @media (max-width: 75em) {
   .menu-list {
-    gap: 10rem;
+    gap: 7.2rem;
   }
   .logo-box {
     width: 20%;
@@ -197,7 +197,25 @@
   }
 
   .title-row-right {
-    gap: 18rem;
+    gap: 0rem;
+  }
+
+  .title-row {
+    gap: 2rem;
+  }
+
+  .title-row > span,
+  .title-row-right > span {
+    font-size: 2rem;
+  }
+  .title-row > h3,
+  .title-row-right > h3 {
+    font-size: 2rem;
+  }
+
+  .upper-box > span {
+    font-size: 1.8rem;
+    text-align: left;
   }
 }
 
@@ -205,52 +223,34 @@
 /* BELOW 850px (tablets) */
 /**************************/
 @media (max-width: 53em) {
-  .title-row-right {
-    gap: 16rem;
-  }
-  .title-row {
-    gap: 12rem;
-  }
-
-  .menu-list {
-    gap: 6rem;
-  }
 }
 
 /**************************/
 /* BELOW 750px */
 /**************************/
 @media (max-width: 47em) {
-  .menu-grid {
-    padding: 6rem;
+  .section-drinks-menu {
+    padding: 12rem 2rem;
   }
-
   .menu-list {
-    margin: 6rem auto;
-  }
-
-  .title-row-right {
-    gap: 23rem;
-  }
-  .title-row {
-    gap: 18rem;
-  }
-  .box-text {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .right-side-illustration {
-    width: 35%;
-  }
-
-  .left-grid {
     gap: 6rem;
+    margin-bottom: 5.4rem;
   }
 
   .title-row > span,
   .title-row-right > span {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .title-row > h3,
+  .title-row-right > h3 {
+    font-size: 1.8rem;
+  }
+
+  .sentence {
+    margin-bottom: 3.2rem;
+  }
+  .right-side-illustration {
+    display: none;
   }
 }
 
@@ -259,9 +259,30 @@
 /**************************/
 
 @media (max-width: 44em) {
-  .menu-grid {
-    padding: 4rem;
+  .title-row-right,
+  .title-row {
+    gap: 1rem;
   }
+
+  .menu-list {
+    gap: 4rem;
+  }
+  .menu-grid {
+    padding: 4rem 2rem;
+  }
+
+  .title-row > span,
+  .title-row-right > span {
+    font-size: 1.6rem;
+  }
+  .title-row > h3,
+  .title-row-right > h3 {
+    font-size: 1.6rem;
+  }
+  .box-text {
+    padding-right: 0;
+  }
+  /*
 
   .title-row-right {
     gap: 12rem;
@@ -272,13 +293,11 @@
   .right-side-illustration {
     display: none;
   }
-  .box-text {
-    padding-right: 0;
-  }
+
 
   .sentence {
     width: 80%;
-  }
+  } */
   .logo-box {
     margin-top: -5%;
   }
@@ -290,7 +309,7 @@
 
 @media (max-width: 20em) {
   .section-drinks-menu {
-    padding: 12rem 2rem;
+    padding: 12rem 1.8rem;
   }
   .menu-grid {
     padding: 3rem;

@@ -38,7 +38,7 @@ const DrinksMenu = ({ slice }) => (
           <div className={classes['upper-box']}>
             <span>{slice.primary.simpledouble}</span>
             {/** item **/}
-            {slice.primary.topdrinktitle1 && (
+            {slice.primary.topdrinktitle1.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle1} />
@@ -50,7 +50,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle2 && (
+            {slice.primary.topdrinktitle2.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle2} />
@@ -62,7 +62,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle3 && (
+            {slice.primary.topdrinktitle3.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle3} />
@@ -74,7 +74,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle4 && (
+            {slice.primary.topdrinktitle4.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle4} />
@@ -86,7 +86,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle5 && (
+            {slice.primary.topdrinktitle5.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle5} />
@@ -98,7 +98,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle6 && (
+            {slice.primary.topdrinktitle6.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle6} />
@@ -110,7 +110,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle7 && (
+            {slice.primary.topdrinktitle7.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle7} />
@@ -122,7 +122,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle8 && (
+            {slice.primary.topdrinktitle8.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle8} />
@@ -134,7 +134,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle9 && (
+            {slice.primary.topdrinktitle9.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle9} />
@@ -146,7 +146,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle10 && (
+            {slice.primary.topdrinktitle10.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle10} />
@@ -158,7 +158,7 @@ const DrinksMenu = ({ slice }) => (
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinktitle11 && (
+            {slice.primary.topdrinktitle11.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle11} />
@@ -174,7 +174,7 @@ const DrinksMenu = ({ slice }) => (
           {/* BOTTOM BOX HEEERE */}
           <div className={classes['bottom-box']}>
             {/** item **/}
-            {slice.primary.btmdrinktitle1 && (
+            {slice.primary.btmdrinktitle1.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle1} />
@@ -187,7 +187,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle2 && (
+            {slice.primary.btmdrinktitle2.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle2} />
@@ -200,7 +200,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle3 && (
+            {slice.primary.btmdrinktitle3.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle3} />
@@ -213,7 +213,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle4 && (
+            {slice.primary.btmdrinktitle4.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle4} />
@@ -226,7 +226,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle5 && (
+            {slice.primary.btmdrinktitle5.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle5} />
@@ -239,7 +239,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle6 && (
+            {slice.primary.btmdrinktitle6.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle6} />
@@ -252,7 +252,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle7 && (
+            {slice.primary.btmdrinktitle7.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle7} />
@@ -265,7 +265,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle8 && (
+            {slice.primary.btmdrinktitle8.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle8} />
@@ -278,7 +278,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle9 && (
+            {slice.primary.btmdrinktitle9.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle9} />
@@ -291,7 +291,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle10 && (
+            {slice.primary.btmdrinktitle10.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle10} />
@@ -304,7 +304,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle11 && (
+            {slice.primary.btmdrinktitle11.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle11} />
@@ -317,7 +317,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle12 && (
+            {slice.primary.btmdrinktitle12.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle12} />
@@ -330,7 +330,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle13 && (
+            {slice.primary.btmdrinktitle13.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle13} />
@@ -343,7 +343,7 @@ const DrinksMenu = ({ slice }) => (
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinktitle14 && (
+            {slice.primary.btmdrinktitle14.length > 0 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle14} />
