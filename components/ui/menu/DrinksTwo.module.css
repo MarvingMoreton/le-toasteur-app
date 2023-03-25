@@ -1,0 +1,46 @@
+.section-drinks {
+  padding: 12rem 0 18rem;
+  background-color: #041e42;
+  position: relative;
+}
+
+.menu-grid {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  min-height: 100%;
+  padding: 8rem 6rem;
+}
+/* Menu list section */
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  justify-content: center;
+  gap: 20rem;
+  row-gap: 4rem;
+  /* column-gap: 8rem; */
+  margin: 8rem auto;
+}
+
+.item-card {
+  width: 100%;
+}
+
+.title-row > span,
+.title-row-right > span {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+
+  color: #041e42;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 15rem;
+}
