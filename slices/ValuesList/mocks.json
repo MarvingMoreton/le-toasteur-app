@@ -1,0 +1,77 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "valueicon1": {
+        "__TYPE__": "FieldContent",
+        "value": "measure",
+        "type": "Text"
+      },
+      "valuetitle1": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Volume"
+            }
+          }
+        ]
+      },
+      "valuedescription1": {
+        "__TYPE__": "FieldContent",
+        "value": "pen",
+        "type": "Text"
+      },
+      "valueicon2": {
+        "__TYPE__": "FieldContent",
+        "value": "finger",
+        "type": "Text"
+      },
+      "valuetitle2": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Entire"
+            }
+          }
+        ]
+      },
+      "valuedescription2": {
+        "__TYPE__": "FieldContent",
+        "value": "please",
+        "type": "Text"
+      },
+      "valueicon3": {
+        "__TYPE__": "FieldContent",
+        "value": "fastened",
+        "type": "Text"
+      },
+      "valuetitle3": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Physical"
+            }
+          }
+        ]
+      },
+      "valuedescription3": {
+        "__TYPE__": "FieldContent",
+        "value": "dead",
+        "type": "Text"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

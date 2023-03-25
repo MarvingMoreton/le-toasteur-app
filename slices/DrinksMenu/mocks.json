@@ -1,0 +1,617 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Consist"
+            }
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "FieldContent",
+        "value": "surrounded",
+        "type": "Text"
+      },
+      "illustration": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
+          "width": 3958,
+          "height": 3958
+        },
+        "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
+        "width": 3958,
+        "height": 3958,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      },
+      "simpledouble": {
+        "__TYPE__": "FieldContent",
+        "value": "case",
+        "type": "Text"
+      },
+      "topdrinktitle1": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Enough"
+            }
+          }
+        ]
+      },
+      "topdrinkprice1": {
+        "__TYPE__": "FieldContent",
+        "value": "blew",
+        "type": "Text"
+      },
+      "topdrinkdescription1": {
+        "__TYPE__": "FieldContent",
+        "value": "discovery",
+        "type": "Text"
+      },
+      "topdrinktitle2": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Tonight"
+            }
+          }
+        ]
+      },
+      "topdrinkprice2": {
+        "__TYPE__": "FieldContent",
+        "value": "fuel",
+        "type": "Text"
+      },
+      "topdrinkdescription2": {
+        "__TYPE__": "FieldContent",
+        "value": "two",
+        "type": "Text"
+      },
+      "topdrinktitle3": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Return"
+            }
+          }
+        ]
+      },
+      "topdrinkprice3": {
+        "__TYPE__": "FieldContent",
+        "value": "series",
+        "type": "Text"
+      },
+      "topdrinkdescription3": {
+        "__TYPE__": "FieldContent",
+        "value": "fort",
+        "type": "Text"
+      },
+      "topdrinktitle4": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Mysterious"
+            }
+          }
+        ]
+      },
+      "topdrinkprice4": {
+        "__TYPE__": "FieldContent",
+        "value": "load",
+        "type": "Text"
+      },
+      "topdrinkdescription4": {
+        "__TYPE__": "FieldContent",
+        "value": "changing",
+        "type": "Text"
+      },
+      "topdrinktitle5": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Product"
+            }
+          }
+        ]
+      },
+      "topdrinkprice5": {
+        "__TYPE__": "FieldContent",
+        "value": "written",
+        "type": "Text"
+      },
+      "topdrinkdescription5": {
+        "__TYPE__": "FieldContent",
+        "value": "whose",
+        "type": "Text"
+      },
+      "topdrinktitle6": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Subject"
+            }
+          }
+        ]
+      },
+      "topdrinkprice6": {
+        "__TYPE__": "FieldContent",
+        "value": "steep",
+        "type": "Text"
+      },
+      "topdrinkdescription6": {
+        "__TYPE__": "FieldContent",
+        "value": "musical",
+        "type": "Text"
+      },
+      "topdrinktitle7": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Drink"
+            }
+          }
+        ]
+      },
+      "topdrinkprice7": {
+        "__TYPE__": "FieldContent",
+        "value": "movie",
+        "type": "Text"
+      },
+      "topdrinkdescription7": {
+        "__TYPE__": "FieldContent",
+        "value": "told",
+        "type": "Text"
+      },
+      "topdrinktitle8": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Buried"
+            }
+          }
+        ]
+      },
+      "topdrinkprice8": {
+        "__TYPE__": "FieldContent",
+        "value": "some",
+        "type": "Text"
+      },
+      "topdrinkdescription8": {
+        "__TYPE__": "FieldContent",
+        "value": "protection",
+        "type": "Text"
+      },
+      "topdrinktitle9": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Little"
+            }
+          }
+        ]
+      },
+      "topdrinkprice9": {
+        "__TYPE__": "FieldContent",
+        "value": "stepped",
+        "type": "Text"
+      },
+      "topdrinkdescription9": {
+        "__TYPE__": "FieldContent",
+        "value": "adjective",
+        "type": "Text"
+      },
+      "topdrinktitle10": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Place"
+            }
+          }
+        ]
+      },
+      "topdrinkprice10": {
+        "__TYPE__": "FieldContent",
+        "value": "over",
+        "type": "Text"
+      },
+      "topdrinkdescription10": {
+        "__TYPE__": "FieldContent",
+        "value": "position",
+        "type": "Text"
+      },
+      "topdrinktitle11": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Thought"
+            }
+          }
+        ]
+      },
+      "topdrinkprice11": {
+        "__TYPE__": "FieldContent",
+        "value": "apartment",
+        "type": "Text"
+      },
+      "topdrinkdescription11": {
+        "__TYPE__": "FieldContent",
+        "value": "throughout",
+        "type": "Text"
+      },
+      "instruction": {
+        "__TYPE__": "FieldContent",
+        "value": "bowl",
+        "type": "Text"
+      },
+      "btmdrinktitle1": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Advice"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription1": {
+        "__TYPE__": "FieldContent",
+        "value": "hold",
+        "type": "Text"
+      },
+      "btmdrinkprice1": {
+        "__TYPE__": "FieldContent",
+        "value": "apart",
+        "type": "Text"
+      },
+      "btmdrinktitle2": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Meant"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription2": {
+        "__TYPE__": "FieldContent",
+        "value": "manner",
+        "type": "Text"
+      },
+      "btmdrinkprice2": {
+        "__TYPE__": "FieldContent",
+        "value": "time",
+        "type": "Text"
+      },
+      "btmdrinktitle3": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Period"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription3": {
+        "__TYPE__": "FieldContent",
+        "value": "donkey",
+        "type": "Text"
+      },
+      "btmdrinkprice3": {
+        "__TYPE__": "FieldContent",
+        "value": "satellites",
+        "type": "Text"
+      },
+      "btmdrinktitle4": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Audience"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription4": {
+        "__TYPE__": "FieldContent",
+        "value": "establish",
+        "type": "Text"
+      },
+      "btmdrinkprice4": {
+        "__TYPE__": "FieldContent",
+        "value": "those",
+        "type": "Text"
+      },
+      "btmdrinktitle5": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Capital"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription5": {
+        "__TYPE__": "FieldContent",
+        "value": "usual",
+        "type": "Text"
+      },
+      "btmdrinkprice5": {
+        "__TYPE__": "FieldContent",
+        "value": "example",
+        "type": "Text"
+      },
+      "btmdrinktitle6": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Lying"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription6": {
+        "__TYPE__": "FieldContent",
+        "value": "apartment",
+        "type": "Text"
+      },
+      "btmdrinkprice6": {
+        "__TYPE__": "FieldContent",
+        "value": "crop",
+        "type": "Text"
+      },
+      "btmdrinktitle7": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Adventure"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription7": {
+        "__TYPE__": "FieldContent",
+        "value": "report",
+        "type": "Text"
+      },
+      "btmdrinkprice7": {
+        "__TYPE__": "FieldContent",
+        "value": "along",
+        "type": "Text"
+      },
+      "btmdrinktitle8": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Percent"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription8": {
+        "__TYPE__": "FieldContent",
+        "value": "race",
+        "type": "Text"
+      },
+      "btmdrinkprice8": {
+        "__TYPE__": "FieldContent",
+        "value": "low",
+        "type": "Text"
+      },
+      "btmdrinktitle9": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Shadow"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription9": {
+        "__TYPE__": "FieldContent",
+        "value": "of",
+        "type": "Text"
+      },
+      "btmdrinkprice9": {
+        "__TYPE__": "FieldContent",
+        "value": "ourselves",
+        "type": "Text"
+      },
+      "btmdrinktitle10": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Quiet"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription10": {
+        "__TYPE__": "FieldContent",
+        "value": "stared",
+        "type": "Text"
+      },
+      "btmdrinkprice10": {
+        "__TYPE__": "FieldContent",
+        "value": "duty",
+        "type": "Text"
+      },
+      "btmdrinktitle11": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Cannot"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription11": {
+        "__TYPE__": "FieldContent",
+        "value": "environment",
+        "type": "Text"
+      },
+      "btmdrinkprice11": {
+        "__TYPE__": "FieldContent",
+        "value": "three",
+        "type": "Text"
+      },
+      "btmdrinktitle12": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Pitch"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription12": {
+        "__TYPE__": "FieldContent",
+        "value": "science",
+        "type": "Text"
+      },
+      "btmdrinkprice12": {
+        "__TYPE__": "FieldContent",
+        "value": "enemy",
+        "type": "Text"
+      },
+      "btmdrinktitle13": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Follow"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription13": {
+        "__TYPE__": "FieldContent",
+        "value": "spent",
+        "type": "Text"
+      },
+      "btmdrinkprice13": {
+        "__TYPE__": "FieldContent",
+        "value": "tired",
+        "type": "Text"
+      },
+      "btmdrinktitle14": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading3",
+            "content": {
+              "text": "Found"
+            }
+          }
+        ]
+      },
+      "btmdrinkdescription14": {
+        "__TYPE__": "FieldContent",
+        "value": "read",
+        "type": "Text"
+      },
+      "btmdrinkprice14": {
+        "__TYPE__": "FieldContent",
+        "value": "watch",
+        "type": "Text"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "drinktitle",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading3",
+                  "content": {
+                    "text": "Afternoon"
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "price",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "opposite",
+              "type": "Text"
+            }
+          ],
+          [
+            "description",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "thank",
+              "type": "Text"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

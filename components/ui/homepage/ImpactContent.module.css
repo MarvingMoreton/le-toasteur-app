@@ -22,13 +22,14 @@
 }
 .small-text {
   text-align: center;
-
+  font-size: 1.8rem;
+  font-weight: 300;
   color: #ffffff;
 }
 
 .title-impact,
 .title-impact-highlighted {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 7.8rem;

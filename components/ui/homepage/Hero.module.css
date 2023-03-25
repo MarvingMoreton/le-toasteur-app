@@ -45,7 +45,7 @@
   margin-left: 0rem;
 }
 .box-text > h1 {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 6.4rem;
@@ -54,13 +54,10 @@
 }
 
 .box-text > span {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: light;
   font-weight: 300;
   font-size: 32px;
-  line-height: 58px;
-
-  /* T - Black 0E0E0E */
 
   color: #0e0e0e;
 }
