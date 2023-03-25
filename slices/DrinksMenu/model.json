@@ -295,13 +295,6 @@
             "placeholder": ""
           }
         },
-        "instruction": {
-          "type": "Text",
-          "config": {
-            "label": "Instruction",
-            "placeholder": ""
-          }
-        },
         "btmdrinktitle1": {
           "type": "StructuredText",
           "config": {
@@ -311,17 +304,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription1": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription1",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice1": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice1",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription1": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription1",
             "placeholder": ""
           }
         },
@@ -334,17 +327,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription2": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription2",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice2": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice2",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription2": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription2",
             "placeholder": ""
           }
         },
@@ -357,17 +350,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription3": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription3",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice3": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice3",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription3": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription3",
             "placeholder": ""
           }
         },
@@ -380,17 +373,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription4": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription4",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice4": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice4",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription4": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription4",
             "placeholder": ""
           }
         },
@@ -403,17 +396,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription5": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription5",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice5": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice5",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription5": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription5",
             "placeholder": ""
           }
         },
@@ -426,17 +419,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription6": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription6",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice6": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice6",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription6": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription6",
             "placeholder": ""
           }
         },
@@ -449,17 +442,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription7": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription7",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice7": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice7",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription7": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription7",
             "placeholder": ""
           }
         },
@@ -472,17 +465,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription8": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription8",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice8": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice8",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription8": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription8",
             "placeholder": ""
           }
         },
@@ -495,17 +488,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription9": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription9",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice9": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice9",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription9": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription9",
             "placeholder": ""
           }
         },
@@ -518,17 +511,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription10": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription10",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice10": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice10",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription10": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription10",
             "placeholder": ""
           }
         },
@@ -541,17 +534,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription11": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription11",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice11": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice11",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription11": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription11",
             "placeholder": ""
           }
         },
@@ -564,17 +557,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription12": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription12",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice12": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice12",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription12": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription12",
             "placeholder": ""
           }
         },
@@ -587,17 +580,17 @@
             "single": "heading3"
           }
         },
-        "btmdrinkdescription13": {
-          "type": "Text",
-          "config": {
-            "label": "BtmDrinkDescription13",
-            "placeholder": ""
-          }
-        },
         "btmdrinkprice13": {
           "type": "Text",
           "config": {
             "label": "BtmDrinkPrice13",
+            "placeholder": ""
+          }
+        },
+        "btmdrinkdescription13": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkDescription13",
             "placeholder": ""
           }
         },
@@ -610,6 +603,13 @@
             "single": "heading3"
           }
         },
+        "btmdrinkprice14": {
+          "type": "Text",
+          "config": {
+            "label": "BtmDrinkPrice14",
+            "placeholder": ""
+          }
+        },
         "btmdrinkdescription14": {
           "type": "Text",
           "config": {
@@ -617,10 +617,10 @@
             "placeholder": ""
           }
         },
-        "btmdrinkprice14": {
+        "instruction": {
           "type": "Text",
           "config": {
-            "label": "BtmDrinkPrice14",
+            "label": "Instruction",
             "placeholder": ""
           }
         }
