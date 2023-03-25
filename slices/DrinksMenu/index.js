@@ -38,103 +38,135 @@ const DrinksMenu = ({ slice }) => (
           <div className={classes['upper-box']}>
             <span>{slice.primary.simpledouble}</span>
             {/** item **/}
-            {slice.primary.topdrinkdescription1 && (
+            {slice.primary.topdrinktitle1 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle1} />
                   <span>{slice.primary.topdrinkprice1}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription1}</p>
+                {slice.primary.topdrinkdescription1 && (
+                  <p>{slice.primary.topdrinkdescription1}</p>
+                )}
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinkdescription2 && (
+            {slice.primary.topdrinktitle2 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle2} />
                   <span>{slice.primary.topdrinkprice2}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription2}</p>
+                {slice.primary.topdrinkdescription2 && (
+                  <p>{slice.primary.topdrinkdescription2}</p>
+                )}
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinkdescription3 && (
+            {slice.primary.topdrinktitle3 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle3} />
                   <span>{slice.primary.topdrinkprice3}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription3}</p>
+                {slice.primary.topdrinkdescription3 && (
+                  <p>{slice.primary.topdrinkdescription3}</p>
+                )}
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinkdescription4 && (
+            {slice.primary.topdrinktitle4 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle4} />
                   <span>{slice.primary.topdrinkprice4}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription4}</p>
+                {slice.primary.topdrinkdescription4 && (
+                  <p>{slice.primary.topdrinkdescription4}</p>
+                )}
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinkdescription5 && (
+            {slice.primary.topdrinktitle5 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle5} />
                   <span>{slice.primary.topdrinkprice5}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription5}</p>
+                {slice.primary.topdrinkdescription5 && (
+                  <p>{slice.primary.topdrinkdescription5}</p>
+                )}
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinkdescription6 && (
+            {slice.primary.topdrinktitle6 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle6} />
                   <span>{slice.primary.topdrinkprice6}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription6}</p>
+                {slice.primary.topdrinkdescription6 && (
+                  <p>{slice.primary.topdrinkdescription6}</p>
+                )}
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinkdescription7 && (
+            {slice.primary.topdrinktitle7 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle7} />
                   <span>{slice.primary.topdrinkprice7}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription7}</p>
+                {slice.primary.topdrinkdescription7 && (
+                  <p>{slice.primary.topdrinkdescription7}</p>
+                )}
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinkdescription8 && (
+            {slice.primary.topdrinktitle8 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle8} />
                   <span>{slice.primary.topdrinkprice8}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription9}</p>
+                {slice.primary.topdrinkdescription8 && (
+                  <p>{slice.primary.topdrinkdescription8}</p>
+                )}
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinkdescription10 && (
+            {slice.primary.topdrinktitle9 && (
+              <div className={classes['item-card']}>
+                <div className={classes['title-row']}>
+                  <PrismicRichText field={slice.primary.topdrinktitle9} />
+                  <span>{slice.primary.topdrinkprice9}</span>
+                </div>
+                {slice.primary.topdrinkdescription9 && (
+                  <p>{slice.primary.topdrinkdescription9}</p>
+                )}
+              </div>
+            )}
+            {/** item **/}
+            {slice.primary.topdrinktitle10 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle10} />
                   <span>{slice.primary.topdrinkprice10}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription10}</p>
+                {slice.primary.topdrinkdescription10 && (
+                  <p>{slice.primary.topdrinkdescription10}</p>
+                )}
               </div>
             )}
             {/** item **/}
-            {slice.primary.topdrinkdescription11 && (
+            {slice.primary.topdrinktitle11 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.topdrinktitle11} />
                   <span>{slice.primary.topdrinkprice11}</span>
                 </div>
-                <p>{slice.primary.topdrinkdescription11}</p>
+                {slice.primary.topdrinkdescription11 && (
+                  <p>{slice.primary.topdrinkdescription11}</p>
+                )}
               </div>
             )}
           </div>
@@ -142,156 +174,184 @@ const DrinksMenu = ({ slice }) => (
           {/* BOTTOM BOX HEEERE */}
           <div className={classes['bottom-box']}>
             {/** item **/}
-            {slice.primary.btmdrinkdescription1 && (
+            {slice.primary.btmdrinktitle1 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle1} />
                   <span>{slice.primary.btmdrinkprice1}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription1}</p>
+                {slice.primary.btmdrinkdescription1 && (
+                  <p>{slice.primary.btmdrinkdescription1}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription2 && (
+            {slice.primary.btmdrinktitle2 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle2} />
                   <span>{slice.primary.btmdrinkprice2}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription2}</p>
+                {slice.primary.btmdrinkdescription2 && (
+                  <p>{slice.primary.btmdrinkdescription2}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription3 && (
+            {slice.primary.btmdrinktitle3 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle3} />
                   <span>{slice.primary.btmdrinkprice3}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription3}</p>
+                {slice.primary.btmdrinkdescription3 && (
+                  <p>{slice.primary.btmdrinkdescription3}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription4 && (
+            {slice.primary.btmdrinktitle4 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle4} />
                   <span>{slice.primary.btmdrinkprice4}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription4}</p>
+                {slice.primary.btmdrinkdescription4 && (
+                  <p>{slice.primary.btmdrinkdescription4}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription5 && (
+            {slice.primary.btmdrinktitle5 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle5} />
                   <span>{slice.primary.btmdrinkprice5}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription5}</p>
+                {slice.primary.btmdrinkdescription5 && (
+                  <p>{slice.primary.btmdrinkdescription5}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription6 && (
+            {slice.primary.btmdrinktitle6 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle6} />
                   <span>{slice.primary.btmdrinkprice6}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription6}</p>
+                {slice.primary.btmdrinkdescription6 && (
+                  <p>{slice.primary.btmdrinkdescription6}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription7 && (
+            {slice.primary.btmdrinktitle7 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle7} />
                   <span>{slice.primary.btmdrinkprice7}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription7}</p>
+                {slice.primary.btmdrinkdescription7 && (
+                  <p>{slice.primary.btmdrinkdescription7}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription8 && (
+            {slice.primary.btmdrinktitle8 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle8} />
                   <span>{slice.primary.btmdrinkprice8}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription8}</p>
+                {slice.primary.btmdrinkdescription8 && (
+                  <p>{slice.primary.btmdrinkdescription8}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription9 && (
+            {slice.primary.btmdrinktitle9 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle9} />
                   <span>{slice.primary.btmdrinkprice9}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription9}</p>
+                {slice.primary.btmdrinkdescription9 && (
+                  <p>{slice.primary.btmdrinkdescription9}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription10 && (
+            {slice.primary.btmdrinktitle10 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle10} />
                   <span>{slice.primary.btmdrinkprice10}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription10}</p>
+                {slice.primary.btmdrinkdescription10 && (
+                  <p>{slice.primary.btmdrinkdescription10}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription11 && (
+            {slice.primary.btmdrinktitle11 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle11} />
                   <span>{slice.primary.btmdrinkprice11}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription11}</p>
+                {slice.primary.btmdrinkdescription11 && (
+                  <p>{slice.primary.btmdrinkdescription11}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription12 && (
+            {slice.primary.btmdrinktitle12 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle12} />
                   <span>{slice.primary.btmdrinkprice12}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription12}</p>
+                {slice.primary.btmdrinkdescription12 && (
+                  <p>{slice.primary.btmdrinkdescription12}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription13 && (
+            {slice.primary.btmdrinktitle13 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle13} />
                   <span>{slice.primary.btmdrinkprice13}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription13}</p>
+                {slice.primary.btmdrinkdescription13 && (
+                  <p>{slice.primary.btmdrinkdescription13}</p>
+                )}
               </div>
             )}
 
             {/** item **/}
-            {slice.primary.btmdrinkdescription14 && (
+            {slice.primary.btmdrinktitle14 && (
               <div className={classes['item-card']}>
                 <div className={classes['title-row']}>
                   <PrismicRichText field={slice.primary.btmdrinktitle14} />
                   <span>{slice.primary.btmdrinkprice14}</span>
                 </div>
-                <p>{slice.primary.btmdrinkdescription14}</p>
+                {slice.primary.btmdrinkdescription14 && (
+                  <p>{slice.primary.btmdrinkdescription14}</p>
+                )}
               </div>
             )}
           </div>
