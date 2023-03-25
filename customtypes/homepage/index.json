@@ -38,6 +38,9 @@
             },
             "testimonials_gallery": {
               "type": "SharedSlice"
+            },
+            "take_away": {
+              "type": "SharedSlice"
             }
           }
         }

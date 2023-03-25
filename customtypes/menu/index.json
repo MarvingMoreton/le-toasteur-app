@@ -2,6 +2,7 @@
   "id": "menu",
   "label": "Menu",
   "repeatable": false,
+  "status": true,
   "json": {
     "Main": {
       "title": {
@@ -15,7 +16,6 @@
         "type": "Group",
         "config": {
           "label": "Menu Links",
-          "placeholder": "",
           "fields": {
             "label": {
               "type": "StructuredText",
@@ -29,8 +29,26 @@
               "type": "Link",
               "config": {
                 "label": "Link",
-                "placeholder": "Select a Link..."
+                "placeholder": "Select a Link...",
+                "select": null
               }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "take_away": {
+              "type": "SharedSlice"
+            },
+            "values_list": {
+              "type": "SharedSlice"
+            },
+            "book_table": {
+              "type": "SharedSlice"
             }
           }
         }

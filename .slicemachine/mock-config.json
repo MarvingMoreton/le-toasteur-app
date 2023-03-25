@@ -350,6 +350,12 @@
           }
         }
       }
+    },
+    "TakeAway": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
     }
   }
 }

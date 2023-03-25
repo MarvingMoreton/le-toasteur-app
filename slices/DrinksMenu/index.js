@@ -379,9 +379,9 @@ const DrinksMenu = ({ slice }) => (
             </React.Fragment>
           ))}
         </div>
-        <div className={classes['sentence']}>
-          <span>{slice.primary.instruction}</span>
-        </div>
+      </div>
+      <div className={classes['sentence']}>
+        <span>{slice.primary.instruction}</span>
       </div>
     </div>
 
