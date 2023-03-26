@@ -10,7 +10,7 @@
 .value-background {
   /* background: url(../../../public/images/ellipse.png); */
   width: 100%;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -45,14 +45,14 @@
 }
 
 .value-title {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 3.8rem;
+  font-size: 3.4rem;
 }
 
 .value-desc {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;

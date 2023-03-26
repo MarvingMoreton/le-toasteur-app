@@ -4,7 +4,7 @@
 }
 
 .subtitle {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -24,6 +24,7 @@
   flex-wrap: wrap;
   gap: 8rem;
   justify-content: center;
+  align-items: flex-start;
   row-gap: 14rem;
 }
 
@@ -49,7 +50,7 @@
 }
 
 .employee-text-box > h4 {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -63,7 +64,7 @@
 }
 
 .employee-text-box > span {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -78,7 +79,7 @@
   margin: 1.4rem auto;
 }
 .employee-text-box > p {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
