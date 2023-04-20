@@ -168,7 +168,7 @@ function MainNavigation() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gallerie">
+                  <Link href="/galerie">
                     <a
                       className={`${classes['main-nav-link']} ${
                         currentRoute === '/' ? 'active' : ''
