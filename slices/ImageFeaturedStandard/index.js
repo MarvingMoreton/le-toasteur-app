@@ -51,6 +51,7 @@ const ImageFeaturedStandard = ({ slice }) => (
     <div className={classes['box-image']}>
       {/* <Image src={slice.primary.image.url} alt={slice.primary.image.alt} />// */}
       <PrismicNextImage
+        className={classes['image-standard']}
         field={slice.primary.image}
         alt={slice.primary.image.alt}
       />

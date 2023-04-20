@@ -75,7 +75,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gallerie">
+                  <Link href="/galerie">
                     <a>Photos</a>
                   </Link>
                 </li>
