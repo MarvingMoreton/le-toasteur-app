@@ -1,11 +1,11 @@
-import React from "react";
-import { PrismicRichText, PrismicText, PrismicLink } from "@prismicio/react";
-import { PrismicNextImage } from "@prismicio/next";
-import Image from "next/image";
-import classes from "../../components/ui/homepage/ImageFeatured.module.css";
-import RichText from "../../components/PrismicComponents/CustomRichText";
-import CustomLink from "../../components/PrismicComponents/CustomLink";
-import Link from "next/link";
+import React from 'react';
+import { PrismicRichText, PrismicText, PrismicLink } from '@prismicio/react';
+import { PrismicNextImage } from '@prismicio/next';
+import Image from 'next/image';
+import classes from '../../components/ui/homepage/ImageFeatured.module.css';
+import RichText from '../../components/PrismicComponents/CustomRichText';
+import CustomLink from '../../components/PrismicComponents/CustomLink';
+import Link from 'next/link';
 
 /**
  * @typedef {import("@prismicio/client").Content.ImageFeaturedStandardSlice} ImageFeaturedStandardSlice
@@ -13,8 +13,8 @@ import Link from "next/link";
  * @param { ImageFeaturedStandardProps }
  */
 const ImageFeaturedStandard = ({ slice }) => (
-  <section className={`${classes["section-featured"]} ${"container"}`}>
-    <div className={classes["box-text"]}>
+  <section className={`${classes['section-featured']} ${'container'}`}>
+    <div className={classes['box-text']}>
       <span className="subtitle">{slice.primary.subtitle}</span>
 
       <PrismicRichText
@@ -22,16 +22,16 @@ const ImageFeaturedStandard = ({ slice }) => (
         components={{
           heading2: ({ children }) => (
             <h2 className={classes.title}>{children}</h2>
-          ),
+          )
         }}
       />
 
-      <div className={classes["box-paragraph"]}>
+      <div className={classes['box-paragraph']}>
         {slice?.items?.map((item, i) => (
           <PrismicRichText field={item.paragraph} key={i} />
         ))}
       </div>
-      <div className={classes["box-buttons"]}>
+      <div className={classes['box-buttons']}>
         <PrismicLink
           document={slice.primary.cta_internal_link}
           className="btn-primary"
@@ -48,8 +48,8 @@ const ImageFeaturedStandard = ({ slice }) => (
       </div>
     </div>
 
-    <div className={classes["box-image"]}>
-      {/* <Image src={slice.primary.image.url} alt={slice.primary.image.alt} /> */}
+    <div className={classes['box-image']}>
+      {/* <Image src={slice.primary.image.url} alt={slice.primary.image.alt} />// */}
       <PrismicNextImage
         field={slice.primary.image}
         alt={slice.primary.image.alt}
