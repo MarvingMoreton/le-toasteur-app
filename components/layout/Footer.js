@@ -38,8 +38,14 @@ function Footer() {
             </div>
             <div className={classes['col-2--openings']}>
               <span className={classes.subtitle}>Heures d’ouverture:</span>
-              <p>Mercredi au Lundi:</p>
-              <p> 8H00 - 15H00</p>
+
+              <p>Lundi | 8H00 - 15H00</p>
+              <p>Mardi | FERMÉ</p>
+              <p>Mercredi | 8H00 - 15H00</p>
+              <p>Jeudi | 8H00 - 15H00</p>
+              <p>Vendredi | 8H00 - 15H00</p>
+              <p>Samedi | 8H00 - 15H00</p>
+              <p>Dimanche | 8H00 - 15H00</p>
             </div>
           </div>
           <div className={classes['footer-col--3']}>
@@ -58,22 +64,21 @@ function Footer() {
             <div>
               <span className={classes.subtitle}>Pages</span>
               <ul className={classes['col-4-nav-list']}>
-                {/* <li>
-                  <Link href="/gallerie">
-                    <a>Photos</a>
-                  </Link>
-                </li> */}
                 <li>
                   <Link href="/menu">
                     <a>Menu</a>
                   </Link>
                 </li>
-
-                {/* <li>
+                <li>
                   <Link href="/notre-histoire">
                     <a>Notre Histoire</a>
                   </Link>
-                </li> */}
+                </li>
+                <li>
+                  <Link href="/gallerie">
+                    <a>Photos</a>
+                  </Link>
+                </li>
                 <li>
                   <Link href="/contact">
                     <a>Contact</a>
