@@ -58,6 +58,7 @@ function MainNavigation() {
                   layout="responsive"
                   // width={133}
                   // height={68}
+                  quality={100}
                 />
               </a>
             </Link>
@@ -125,7 +126,7 @@ function MainNavigation() {
                     </a>
                   </Link>
                 </li>
-                {/* <li>
+                <li>
                   <Link href="/menu">
                     <a
                       className={`${classes['main-nav-link']} ${
@@ -138,7 +139,7 @@ function MainNavigation() {
                       Menu
                     </a>
                   </Link>
-                </li> */}
+                </li>
                 <li className={classes['image-toast']}>
                   <Link href="/">
                     <a>
@@ -152,21 +153,7 @@ function MainNavigation() {
                     </a>
                   </Link>
                 </li>
-                {/* <li>
-                  <Link href="/gallerie">
-                    <a
-                      className={`${classes['main-nav-link']} ${
-                        currentRoute === '/' ? 'active' : ''
-                      }`}
-                      onClick={() => {
-                        setIsNavExpanded(!isNavExpanded);
-                      }}
-                    >
-                      Photos
-                    </a>
-                  </Link>
-                </li> */}
-                {/* <li>
+                <li>
                   <Link href="/notre-histoire">
                     <a
                       className={`${classes['main-nav-link']} ${
@@ -179,19 +166,18 @@ function MainNavigation() {
                       Notre Histoire
                     </a>
                   </Link>
-                </li> */}
-
+                </li>
                 <li>
-                  <Link href="/menu">
+                  <Link href="/gallerie">
                     <a
                       className={`${classes['main-nav-link']} ${
-                        currentRoute === '/menu' ? 'active' : ''
+                        currentRoute === '/' ? 'active' : ''
                       }`}
                       onClick={() => {
                         setIsNavExpanded(!isNavExpanded);
                       }}
                     >
-                      Menu
+                      Photos
                     </a>
                   </Link>
                 </li>
