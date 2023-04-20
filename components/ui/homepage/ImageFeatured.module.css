@@ -13,6 +13,10 @@
   z-index: -1;
 }
 
+.image-standard {
+  border-radius: 12px;
+}
+
 .title {
   margin-bottom: 3rem;
 }
