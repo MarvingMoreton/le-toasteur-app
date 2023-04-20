@@ -20,7 +20,6 @@ const LoveContent = ({ slice }) => (
             ),
           }}
         /> */}
-
         <h2 className={classes['title-impact']}>
           If we like it then <br />
           <span className={classes['title-impact-highlighted']}>

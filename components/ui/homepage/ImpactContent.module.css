@@ -39,6 +39,12 @@
   color: #ffffff;
 }
 
+.subtitle-beyonce {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 .title-impact-highlighted {
   color: #efdbb2;
 }
