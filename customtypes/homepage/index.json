@@ -56,14 +56,6 @@
           "placeholder_false": "false"
         }
       },
-      "canonical_url": {
-        "type": "Link",
-        "config": {
-          "label": "Canonical URL",
-          "placeholder": "",
-          "select": null
-        }
-      },
       "meta_title": {
         "type": "Text",
         "config": {
