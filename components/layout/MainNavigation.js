@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
-function MainNavigation() {
+function MainNavigation({ alternateLanguages = [], ...props }) {
   const router = useRouter();
   const currentRoute = router.pathname;
 
@@ -113,7 +113,11 @@ function MainNavigation() {
             >
               <ul className={classes['main-nav-list']}>
                 <li>
-                  <Link href="/">
+                  <Link
+                    href={
+                      alternateLanguages[0].lang == 'fr-fr' ? '/en-ca' : '/'
+                    }
+                  >
                     <a
                       className={`${classes['main-nav-link']} ${
                         currentRoute === '/' ? 'active' : ''
@@ -127,7 +131,13 @@ function MainNavigation() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/menu">
+                  <Link
+                    href={
+                      alternateLanguages[0].lang == 'fr-fr'
+                        ? '/en-ca/menu'
+                        : '/menu'
+                    }
+                  >
                     <a
                       className={`${classes['main-nav-link']} ${
                         currentRoute === '/' ? 'active' : ''
@@ -154,7 +164,13 @@ function MainNavigation() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/notre-histoire">
+                  <Link
+                    href={
+                      alternateLanguages[0].lang == 'fr-fr'
+                        ? '/en-ca/our-history'
+                        : '/notre-histoire'
+                    }
+                  >
                     <a
                       className={`${classes['main-nav-link']} ${
                         currentRoute === '/' ? 'active' : ''
@@ -163,12 +179,20 @@ function MainNavigation() {
                         setIsNavExpanded(!isNavExpanded);
                       }}
                     >
-                      Notre Histoire
+                      {alternateLanguages[0].lang == 'fr-fr'
+                        ? 'Our Story'
+                        : 'Notre Histoire'}
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/galerie">
+                  <Link
+                    href={
+                      alternateLanguages[0].lang == 'fr-fr'
+                        ? '/en-ca/gallery'
+                        : '/galerie'
+                    }
+                  >
                     <a
                       className={`${classes['main-nav-link']} ${
                         currentRoute === '/' ? 'active' : ''
@@ -183,7 +207,13 @@ function MainNavigation() {
                 </li>
 
                 <li>
-                  <Link href="/contact">
+                  <Link
+                    href={
+                      alternateLanguages[0].lang == 'fr-fr'
+                        ? '/en-ca/contact'
+                        : '/contact'
+                    }
+                  >
                     <a
                       className={`${classes['main-nav-link']} ${
                         currentRoute === '/' ? 'active' : ''

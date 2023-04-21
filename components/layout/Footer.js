@@ -27,18 +27,19 @@ function Footer({ alternateLanguages = [], ...props }) {
   const { req } = props;
   const currentLocale = resolveLocaleFromNext(req);
 
-  // console.log(alternateLanguages);
+  console.log(alternateLanguages);
+  console.log(alternateLanguages[0].lang);
   const router = useRouter();
   const currentRoute = router.pathname;
 
-  const languageAnchor =
-    alternateLanguages.lang === 'fr-fr' ? 'English' : 'French';
+  // const languageAnchor =
+  //   alternateLanguages.lang === 'fr-fr' ? 'English' : 'French';
 
-  const languageRoot =
-    alternateLanguages.lang === 'en-ca'
-      ? 'https://letoasteur.com/'
-      : 'https://letoasteur.com/en-ca/';
-
+  // const languageRoot =
+  //   alternateLanguages.lang === 'en-ca'
+  //     ? 'https://letoasteur.com/'
+  //     : 'https://letoasteur.com/en-ca/';
+  // alternateLanguages;
   return (
     <React.Fragment>
       <footer className={classes['footer']}>
@@ -89,23 +90,53 @@ function Footer({ alternateLanguages = [], ...props }) {
             <div>
               <span className={classes.subtitle}>Pages</span>
               <ul className={classes['col-4-nav-list']}>
+                {/* { {alternateLanguages[0].lang} == "en-ca"} && ()} */}
                 <li>
-                  <Link href="/menu">
+                  <Link
+                    href={
+                      alternateLanguages[0].lang == 'fr-fr'
+                        ? '/en-ca/menu'
+                        : '/menu'
+                    }
+                  >
                     <a>Menu</a>
                   </Link>
+                  {/* alternateLanguages[0].lang == "en-ca" ? "/" : /menu*/}
                 </li>
                 <li>
-                  <Link href="/notre-histoire">
-                    <a>Notre Histoire</a>
+                  <Link
+                    href={
+                      alternateLanguages[0].lang == 'fr-fr'
+                        ? '/en-ca/our-history'
+                        : '/notre-histoire'
+                    }
+                  >
+                    <a>
+                      {alternateLanguages[0].lang == 'fr-fr'
+                        ? 'Our Story'
+                        : 'Notre Histoire'}
+                    </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/galerie">
+                  <Link
+                    href={
+                      alternateLanguages[0].lang == 'fr-fr'
+                        ? '/en-ca/gallery'
+                        : '/galerie'
+                    }
+                  >
                     <a>Photos</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact">
+                  <Link
+                    href={
+                      alternateLanguages[0].lang == 'fr-fr'
+                        ? '/en-ca/contact'
+                        : '/contact'
+                    }
+                  >
                     <a>Contact</a>
                   </Link>
                 </li>
@@ -114,7 +145,7 @@ function Footer({ alternateLanguages = [], ...props }) {
                     <a>{languageAnchor}</a>
                   </Link>
                 </li> */}
-                {alternateLanguages.map((lang) => (
+                {/* {alternateLanguages.map((lang) => (
                   <li key={lang.lang}>
                     <PrismicLink
                       href={lang.url}
@@ -125,6 +156,24 @@ function Footer({ alternateLanguages = [], ...props }) {
                       </span>
                       <FlagIcon lang={lang.lang} />
                     </PrismicLink>
+                  </li>
+                ))} */}
+
+                {/* CHAPGPT VERSION */}
+
+                {alternateLanguages.map((lang) => (
+                  <li key={lang.lang}>
+                    <Link
+                      href={lang.url}
+                      locale={`${lang.lang === 'en-ca' ? 'en-CA' : 'fr'}`}
+                    >
+                      <a>
+                        <span className="sr-only">
+                          {`${lang.lang === 'en-ca' ? 'en-CA' : 'fr'}`}
+                        </span>
+                        <FlagIcon lang={lang.lang} />
+                      </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
