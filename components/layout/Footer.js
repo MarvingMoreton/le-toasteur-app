@@ -12,8 +12,33 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { resolveLocaleFromNext } from '../../lib/resolveLocaleFromNext';
+import { withAlternateLanguageURLs } from '../../lib/withAlternateLanguageURLs';
+import '/node_modules/flag-icons/css/flag-icons.min.css';
+import { useRouter } from 'next/router';
+import { PrismicLink, PrismicText } from '@prismicio/react';
 
-function Footer() {
+const FlagIcon = ({ lang }) => {
+  const code = lang.substring(3).toLowerCase();
+  return <span className={`fi fi-${code === 'fr' ? 'fr' : 'us'}`} />;
+};
+
+function Footer({ alternateLanguages = [], ...props }) {
+  const { req } = props;
+  const currentLocale = resolveLocaleFromNext(req);
+
+  // console.log(alternateLanguages);
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
+  const languageAnchor =
+    alternateLanguages.lang === 'fr-fr' ? 'English' : 'French';
+
+  const languageRoot =
+    alternateLanguages.lang === 'en-ca'
+      ? 'https://letoasteur.com/'
+      : 'https://letoasteur.com/en-ca/';
+
   return (
     <React.Fragment>
       <footer className={classes['footer']}>
@@ -85,10 +110,23 @@ function Footer() {
                   </Link>
                 </li>
                 {/* <li>
-                  <Link href="">
-                    <a>English</a>
+                  <Link href={languageRoot + alternateLanguages[0].url}>
+                    <a>{languageAnchor}</a>
                   </Link>
                 </li> */}
+                {alternateLanguages.map((lang) => (
+                  <li key={lang.lang}>
+                    <PrismicLink
+                      href={lang.url}
+                      locale={`${lang.lang === 'en-ca' ? 'en-ca' : lang.lang}`}
+                    >
+                      <span className="sr-only">
+                        {`${lang.lang === 'en-ca' ? 'en-ca' : 'fr-fr'}`}
+                      </span>
+                      <FlagIcon lang={lang.lang} />
+                    </PrismicLink>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className={classes['footer-col--5']}>

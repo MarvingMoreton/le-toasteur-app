@@ -7,6 +7,7 @@ import TestimonialsBis from '../components/ui/shared/TestimonialsBis';
 import { resolveLocaleFromNext } from '../lib/resolveLocaleFromNext';
 import { withAlternateLanguageURLs } from '../lib/withAlternateLanguageURLs';
 import { useRouter } from 'next/router';
+import Layout from '../components/layout/Layout';
 
 const Home = (props) => {
   const router = useRouter();
@@ -29,7 +30,7 @@ const Home = (props) => {
   }
 
   return (
-    <>
+    <Layout alternateLanguages={page.alternate_languages}>
       <Head>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} key="desc" />
@@ -55,7 +56,7 @@ const Home = (props) => {
         />
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
-    </>
+    </Layout>
   );
 };
 

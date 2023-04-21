@@ -6,17 +6,18 @@ import { createClient } from '../prismicio';
 import { components } from '../slices';
 import { resolveLocaleFromNext } from '../lib/resolveLocaleFromNext';
 import { withAlternateLanguageURLs } from '../lib/withAlternateLanguageURLs';
+import Layout from '../components/layout/Layout';
 
 const Page = (props) => {
   const router = useRouter();
   const currentRoute = router.pathname;
   const { metaTitle, metaDescription, ogImage, ogImageAlt, page } = props;
-
+  // console.log('alternante through page:', page);
   // console.log(page.url);
   const canonicalUrl = `https://letoasteur.com` + page.url;
 
   return (
-    <>
+    <Layout alternateLanguages={page.alternate_languages}>
       <Head>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} key="desc" />
@@ -33,7 +34,7 @@ const Page = (props) => {
         <meta property="og:site_name" content="Marving Moreton" />
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
-    </>
+    </Layout>
   );
 };
 
