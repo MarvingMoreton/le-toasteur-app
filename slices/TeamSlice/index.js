@@ -1,8 +1,8 @@
-import React from "react";
-import { PrismicRichText } from "@prismicio/react";
-import classes from "../../components/ui/history/OurTeam.module.css";
-import { PrismicNextImage } from "@prismicio/next";
-import CustomImageH from "../../components/PrismicComponents/CustomLink";
+import React from 'react';
+import { PrismicRichText } from '@prismicio/react';
+import classes from '../../components/ui/history/OurTeam.module.css';
+import { PrismicNextImage } from '@prismicio/next';
+import CustomImageH from '../../components/PrismicComponents/CustomLink';
 
 /**
  * @typedef {import("@prismicio/client").Content.TeamSliceSlice} TeamSliceSlice
@@ -10,13 +10,13 @@ import CustomImageH from "../../components/PrismicComponents/CustomLink";
  * @param { TeamSliceProps }
  */
 const TeamSlice = ({ slice }) => (
-  <section className={`${classes["section-team"]} ${"container"}`}>
-    <div className={classes["grid-team"]}>
-      <div className={classes["box-text"]}>
-        <span className={classes.subtitle}>La Dream Team</span>
-        <h2>Notre équipe</h2>
+  <section className={`${classes['section-team']} ${'container'}`}>
+    <div className={classes['grid-team']}>
+      <div className={classes['box-text']}>
+        <span className={classes.subtitle}>{slice.primary.subtitle}</span>
+        <PrismicRichText field={slice.primary.title} />
       </div>
-      <div className={classes["team-item-list"]}>
+      <div className={classes['team-item-list']}>
         {/*
 
         */}
@@ -24,12 +24,12 @@ const TeamSlice = ({ slice }) => (
 
         {slice?.items?.map((item, i) => (
           <React.Fragment key={i}>
-            <div className={classes["employee-card"]}>
-              <div className={classes["image-box"]}>
+            <div className={classes['employee-card']}>
+              <div className={classes['image-box']}>
                 <PrismicNextImage field={item.photo} alt={item.photo.alt} />
               </div>
 
-              <div className={classes["employee-text-box"]}>
+              <div className={classes['employee-text-box']}>
                 <PrismicRichText field={item.names} />
                 <span className={classes.position}>{item.position_title}</span>
                 <PrismicRichText field={item.description} />

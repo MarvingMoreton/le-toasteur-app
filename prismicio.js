@@ -1,24 +1,41 @@
-import * as prismic from "@prismicio/client";
-import * as prismicH from "@prismicio/helpers";
-import * as prismicNext from "@prismicio/next";
-import sm from "./sm.json";
+import * as prismic from '@prismicio/client';
+import * as prismicH from '@prismicio/helpers';
+import * as prismicNext from '@prismicio/next';
+import sm from './sm.json';
 
 /**
  * The project's Prismic repository name.
  */
 export const letoasteur = prismic.getRepositoryName(sm.apiEndpoint);
 
+/**
+ * Locale overrides for nicer URLs.
+ */
+export const localeOverrides = {
+  'fr-fr': 'fr'
+};
+
 // Update the routes array to match your project's route structure
 /** @type {prismic.ClientConfig['routes']} **/
 const routes = [
   {
-    type: "homepage",
-    path: "/",
+    type: 'homepage',
+    path: '/:lang?'
   },
   {
-    type: "page",
-    path: "/:uid",
+    type: 'homepage',
+    lang: 'en-ca',
+    path: '/en-ca'
   },
+  {
+    type: 'page',
+    path: '/:lang?/:uid'
+  },
+  {
+    type: 'page',
+    lang: 'en-ca',
+    path: '/en-ca/:uid'
+  }
 ];
 
 /**
@@ -27,17 +44,35 @@ const routes = [
  *
  * @param config {prismicNext.CreateClientConfig} - Configuration for the Prismic client.
  */
-export const createClient = (config = {}) => {
+export const createClient = ({ previewData, req, ...config } = {}) => {
   const client = prismic.createClient(sm.apiEndpoint, {
     routes,
     ...config,
+    defaultParams: {
+      ...config.defaultParams,
+      lang: '*'
+    }
   });
 
   prismicNext.enableAutoPreviews({
     client,
     previewData: config.previewData,
-    req: config.req,
+    req: config.req
   });
 
   return client;
 };
+// export const createClient = (config = {}) => {
+//   const client = prismic.createClient(sm.apiEndpoint, {
+//     routes,
+//     ...config
+//   });
+
+//   prismicNext.enableAutoPreviews({
+//     client,
+//     previewData: config.previewData,
+//     req: config.req
+//   });
+
+//   return client;
+// };

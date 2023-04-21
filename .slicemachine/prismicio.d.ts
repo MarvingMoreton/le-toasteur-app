@@ -43,17 +43,6 @@ interface HomepageDocumentData {
      */
     no_index: prismicT.BooleanField;
     /**
-     * Canonical URL field in *Homepage*
-     *
-     * - **Field Type**: Link
-     * - **Placeholder**: *None*
-     * - **API ID Path**: homepage.canonical_url
-     * - **Tab**: SEO TAB
-     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
-     *
-     */
-    canonical_url: prismicT.LinkField;
-    /**
      * Meta title field in *Homepage*
      *
      * - **Field Type**: Text
