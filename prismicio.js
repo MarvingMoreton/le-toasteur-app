@@ -20,11 +20,21 @@ export const localeOverrides = {
 const routes = [
   {
     type: 'homepage',
-    path: '/'
+    path: '/:lang?'
+  },
+  {
+    type: 'homepage',
+    lang: 'en-ca',
+    path: '/en-ca'
   },
   {
     type: 'page',
-    path: '/:uid'
+    path: '/:lang?/:uid'
+  },
+  {
+    type: 'page',
+    lang: 'en-ca',
+    path: '/en-ca/:uid'
   }
 ];
 

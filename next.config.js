@@ -1,5 +1,4 @@
 const prismic = require('@prismicio/client');
-
 const sm = require('./sm.json');
 
 const localeOverrides = {
@@ -31,36 +30,36 @@ const nextConfig = async () => {
     },
     images: {
       domains: [
-        'marving-moreton.cdn.prismic.io',
+        'letoasteur.cdn.prismic.io',
         'images.prismic.io',
         'res.cloudinary.com'
       ]
-    },
-
-    async redirects() {
-      return [
-        {
-          source: '/notre-histoire',
-          destination: '/en-ca/our-history',
-          permanent: true
-        },
-        {
-          source: '/menu',
-          destination: '/en-ca/menu',
-          permanent: true
-        },
-        {
-          source: '/galerie',
-          destination: '/en-ca/gallery',
-          permanent: true
-        },
-        {
-          source: '/contact',
-          destination: '/en-ca/contact',
-          permanent: true
-        }
-      ];
     }
+
+    // async redirects() {
+    //   return [
+    //     {
+    //       source: '/notre-histoire',
+    //       destination: '/en-ca/our-history',
+    //       permanent: true
+    //     },
+    //     {
+    //       source: '/menu',
+    //       destination: '/menu',
+    //       permanent: true
+    //     },
+    //     {
+    //       source: '/galerie',
+    //       destination: '/en-ca/gallery',
+    //       permanent: true
+    //     },
+    //     {
+    //       source: '/contact',
+    //       destination: '/en-ca/contact',
+    //       permanent: true
+    //     }
+    //   ];
+    // }
   };
 };
 
