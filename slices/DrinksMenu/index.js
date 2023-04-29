@@ -360,13 +360,13 @@ const DrinksMenu = ({ slice }) => (
         {/* RIGHT GRID HERE */}
         <div className={classes['right-grid']}>
           {/* Items */}
-          <div className={classes['item-card']}>
+          {/* <div className={classes['item-card']}>
             <div className={classes['title-row-right']}>
               <h3>Jus pressé</h3>
               <span>5</span>
             </div>
             <p>orange, pamplemousse, 1/2-1/2</p>
-          </div>
+          </div> */}
           {slice?.items?.map((item, i) => (
             <React.Fragment key={i}>
               <div className={classes['item-card']}>
