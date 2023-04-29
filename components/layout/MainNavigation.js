@@ -157,8 +157,8 @@ function MainNavigation({ alternateLanguages = [], ...props }) {
                         src={blueToast}
                         alt="Logo Letoasteur Restaurant villeray"
                         // layout="responsive"
-                        // width={124}
-                        // height={124}
+                        width={134}
+                        height={134}
                       />
                     </a>
                   </Link>

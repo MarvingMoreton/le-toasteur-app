@@ -27,8 +27,8 @@ function Footer({ alternateLanguages = [], ...props }) {
   const { req } = props;
   const currentLocale = resolveLocaleFromNext(req);
 
-  console.log(alternateLanguages);
-  console.log(alternateLanguages[0].lang);
+  // console.log(alternateLanguages);
+  // console.log(alternateLanguages[0].lang);
   const router = useRouter();
   const currentRoute = router.pathname;
 
