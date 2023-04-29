@@ -53,7 +53,7 @@
 .menu-list {
   display: flex;
   flex-direction: column;
-  max-height: 1800px;
+  max-height: 1900px;
   flex-wrap: wrap;
   /* align-items: center; */
   /* justify-content: center; */
@@ -132,6 +132,12 @@
 @media (max-width: 64em) {
   .section-main-menu {
     padding: 12rem 4rem;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    max-height: 2400px;
   }
 }
 

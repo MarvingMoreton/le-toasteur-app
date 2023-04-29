@@ -155,7 +155,7 @@ function MainNavigation({ alternateLanguages = [], ...props }) {
                     <a>
                       <Image
                         src={blueToast}
-                        alt="test"
+                        alt="Logo Letoasteur Restaurant villeray"
                         // layout="responsive"
                         // width={124}
                         // height={124}
