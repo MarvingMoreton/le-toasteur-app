@@ -8,6 +8,12 @@ import { useRouter } from 'next/router';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import '/node_modules/flag-icons/css/flag-icons.min.css';
+
+const FlagIcon = ({ lang }) => {
+  const code = lang.substring(3).toLowerCase();
+  return <span className={`fi fi-${code === 'fr' ? 'fr' : 'us'}`} />;
+};
 
 function MainNavigation({ alternateLanguages = [], ...props }) {
   const router = useRouter();
@@ -157,8 +163,8 @@ function MainNavigation({ alternateLanguages = [], ...props }) {
                         src={blueToast}
                         alt="Logo Letoasteur Restaurant villeray"
                         // layout="responsive"
-                        // width={124}
-                        // height={124}
+                        width={134}
+                        height={134}
                       />
                     </a>
                   </Link>
@@ -226,6 +232,31 @@ function MainNavigation({ alternateLanguages = [], ...props }) {
                     </a>
                   </Link>
                 </li>
+
+                {/* LANGUAGE VERSION */}
+                {alternateLanguages.map((lang) => (
+                  <li key={lang.lang}>
+                    <Link
+                      href={lang.url}
+                      locale={`${lang.lang === 'en-ca' ? 'en-CA' : 'fr'}`}
+                    >
+                      <a
+                        className={`${classes['main-nav-link']} ${
+                          currentRoute === '/' ? 'active' : ''
+                        }`}
+                        onClick={() => {
+                          setIsNavExpanded(!isNavExpanded);
+                        }}
+                      >
+                        <span className="sr-only">
+                          {`${lang.lang === 'en-ca' ? 'en-CA' : 'fr'}`}
+                        </span>
+                        <FlagIcon lang={lang.lang} />
+                        {lang.lang === 'en-ca' ? ' English' : ' Français'}
+                      </a>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
