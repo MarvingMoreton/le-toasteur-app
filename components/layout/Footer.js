@@ -13,7 +13,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { resolveLocaleFromNext } from '../../lib/resolveLocaleFromNext';
-import { withAlternateLanguageURLs } from '../../lib/withAlternateLanguageURLs';
 import '/node_modules/flag-icons/css/flag-icons.min.css';
 import { useRouter } from 'next/router';
 import { PrismicLink, PrismicText } from '@prismicio/react';
@@ -27,19 +26,9 @@ function Footer({ alternateLanguages = [], ...props }) {
   const { req } = props;
   const currentLocale = resolveLocaleFromNext(req);
 
-  // console.log(alternateLanguages);
-  // console.log(alternateLanguages[0].lang);
   const router = useRouter();
   const currentRoute = router.pathname;
 
-  // const languageAnchor =
-  //   alternateLanguages.lang === 'fr-fr' ? 'English' : 'French';
-
-  // const languageRoot =
-  //   alternateLanguages.lang === 'en-ca'
-  //     ? 'https://letoasteur.com/'
-  //     : 'https://letoasteur.com/en-ca/';
-  // alternateLanguages;
   return (
     <React.Fragment>
       <footer className={classes['footer']}>
@@ -140,27 +129,8 @@ function Footer({ alternateLanguages = [], ...props }) {
                     <a>Contact</a>
                   </Link>
                 </li>
-                {/* <li>
-                  <Link href={languageRoot + alternateLanguages[0].url}>
-                    <a>{languageAnchor}</a>
-                  </Link>
-                </li> */}
-                {/* {alternateLanguages.map((lang) => (
-                  <li key={lang.lang}>
-                    <PrismicLink
-                      href={lang.url}
-                      locale={`${lang.lang === 'en-ca' ? 'en-ca' : lang.lang}`}
-                    >
-                      <span className="sr-only">
-                        {`${lang.lang === 'en-ca' ? 'en-ca' : 'fr-fr'}`}
-                      </span>
-                      <FlagIcon lang={lang.lang} />
-                    </PrismicLink>
-                  </li>
-                ))} */}
 
-                {/* CHAPGPT VERSION */}
-
+                {/* LANGUAGE VERSION */}
                 {alternateLanguages.map((lang) => (
                   <li key={lang.lang}>
                     <Link
@@ -172,6 +142,7 @@ function Footer({ alternateLanguages = [], ...props }) {
                           {`${lang.lang === 'en-ca' ? 'en-CA' : 'fr'}`}
                         </span>
                         <FlagIcon lang={lang.lang} />
+                        {lang.lang === 'en-ca' ? ' English' : ' Français'}
                       </a>
                     </Link>
                   </li>

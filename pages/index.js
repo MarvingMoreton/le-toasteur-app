@@ -62,18 +62,6 @@ const Home = (props) => {
 
 export default Home;
 
-// export async function getStaticProps({ previewData }) {
-//   const client = createClient({ previewData });
-
-//   const page = await client.getSingle('homepage');
-
-//   return {
-//     props: {
-//       page
-//     }
-//   };
-// }
-
 export async function getStaticProps({ previewData, locale }) {
   const client = createClient({ previewData });
   const resolvedLocale = resolveLocaleFromNext(locale);
