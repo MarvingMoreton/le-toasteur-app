@@ -9,6 +9,7 @@ config.autoAddCss = false;
 import { PrismicProvider } from '@prismicio/react';
 import { PrismicPreview } from '@prismicio/next';
 import { letoasteur } from '../prismicio';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -29,6 +30,18 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
 
+      {/* GOOGLE ANALYTICS */}
+      <Script
+        id="google-analytics"
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YXK3DPM6D4');`
+        }}
+      />
       <PrismicPreview repositoryName={letoasteur}>
         <Component {...pageProps} />
       </PrismicPreview>
