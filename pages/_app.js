@@ -20,7 +20,6 @@ function MyApp({ Component, pageProps }) {
         </Link>
       )}
     >
-      {/* <Layout> */}
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
@@ -29,7 +28,10 @@ function MyApp({ Component, pageProps }) {
           href="/images/logos/toast-blue-navy-ellipsed.png"
         />
       </Head>
-
+      <Script
+        strategy="lazyOnload"
+        src="https://www.googletagmanager.com/gtag/js?id=G-YXK3DPM6D4"
+      />
       {/* GOOGLE ANALYTICS */}
       <Script
         id="google-analytics"
@@ -45,7 +47,6 @@ function MyApp({ Component, pageProps }) {
       <PrismicPreview repositoryName={letoasteur}>
         <Component {...pageProps} />
       </PrismicPreview>
-      {/* </Layout> */}
     </PrismicProvider>
   );
 }
