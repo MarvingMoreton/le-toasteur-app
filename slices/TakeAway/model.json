@@ -36,11 +36,12 @@
             "single": "heading3"
           }
         },
-        "cta_internal_link": {
+        "cta_link": {
           "type": "Link",
           "config": {
-            "label": "CTA Internal Link",
-            "select": "document"
+            "label": "CTA link",
+            "placeholder": "",
+            "select": null
           }
         },
         "cta_text_internal_link": {

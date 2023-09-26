@@ -46,10 +46,7 @@ const TakeAway = ({ slice }) => (
             <PrismicRichText field={item.paragraph} key={i} />
           ))}
         </div>
-        <PrismicLink
-          document={slice.primary.cta_internal_link}
-          className="btn-primary"
-        >
+        <PrismicLink document={slice.primary.cta_link} className="btn-primary">
           {slice.primary.cta_text_internal_link}
         </PrismicLink>
       </div>

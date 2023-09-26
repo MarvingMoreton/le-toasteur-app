@@ -2264,15 +2264,15 @@ interface TakeAwaySliceDefaultPrimary {
      */
     takeawaytitleoverlay: prismicT.TitleField;
     /**
-     * CTA Internal Link field in *TakeAway → Primary*
+     * CTA link field in *TakeAway → Primary*
      *
-     * - **Field Type**: Content Relationship
+     * - **Field Type**: Link
      * - **Placeholder**: *None*
-     * - **API ID Path**: take_away.primary.cta_internal_link
+     * - **API ID Path**: take_away.primary.cta_link
      * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
      *
      */
-    cta_internal_link: prismicT.RelationField;
+    cta_link: prismicT.LinkField;
     /**
      * CTA Text Internal Link field in *TakeAway → Primary*
      *
