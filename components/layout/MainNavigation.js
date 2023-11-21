@@ -132,7 +132,9 @@ function MainNavigation({ alternateLanguages = [], ...props }) {
                         setIsNavExpanded(!isNavExpanded);
                       }}
                     >
-                      Home
+                      {alternateLanguages[0].lang == 'fr-fr'
+                        ? 'Home'
+                        : 'Accueil'}
                     </a>
                   </Link>
                 </li>
