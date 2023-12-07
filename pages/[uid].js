@@ -31,7 +31,7 @@ const Page = (props) => {
         <meta property="og:url" content={currentRoute} />
         <meta property="og:image" content={ogImage} alt={ogImageAlt} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:site_name" content="Marving Moreton" />
+        <meta property="og:site_name" content="Le Toasteur Villeray" />
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </Layout>

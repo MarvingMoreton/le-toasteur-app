@@ -48,7 +48,7 @@ const Home = (props) => {
         <meta property="og:url" content={currentRoute} />
         <meta property="og:image" content={ogImage} alt={ogImageAlt} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:site_name" content="Marving Moreton" />
+        <meta property="og:site_name" content="Le Toasteur Villeray" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={structuredDataOrg()}
