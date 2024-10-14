@@ -20,29 +20,29 @@ const BlogModal = () => {
         />
 
         {/* Modal */}
-        <div className="relative z-20 mx-auto max-w-lg h-[250px] p-6 bg-white rounded-lg shadow-lg">
-          <div className="flex justify-center mb-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#f6d3cc] mb-10">
+        <div className="relative z-20 mx-auto max-w-xl h-auto p-8 bg-white rounded-lg shadow-lg">
+          <div className="flex justify-center mb-6">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#f6d3cc]">
               <PauseIcon
                 aria-hidden="true"
-                className="h-6 w-6 text-[#ff5c39]"
+                className="h-8 w-8 text-[#ff5c39]"
               />
             </div>
           </div>
 
-          <h3 className="text-lg font-semibold text-center text-gray-900">
+          <h3 className="text-2xl font-semibold text-center text-gray-900">
             Coming soon: Bientôt disponible !
           </h3>
-          <p className="mt-2 text-center text-sm text-gray-500">
+          <p className="mt-4 text-center text-base text-gray-600">
             Nous travaillons dur pour vous apporter le meilleur contenu. Restez
             à l'écoute pour des mises à jour passionnantes !
           </p>
 
-          <div className="mt-16">
+          <div className="mt-10">
             <button
               type="button"
               onClick={handleRedirect}
-              className="w-full rounded-md bg-[#041e42] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+              className="w-full rounded-md bg-[#041e42] px-5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600"
             >
               Retourner à la page d'accueil
             </button>
