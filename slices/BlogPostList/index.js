@@ -1,5 +1,5 @@
 import React from 'react';
-import { PrismicLink, PrismicRichText } from '@prismicio/react';
+import { PrismicLink } from '@prismicio/react';
 import Image from 'next/image';
 const posts = [
   {
