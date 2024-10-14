@@ -13,7 +13,6 @@ const BlogHome = (props) => {
   const currentRoute = router.pathname;
 
   const { metaTitle, metaDescription, ogImage, ogImageAlt, page } = props;
-  // console.log(page);
   const canonicalUrl = `https://letoasteur.com` + page.url;
 
   return (
