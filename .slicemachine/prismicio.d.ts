@@ -68,7 +68,7 @@ interface BlogHomeDocumentData {
  * Slice for *Blog Home → Slice Zone*
  *
  */
-type BlogHomeDocumentDataSlicesSlice = BannerSlice;
+type BlogHomeDocumentDataSlicesSlice = BannerSlice | BlogPostListSlice;
 /**
  * Blog Home document from Prismic
  *

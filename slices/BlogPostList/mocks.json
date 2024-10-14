@@ -5,12 +5,12 @@
     "primary": {
       "title": {
         "__TYPE__": "FieldContent",
-        "value": "perfect",
+        "value": "sister",
         "type": "Text"
       },
       "description": {
         "__TYPE__": "FieldContent",
-        "value": "over",
+        "value": "stairs",
         "type": "Text"
       }
     },

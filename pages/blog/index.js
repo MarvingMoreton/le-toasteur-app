@@ -6,7 +6,7 @@ import { resolveLocaleFromNext } from '../../lib/resolveLocaleFromNext';
 import { withAlternateLanguageURLs } from '../../lib/withAlternateLanguageURLs';
 import { useRouter } from 'next/router';
 import Layout from '../../components/layout/Layout';
-import BlogLists from '../../components/ui/blog/BlogList';
+import BlogModal from '../../components/ui/shared/BlogModal';
 
 const BlogHome = (props) => {
   const router = useRouter();
@@ -16,90 +16,26 @@ const BlogHome = (props) => {
   // console.log(page);
   const canonicalUrl = `https://letoasteur.com` + page.url;
 
-  const posts = [
-    {
-      id: 1,
-      title: 'Boost your conversion rate',
-      href: '#',
-      description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.',
-      imageUrl:
-        'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-      date: 'Mar 16, 2020',
-      datetime: '2020-03-16',
-      category: { title: 'Marketing', href: '#' },
-      author: {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
-      }
-    },
-    {
-      id: 2,
-      title: 'Boost your conversion rate',
-      href: '#',
-      description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.',
-      imageUrl:
-        'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-      date: 'Mar 16, 2020',
-      datetime: '2020-03-16',
-      category: { title: 'Marketing', href: '#' },
-      author: {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
-      }
-    },
-    {
-      id: 3,
-      title: 'Boost your conversion rate',
-      href: '#',
-      description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.',
-      imageUrl:
-        'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-      date: 'Mar 16, 2020',
-      datetime: '2020-03-16',
-      category: { title: 'Marketing', href: '#' },
-      author: {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
-      }
-    }
-    // Add more posts...
-  ];
-
   return (
     <Layout alternateLanguages={page.alternate_languages}>
+      <BlogModal />
       <Head>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} key="desc" />
         <link rel="canonical" href={canonicalUrl} key="canonical" />
-
         <meta name="twitter:card" content="summary" />
-
         <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:description" content={metaDescription} />
-
         <meta name="twitter:image" content={ogImage} />
-
         <meta property="og:title" content={metaTitle} />
         <meta property="og:type" content="page" />
         <meta property="og:url" content={currentRoute} />
         <meta property="og:image" content={ogImage} alt={ogImageAlt} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:site_name" content="Le Toasteur Villeray" />
+        <meta name="robots" content="noindex" />
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
-      <BlogLists posts={posts} />
     </Layout>
   );
 };
