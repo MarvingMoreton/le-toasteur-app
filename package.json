@@ -22,7 +22,6 @@
     "@prismicio/next": "^0.1.7",
     "@prismicio/react": "^2.5.2",
     "@prismicio/slice-simulator-react": "^0.2.2",
-    "@swc/helpers": "^0.5.13",
     "flag-icons": "^6.6.6",
     "google-maps-react": "^2.0.6",
     "lucide-react": "^0.452.0",
