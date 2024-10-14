@@ -7,7 +7,7 @@ const Reservations = () => {
 
   // Hard-coded username and password for simplicity
   const adminUsername = 'admin'; // Change to your preferred admin name
-  const adminPassword = 'yourpassword'; // Change to your preferred password
+  const adminPassword = '12345'; // Change to your preferred password
 
   const handleLogin = (e) => {
     e.preventDefault();
