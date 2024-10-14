@@ -6,6 +6,79 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = {
     [KeyType in keyof T]: T[KeyType];
 };
+/** Content for Blog Home documents */
+interface BlogHomeDocumentData {
+    /**
+     * Slice Zone field in *Blog Home*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_home.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<BlogHomeDocumentDataSlicesSlice>;
+    /**
+     * Meta Title field in *Blog Home*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_home.meta_title
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_title: prismicT.KeyTextField;
+    /**
+     * Meta Description field in *Blog Home*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_home.meta_description
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_description: prismicT.KeyTextField;
+    /**
+     * Keyword field in *Blog Home*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_home.keyword
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    keyword: prismicT.KeyTextField;
+    /**
+     * OG Image field in *Blog Home*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_home.og_image
+     * - **Tab**: SEO TAB
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    og_image: prismicT.ImageField<never>;
+}
+/**
+ * Slice for *Blog Home → Slice Zone*
+ *
+ */
+type BlogHomeDocumentDataSlicesSlice = BannerSlice;
+/**
+ * Blog Home document from Prismic
+ *
+ * - **API ID**: `blog_home`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type BlogHomeDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<BlogHomeDocumentData>, "blog_home", Lang>;
 /** Content for Homepage documents */
 interface HomepageDocumentData {
     /**
@@ -472,7 +545,7 @@ type StandardpageDocumentDataSlicesSlice = HeroSliceSlice | ImageGallerySlice | 
  * @typeParam Lang - Language API ID of the document.
  */
 export type StandardpageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<StandardpageDocumentData>, "standardpage", Lang>;
-export type AllDocumentTypes = HomepageDocument | MenuDocument | PageDocument | StandardpageDocument;
+export type AllDocumentTypes = BlogHomeDocument | HomepageDocument | MenuDocument | PageDocument | StandardpageDocument;
 /**
  * Primary content in AddressesBox → Primary
  *
@@ -672,6 +745,55 @@ type BannerSliceVariation = BannerSliceDefault;
  *
  */
 export type BannerSlice = prismicT.SharedSlice<"banner", BannerSliceVariation>;
+/**
+ * Primary content in BlogPostList → Primary
+ *
+ */
+interface BlogPostListSliceDefaultPrimary {
+    /**
+     * Title field in *BlogPostList → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_post_list.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    title: prismicT.KeyTextField;
+    /**
+     * Description field in *BlogPostList → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_post_list.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    description: prismicT.KeyTextField;
+}
+/**
+ * Default variation for BlogPostList Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `BlogPostList`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BlogPostListSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BlogPostListSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *BlogPostList*
+ *
+ */
+type BlogPostListSliceVariation = BlogPostListSliceDefault;
+/**
+ * BlogPostList Shared Slice
+ *
+ * - **API ID**: `blog_post_list`
+ * - **Description**: `BlogPostList`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BlogPostListSlice = prismicT.SharedSlice<"blog_post_list", BlogPostListSliceVariation>;
 /**
  * Primary content in BookTable → Primary
  *
@@ -2756,6 +2878,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, MenuDocumentData, MenuDocumentDataMenuLinksItem, MenuDocumentDataSlicesSlice, MenuDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TakeAwaySliceDefaultPrimary, TakeAwaySliceDefaultItem, TakeAwaySliceDefault, TakeAwaySliceVariation, TakeAwaySlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, ValuesListSliceDefaultPrimary, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
+        export type { BlogHomeDocumentData, BlogHomeDocumentDataSlicesSlice, BlogHomeDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, MenuDocumentData, MenuDocumentDataMenuLinksItem, MenuDocumentDataSlicesSlice, MenuDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BlogPostListSliceDefaultPrimary, BlogPostListSliceDefault, BlogPostListSliceVariation, BlogPostListSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TakeAwaySliceDefaultPrimary, TakeAwaySliceDefaultItem, TakeAwaySliceDefault, TakeAwaySliceVariation, TakeAwaySlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, ValuesListSliceDefaultPrimary, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
     }
 }

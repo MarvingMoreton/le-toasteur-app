@@ -3,6 +3,7 @@
 import AddressesBox from './AddressesBox';
 import AllergyBox from './AllergyBox';
 import BannerSlice from './BannerSlice';
+import BlogPostList from './BlogPostList';
 import BookTable from './BookTable';
 import DrinksMenu from './DrinksMenu';
 import GalleryList from './GalleryList';
@@ -23,6 +24,7 @@ export {
 	AddressesBox,
 	AllergyBox,
 	BannerSlice,
+	BlogPostList,
 	BookTable,
 	DrinksMenu,
 	GalleryList,
@@ -44,6 +46,7 @@ export const components = {
 	addresses_box: AddressesBox,
 	allergy_box: AllergyBox,
 	banner: BannerSlice,
+	blog_post_list: BlogPostList,
 	book_table: BookTable,
 	drinks_menu: DrinksMenu,
 	gallery_list: GalleryList,
