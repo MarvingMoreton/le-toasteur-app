@@ -7,6 +7,11 @@ import Image from 'next/image';
 import illustration from '../../public/images/illustrations/hero-img-dummy.webp';
 
 import classes from '../../components/ui/homepage/Hero.module.css';
+
+const isValidLink = (link) => {
+  return link && link.link_type === 'Document' && (link.id || link.uid);
+};
+
 /**
  * @typedef {import("@prismicio/client").Content.HeroSliceSlice} HeroSliceSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<HeroSliceSlice>} HeroSliceProps
@@ -20,12 +25,15 @@ const HeroSlice = ({ slice }) => (
         <PrismicRichText field={slice.primary.title} />
         <span>{slice.primary.description}</span>
 
-        <PrismicLink
-          document={slice.primary.cta_internal_link}
-          className="btn-primary"
-        >
-          {slice.primary.cta_text}
-        </PrismicLink>
+        {/* Safe check for PrismicLink */}
+        {isValidLink(slice.primary.cta_internal_link) && (
+          <PrismicLink
+            document={slice.primary.cta_internal_link}
+            className="btn-primary"
+          >
+            {slice.primary.cta_text}
+          </PrismicLink>
+        )}
       </div>
 
       {/* dynamic image zz*/}
@@ -34,6 +42,7 @@ const HeroSlice = ({ slice }) => (
           field={slice.primary.image}
           className={classes['hero-img-box']}
           alt={slice.primary.image.alt}
+          priority
         />
       </div>
     </div>

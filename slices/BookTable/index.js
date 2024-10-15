@@ -9,7 +9,9 @@ import table from '../../public/images/restaurant/table-toasteur.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
+const isValidLink = (link) => {
+  return link && link.link_type === 'Document' && (link.id || link.uid);
+};
 /**
  * @typedef {import("@prismicio/client").Content.BookTableSlice} BookTableSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<BookTableSlice>} BookTableProps
@@ -49,12 +51,15 @@ const BookTable = ({ slice }) => (
             <PrismicRichText field={item.paragraph} key={i} />
           ))}
         </div>
-        <PrismicLink
-          document={slice.primary.cta_internal_link}
-          className="btn-primary"
-        >
-          {slice.primary.cta_text_internal_link}
-        </PrismicLink>
+        {/* Safe check for PrismicLink */}
+        {isValidLink(slice.primary.cta_internal_link) && (
+          <PrismicLink
+            document={slice.primary.cta_internal_link}
+            className="btn-primary"
+          >
+            {slice.primary.cta_text_internal_link}
+          </PrismicLink>
+        )}
       </div>
     </div>
   </section>

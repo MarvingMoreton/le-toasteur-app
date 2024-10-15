@@ -3,7 +3,8 @@
     "homepage": {},
     "standardpage": {},
     "page": {},
-    "menu": {}
+    "menu": {},
+    "blog_home": {}
   },
   "slices": {
     "HeroSlice": {
@@ -355,6 +356,11 @@
       "default": {
         "primary": {},
         "items": {}
+      }
+    },
+    "BlogPostList": {
+      "default": {
+        "primary": {}
       }
     }
   }

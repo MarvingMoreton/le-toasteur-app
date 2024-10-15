@@ -28,6 +28,15 @@ const routes = [
     path: '/en-ca'
   },
   {
+    type: 'blog_home',
+    path: '/blog/:lang?'
+  },
+  {
+    type: 'blog_home',
+    lang: 'en-ca',
+    path: '/en-ca/blog'
+  },
+  {
     type: 'page',
     path: '/:lang?/:uid'
   },
