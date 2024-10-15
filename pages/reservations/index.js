@@ -1,32 +1,42 @@
 import { useState, useEffect } from 'react';
+import { createClient } from '../../prismicio';
+import { resolveLocaleFromNext } from '../../lib/resolveLocaleFromNext';
+import { withAlternateLanguageURLs } from '../../lib/withAlternateLanguageURLs';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-const Reservations = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+const Reservations = ({ isAuthenticated: initialAuthStatus, locale }) => {
+  const [isAuthenticated, setIsAuthenticated] = useState(initialAuthStatus);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
 
-  // Hard-coded username and password for simplicity
-  const adminUsername = 'Pro VIP';
-  const adminPassword = '12345'; // Change to your preferred password
-
-  // Check localStorage for previous login
-  useEffect(() => {
-    const isVerified = localStorage.getItem('alreadySignedAsPro');
-    if (isVerified === 'verifiedByToasteur') {
-      setIsAuthenticated(true);
-    }
-  }, []);
-
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    if (username === adminUsername && password === adminPassword) {
-      // Save to localStorage
+
+    const res = await fetch('/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password, locale }) // Pass locale to the API
+    });
+
+    const result = await res.json();
+    if (result.isAuthenticated) {
+      // Save the flag to localStorage
       localStorage.setItem('alreadySignedAsPro', 'verifiedByToasteur');
       setIsAuthenticated(true);
     } else {
       alert('Ce ne sont pas les bons identifiants');
     }
   };
+
+  // Check for localStorage verification
+  useEffect(() => {
+    const isVerified = localStorage.getItem('alreadySignedAsPro');
+    if (isVerified === 'verifiedByToasteur') {
+      setIsAuthenticated(true);
+    }
+  }, []);
 
   if (!isAuthenticated) {
     return (
@@ -89,3 +99,26 @@ const Reservations = () => {
 };
 
 export default Reservations;
+
+// Server-side logic to get the credentials from Prismic CMS
+export async function getServerSideProps({ previewData, locale }) {
+  const client = createClient({ previewData });
+  const resolvedLocale = resolveLocaleFromNext(locale);
+
+  const page = await client.getSingle('reservations', {
+    lang: resolvedLocale
+  });
+
+  const adminUsername = page.data.username;
+  const adminPassword = page.data.password;
+
+  console.log('whatusp:', adminUsername, adminPassword);
+  return {
+    props: {
+      adminUsername,
+      adminPassword,
+      isAuthenticated: false,
+      locale: resolvedLocale
+    }
+  };
+}

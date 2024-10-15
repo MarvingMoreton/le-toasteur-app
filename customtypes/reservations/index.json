@@ -1,0 +1,24 @@
+{
+  "id": "reservations",
+  "label": "reservations",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "username": {
+        "type": "Text",
+        "config": {
+          "label": "username",
+          "placeholder": ""
+        }
+      },
+      "password": {
+        "type": "Text",
+        "config": {
+          "label": "password",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}
