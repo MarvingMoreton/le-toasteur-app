@@ -4,10 +4,10 @@ import Image from 'next/image';
 const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
+    title: 'Ton lieu pour un déjeuner matinal,',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.',
+      'Depuis plus de 10 ans, on propose des déjeuners et des brunchs, aussi classiques que créatifs élaborés avec des produits de saison..',
     imageUrl:
       'https://images.prismic.io/letoasteur/f6e306a2-87fa-4957-8279-fddd8beb9a86_og-graph-3.png?auto=format,compress',
     date: 'Mar 16, 2020',
@@ -23,10 +23,10 @@ const posts = [
   },
   {
     id: 2,
-    title: 'Boost your conversion rate',
+    title: 'Ton lieu pour un déjeuner matinal,',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.',
+      'Depuis plus de 10 ans, on propose des déjeuners et des brunchs, aussi classiques que créatifs élaborés avec des produits de saison..',
     imageUrl:
       'https://images.prismic.io/letoasteur/f6e306a2-87fa-4957-8279-fddd8beb9a86_og-graph-3.png?auto=format,compress',
     date: 'Mar 16, 2020',
@@ -42,10 +42,10 @@ const posts = [
   },
   {
     id: 3,
-    title: 'Boost your conversion rate',
+    title: 'Ton lieu pour un déjeuner matinal,',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.',
+      'Depuis plus de 10 ans, on propose des déjeuners et des brunchs, aussi classiques que créatifs élaborés avec des produits de saison..',
     imageUrl:
       'https://images.prismic.io/letoasteur/f6e306a2-87fa-4957-8279-fddd8beb9a86_og-graph-3.png?auto=format,compress',
     date: 'Mar 16, 2020',
