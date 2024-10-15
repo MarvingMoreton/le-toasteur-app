@@ -4,8 +4,10 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { PrismicRichText, PrismicLink } from '@prismicio/react';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import classes from '../../components/ui/homepage/BookTable.module.css';
-import Link from 'next/link';
-import Image from 'next/image';
+
+const isValidLink = (link) => {
+  return link && link.link_type === 'Document' && (link.id || link.uid);
+};
 
 /**
  * @typedef {import("@prismicio/client").Content.TakeAwaySlice} TakeAwaySlice
@@ -46,9 +48,16 @@ const TakeAway = ({ slice }) => (
             <PrismicRichText field={item.paragraph} key={i} />
           ))}
         </div>
-        <PrismicLink document={slice.primary.cta_link} className="btn-primary">
-          {slice.primary.cta_text_internal_link}
-        </PrismicLink>
+
+        {/* Safe check for PrismicLink */}
+        {isValidLink(slice.primary.cta_link) && (
+          <PrismicLink
+            document={slice.primary.cta_link}
+            className="btn-primary"
+          >
+            {slice.primary.cta_text_internal_link}
+          </PrismicLink>
+        )}
       </div>
     </div>
   </section>

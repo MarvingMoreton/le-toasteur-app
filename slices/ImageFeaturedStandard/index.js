@@ -1,62 +1,75 @@
 import React from 'react';
-import { PrismicRichText, PrismicText, PrismicLink } from '@prismicio/react';
+import { PrismicRichText, PrismicLink } from '@prismicio/react';
 import { PrismicNextImage } from '@prismicio/next';
-import Image from 'next/image';
 import classes from '../../components/ui/homepage/ImageFeatured.module.css';
-import RichText from '../../components/PrismicComponents/CustomRichText';
-import CustomLink from '../../components/PrismicComponents/CustomLink';
-import Link from 'next/link';
 
 /**
  * @typedef {import("@prismicio/client").Content.ImageFeaturedStandardSlice} ImageFeaturedStandardSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<ImageFeaturedStandardSlice>} ImageFeaturedStandardProps
  * @param { ImageFeaturedStandardProps }
  */
-const ImageFeaturedStandard = ({ slice }) => (
-  <section className={`${classes['section-featured']} ${'container'}`}>
-    <div className={classes['box-text']}>
-      <span className="subtitle">{slice.primary.subtitle}</span>
+const ImageFeaturedStandard = ({ slice }) => {
+  const {
+    cta_internal_link,
+    cta_text_link,
+    cta_internal_link_2,
+    cta_text_link_2
+  } = slice.primary;
 
-      <PrismicRichText
-        field={slice.primary.secondary_heading}
-        components={{
-          heading2: ({ children }) => (
-            <h2 className={classes.title}>{children}</h2>
-          )
-        }}
-      />
+  // Function to check if the link is valid
+  const isValidLink = (link) => {
+    return link && link.link_type === 'Document' && (link.id || link.uid);
+  };
 
-      <div className={classes['box-paragraph']}>
-        {slice?.items?.map((item, i) => (
-          <PrismicRichText field={item.paragraph} key={i} />
-        ))}
+  return (
+    <section className={`${classes['section-featured']} ${'container'}`}>
+      <div className={classes['box-text']}>
+        <span className="subtitle">{slice.primary.subtitle}</span>
+
+        <PrismicRichText
+          field={slice.primary.secondary_heading}
+          components={{
+            heading2: ({ children }) => (
+              <h2 className={classes.title}>{children}</h2>
+            )
+          }}
+        />
+
+        <div className={classes['box-paragraph']}>
+          {slice?.items?.map((item, i) => (
+            <PrismicRichText field={item.paragraph} key={i} />
+          ))}
+        </div>
+
+        <div className={classes['box-buttons']}>
+          {/* Safe check for the first PrismicLink */}
+          {isValidLink(cta_internal_link) && cta_text_link && (
+            <PrismicLink document={cta_internal_link} className="btn-primary">
+              {cta_text_link}
+            </PrismicLink>
+          )}
+
+          {/* Safe check for the second PrismicLink */}
+          {isValidLink(cta_internal_link_2) && cta_text_link_2 && (
+            <PrismicLink
+              document={cta_internal_link_2}
+              className="btn-secondary"
+            >
+              {cta_text_link_2}
+            </PrismicLink>
+          )}
+        </div>
       </div>
-      <div className={classes['box-buttons']}>
-        <PrismicLink
-          document={slice.primary.cta_internal_link}
-          className="btn-primary"
-        >
-          {slice.primary.cta_text_link}
-        </PrismicLink>
 
-        <PrismicLink
-          document={slice.primary.cta_internal_link_2}
-          className="btn-secondary"
-        >
-          {slice.primary.cta_text_link_2}
-        </PrismicLink>
+      <div className={classes['box-image']}>
+        <PrismicNextImage
+          className={classes['image-standard']}
+          field={slice.primary.image}
+          alt={slice.primary.image.alt}
+        />
       </div>
-    </div>
-
-    <div className={classes['box-image']}>
-      {/* <Image src={slice.primary.image.url} alt={slice.primary.image.alt} />// */}
-      <PrismicNextImage
-        className={classes['image-standard']}
-        field={slice.primary.image}
-        alt={slice.primary.image.alt}
-      />
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default ImageFeaturedStandard;
