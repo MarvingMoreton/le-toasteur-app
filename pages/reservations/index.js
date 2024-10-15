@@ -1,20 +1,30 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Reservations = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [username, setUsername] = useState('nom utilisateur');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   // Hard-coded username and password for simplicity
   const adminUsername = 'Pro VIP';
   const adminPassword = '12345'; // Change to your preferred password
 
+  // Check localStorage for previous login
+  useEffect(() => {
+    const isVerified = localStorage.getItem('alreadySignedAsPro');
+    if (isVerified === 'verifiedByToasteur') {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
   const handleLogin = (e) => {
     e.preventDefault();
     if (username === adminUsername && password === adminPassword) {
+      // Save to localStorage
+      localStorage.setItem('alreadySignedAsPro', 'verifiedByToasteur');
       setIsAuthenticated(true);
     } else {
-      alert("Ce n'est pas le bon mot de passe!");
+      alert('Ce ne sont pas les bons identifiants');
     }
   };
 
@@ -53,7 +63,7 @@ const Reservations = () => {
             </div>
             <button
               type="submit"
-              className="w-full text-xl  bg-[#041e42] text-white px-4 py-3 rounded-md font-medium hover:bg-[#ff5c39] focus:outline-none focus:ring-2 focus:ring-[#ff5c39]"
+              className="w-full text-xl bg-[#041e42] text-white px-4 py-3 rounded-md font-medium hover:bg-[#ff5c39] focus:outline-none focus:ring-2 focus:ring-[#ff5c39]"
             >
               Se connecter
             </button>
