@@ -37,6 +37,15 @@ const routes = [
     path: '/en-ca/blog'
   },
   {
+    type: 'reservations',
+    path: '/:lang?'
+  },
+  {
+    type: 'reservations',
+    lang: 'en-ca',
+    path: '/en-ca/reservations'
+  },
+  {
     type: 'page',
     path: '/:lang?/:uid'
   },

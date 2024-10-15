@@ -1,0 +1,12 @@
+{
+  "username": {
+    "__TYPE__": "FieldContent",
+    "value": "furniture",
+    "type": "Text"
+  },
+  "password": {
+    "__TYPE__": "FieldContent",
+    "value": "has",
+    "type": "Text"
+  }
+}
