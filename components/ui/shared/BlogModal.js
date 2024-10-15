@@ -42,7 +42,7 @@ const BlogModal = () => {
             <button
               type="button"
               onClick={handleRedirect}
-              className="w-full rounded-md bg-[#041e42] px-5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+              className="w-full rounded-md bg-[#041e42] px-5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-[#ff5c39] focus:outline-none focus:ring-2 focus:ring-[#ff5c39]"
             >
               Retourner à la page d'accueil
             </button>
