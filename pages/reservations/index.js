@@ -3,13 +3,34 @@ import { createClient } from '../../prismicio';
 import { resolveLocaleFromNext } from '../../lib/resolveLocaleFromNext';
 import { withAlternateLanguageURLs } from '../../lib/withAlternateLanguageURLs';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 
 const Reservations = ({ isAuthenticated: initialAuthStatus, locale }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(initialAuthStatus);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const router = useRouter();
+
+  // Define language content based on locale
+  const content = {
+    'fr': {
+      connection: 'Connexion',
+      usernameLabel: 'Utilisateur',
+      passwordLabel: 'Mot de passe',
+      loginButton: 'Se connecter',
+      wrongCredentials: 'Ce ne sont pas les bons identifiants',
+      placeholderUser: 'nom utilisateur'
+    },
+    'en-ca': {
+      connection: 'Connection',
+      usernameLabel: 'User',
+      passwordLabel: 'Password',
+      loginButton: 'Log in',
+      wrongCredentials: 'These are the wrong identifiers',
+      placeholderUser: 'username'
+    }
+  };
+
+  // Use content based on locale (default to French if not provided)
+  const currentContent = content[locale] || content['fr'];
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -22,37 +43,51 @@ const Reservations = ({ isAuthenticated: initialAuthStatus, locale }) => {
 
     const result = await res.json();
     if (result.isAuthenticated) {
-      // Save the flag to localStorage
+      // Set expiration for 30 days from now
+      const expirationTime = new Date().getTime() + 30 * 24 * 60 * 60 * 1000;
+
+      // Save the flag and expiration to localStorage
       localStorage.setItem('alreadySignedAsPro', 'verifiedByToasteur');
+      localStorage.setItem('authExpiration', expirationTime.toString());
+
       setIsAuthenticated(true);
     } else {
-      alert('Ce ne sont pas les bons identifiants');
+      alert(currentContent.wrongCredentials);
     }
   };
 
   // Check for localStorage verification
   useEffect(() => {
     const isVerified = localStorage.getItem('alreadySignedAsPro');
-    if (isVerified === 'verifiedByToasteur') {
-      setIsAuthenticated(true);
+    const expirationTime = localStorage.getItem('authExpiration');
+    const currentTime = new Date().getTime();
+
+    if (isVerified === 'verifiedByToasteur' && expirationTime) {
+      if (currentTime < parseInt(expirationTime, 10)) {
+        setIsAuthenticated(true); // Still valid
+      } else {
+        // Expired, clear localStorage
+        localStorage.removeItem('alreadySignedAsPro');
+        localStorage.removeItem('authExpiration');
+      }
     }
   }, []);
 
   if (!isAuthenticated) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex items-center justify-center min-h-screen bg-slate-100">
         <div className="p-16 bg-white shadow-lg rounded-md w-full max-w-3xl">
           <h2 className="mb-8 text-2xl font-semibold text-gray-800 text-center">
-            Connexion
+            {currentContent.connection}
           </h2>
           <form onSubmit={handleLogin} className="space-y-10">
             <div>
               <label className="block mb-3 text-lg font-medium text-gray-700">
-                Utilisateur
+                {currentContent.usernameLabel}
               </label>
               <input
                 type="text"
-                placeholder="nom utilisateur"
+                placeholder={currentContent.placeholderUser}
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-[#ff5c39] focus:border-[#ff5c39]"
@@ -61,7 +96,7 @@ const Reservations = ({ isAuthenticated: initialAuthStatus, locale }) => {
             </div>
             <div>
               <label className="block mb-3 text-lg font-medium text-gray-700">
-                Mot de passe
+                {currentContent.passwordLabel}
               </label>
               <input
                 type="password"
@@ -75,7 +110,7 @@ const Reservations = ({ isAuthenticated: initialAuthStatus, locale }) => {
               type="submit"
               className="w-full text-xl bg-[#041e42] text-white px-4 py-3 rounded-md font-medium hover:bg-[#ff5c39] focus:outline-none focus:ring-2 focus:ring-[#ff5c39]"
             >
-              Se connecter
+              {currentContent.loginButton}
             </button>
           </form>
         </div>
@@ -112,7 +147,6 @@ export async function getServerSideProps({ previewData, locale }) {
   const adminUsername = page.data.username;
   const adminPassword = page.data.password;
 
-  console.log('whatusp:', adminUsername, adminPassword);
   return {
     props: {
       adminUsername,
