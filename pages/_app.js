@@ -37,6 +37,7 @@ function MyApp({ Component, pageProps }) {
       <Script
         id="google-analytics"
         strategy="lazyOnload"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
