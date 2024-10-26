@@ -83,21 +83,11 @@
       }
     },
     "SEO TAB": {
-      "no_index": {
-        "type": "Boolean",
+      "keyword": {
+        "type": "Text",
         "config": {
-          "label": "NO INDEX",
-          "default_value": false,
-          "placeholder_true": "true",
-          "placeholder_false": "false"
-        }
-      },
-      "canonical_url": {
-        "type": "Link",
-        "config": {
-          "label": "Canonical URL",
-          "placeholder": "",
-          "select": null
+          "label": "Keyword",
+          "placeholder": ""
         }
       },
       "meta_title": {

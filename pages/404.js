@@ -14,8 +14,8 @@ function NotFoundPage() {
   return (
     <React.Fragment>
       <Head>
-        <title>Le Toasteur xx</title>
-        <meta name="description" content="Meta description to be filled!" />
+        <title>Le Toasteur - Erreur</title>
+        <meta name="description" content="Page 404: Cette page n'éxiste pas." />
       </Head>
 
       <div className={classes["background"]}>

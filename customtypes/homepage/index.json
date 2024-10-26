@@ -47,6 +47,13 @@
       }
     },
     "SEO TAB": {
+      "keyword": {
+        "type": "Text",
+        "config": {
+          "label": "Keyword",
+          "placeholder": ""
+        }
+      },
       "no_index": {
         "type": "Boolean",
         "config": {

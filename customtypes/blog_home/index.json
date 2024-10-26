@@ -21,6 +21,13 @@
       }
     },
     "SEO TAB": {
+      "keyword": {
+        "type": "Text",
+        "config": {
+          "label": "Keyword",
+          "placeholder": ""
+        }
+      },
       "meta_title": {
         "type": "Text",
         "config": {
@@ -32,13 +39,6 @@
         "type": "Text",
         "config": {
           "label": "Meta Description",
-          "placeholder": ""
-        }
-      },
-      "keyword": {
-        "type": "Text",
-        "config": {
-          "label": "Keyword",
           "placeholder": ""
         }
       },
