@@ -68,7 +68,7 @@ interface BlogHomeDocumentData {
  * Slice for *Blog Home → Slice Zone*
  *
  */
-type BlogHomeDocumentDataSlicesSlice = BannerSlice | BlogPostListSlice;
+type BlogHomeDocumentDataSlicesSlice = BannerSlice | BlogPostListSlice | TestimonialsMarqueeSlice;
 /**
  * Blog Home document from Prismic
  *
@@ -186,7 +186,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSlice | BookTableSlice | LoveContentSlice | TestimonialsGallerySlice | TakeAwaySlice;
+type HomepageDocumentDataSlicesSlice = HeroSliceSlice | ImageFeaturedStandardSlice | BookTableSlice | LoveContentSlice | TestimonialsGallerySlice | TakeAwaySlice | TestimonialsMarqueeSlice;
 /**
  * Homepage document from Prismic
  *
@@ -392,7 +392,7 @@ interface PageDocumentData {
  * Slice for *Page → Slice Zone*
  *
  */
-type PageDocumentDataSlicesSlice = BannerSlice | AddressesBoxSlice | AllergyBoxSlice | DrinksMenuSlice | BookTableSlice | GalleryListSlice | ImageGallerySlice | ImageFeaturedStandardSlice | HeroSliceSlice | LoveContentSlice | MainMenuSlice | MapBoxSlice | TestimonialsGallerySlice | TeamSliceSlice | StoryFeaturedSlice | ValuesListSlice | VeganMenuSlice | TakeAwaySlice;
+type PageDocumentDataSlicesSlice = BannerSlice | AddressesBoxSlice | AllergyBoxSlice | DrinksMenuSlice | BookTableSlice | GalleryListSlice | ImageGallerySlice | ImageFeaturedStandardSlice | HeroSliceSlice | LoveContentSlice | MainMenuSlice | MapBoxSlice | TestimonialsGallerySlice | TeamSliceSlice | StoryFeaturedSlice | ValuesListSlice | VeganMenuSlice | TakeAwaySlice | TestimonialsMarqueeSlice;
 /**
  * Page document from Prismic
  *
@@ -2694,6 +2694,45 @@ type TestimonialsGallerySliceVariation = TestimonialsGallerySliceDefault;
  */
 export type TestimonialsGallerySlice = prismicT.SharedSlice<"testimonials_gallery", TestimonialsGallerySliceVariation>;
 /**
+ * Primary content in TestimonialsMarquee → Primary
+ *
+ */
+interface TestimonialsMarqueeSliceDefaultPrimary {
+    /**
+     * Title field in *TestimonialsMarquee → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: testimonials_marquee.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    title: prismicT.KeyTextField;
+}
+/**
+ * Default variation for TestimonialsMarquee Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `TestimonialsMarquee`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TestimonialsMarqueeSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<TestimonialsMarqueeSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *TestimonialsMarquee*
+ *
+ */
+type TestimonialsMarqueeSliceVariation = TestimonialsMarqueeSliceDefault;
+/**
+ * TestimonialsMarquee Shared Slice
+ *
+ * - **API ID**: `testimonials_marquee`
+ * - **Description**: `TestimonialsMarquee`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TestimonialsMarqueeSlice = prismicT.SharedSlice<"testimonials_marquee", TestimonialsMarqueeSliceVariation>;
+/**
  * Primary content in ValuesList → Primary
  *
  */
@@ -2912,6 +2951,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { BlogHomeDocumentData, BlogHomeDocumentDataSlicesSlice, BlogHomeDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, MenuDocumentData, MenuDocumentDataMenuLinksItem, MenuDocumentDataSlicesSlice, MenuDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, ReservationsDocumentData, ReservationsDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BlogPostListSliceDefaultPrimary, BlogPostListSliceDefault, BlogPostListSliceVariation, BlogPostListSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TakeAwaySliceDefaultPrimary, TakeAwaySliceDefaultItem, TakeAwaySliceDefault, TakeAwaySliceVariation, TakeAwaySlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, ValuesListSliceDefaultPrimary, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
+        export type { BlogHomeDocumentData, BlogHomeDocumentDataSlicesSlice, BlogHomeDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, MenuDocumentData, MenuDocumentDataMenuLinksItem, MenuDocumentDataSlicesSlice, MenuDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, ReservationsDocumentData, ReservationsDocument, StandardpageDocumentData, StandardpageDocumentDataSlicesSlice, StandardpageDocument, AllDocumentTypes, AddressesBoxSliceDefaultPrimary, AddressesBoxSliceDefaultItem, AddressesBoxSliceDefault, AddressesBoxSliceVariation, AddressesBoxSlice, AllergyBoxSliceDefaultPrimary, AllergyBoxSliceDefaultItem, AllergyBoxSliceDefault, AllergyBoxSliceVariation, AllergyBoxSlice, BannerSliceDefaultPrimary, BannerSliceDefault, BannerSliceVariation, BannerSlice, BlogPostListSliceDefaultPrimary, BlogPostListSliceDefault, BlogPostListSliceVariation, BlogPostListSlice, BookTableSliceDefaultPrimary, BookTableSliceDefaultItem, BookTableSliceDefault, BookTableSliceVariation, BookTableSlice, DrinksMenuSliceDefaultPrimary, DrinksMenuSliceDefaultItem, DrinksMenuSliceDefault, DrinksMenuSliceVariation, DrinksMenuSlice, GalleryListSliceDefaultItem, GalleryListSliceDefault, GalleryListSliceVariation, GalleryListSlice, HeroSliceSliceDefaultPrimary, HeroSliceSliceDefault, HeroSliceSliceVariation, HeroSliceSlice, ImageFeaturedStandardSliceDefaultPrimary, ImageFeaturedStandardSliceDefaultItem, ImageFeaturedStandardSliceDefault, ImageFeaturedStandardSliceVariation, ImageFeaturedStandardSlice, ImageGallerySliceDefaultPrimary, ImageGallerySliceDefaultItem, ImageGallerySliceDefault, ImageGallerySliceVariation, ImageGallerySlice, LoveContentSliceDefaultPrimary, LoveContentSliceDefault, LoveContentSliceVariation, LoveContentSlice, MainMenuSliceDefaultPrimary, MainMenuSliceDefaultItem, MainMenuSliceDefault, MainMenuSliceVariation, MainMenuSlice, MapBoxSliceDefaultPrimary, MapBoxSliceDefault, MapBoxSliceVariation, MapBoxSlice, StoryFeaturedSliceDefaultPrimary, StoryFeaturedSliceDefaultItem, StoryFeaturedSliceDefault, StoryFeaturedSliceVariation, StoryFeaturedSlice, TakeAwaySliceDefaultPrimary, TakeAwaySliceDefaultItem, TakeAwaySliceDefault, TakeAwaySliceVariation, TakeAwaySlice, TeamSliceSliceDefaultPrimary, TeamSliceSliceDefaultItem, TeamSliceSliceDefault, TeamSliceSliceVariation, TeamSliceSlice, TestimonialsGallerySliceDefaultPrimary, TestimonialsGallerySliceDefault, TestimonialsGallerySliceVariation, TestimonialsGallerySlice, TestimonialsMarqueeSliceDefaultPrimary, TestimonialsMarqueeSliceDefault, TestimonialsMarqueeSliceVariation, TestimonialsMarqueeSlice, ValuesListSliceDefaultPrimary, ValuesListSliceDefault, ValuesListSliceVariation, ValuesListSlice, VeganMenuSliceDefaultPrimary, VeganMenuSliceDefaultItem, VeganMenuSliceDefault, VeganMenuSliceVariation, VeganMenuSlice };
     }
 }

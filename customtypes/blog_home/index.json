@@ -15,6 +15,9 @@
             },
             "blog_post_list": {
               "type": "SharedSlice"
+            },
+            "testimonials_marquee": {
+              "type": "SharedSlice"
             }
           }
         }

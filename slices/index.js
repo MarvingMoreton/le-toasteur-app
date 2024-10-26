@@ -17,6 +17,7 @@ import StoryFeatured from './StoryFeatured';
 import TakeAway from './TakeAway';
 import TeamSlice from './TeamSlice';
 import TestimonialsGallery from './TestimonialsGallery';
+import TestimonialsMarquee from './TestimonialsMarquee';
 import ValuesList from './ValuesList';
 import VeganMenu from './VeganMenu';
 
@@ -38,6 +39,7 @@ export {
 	TakeAway,
 	TeamSlice,
 	TestimonialsGallery,
+	TestimonialsMarquee,
 	ValuesList,
 	VeganMenu,
 };
@@ -60,6 +62,7 @@ export const components = {
 	take_away: TakeAway,
 	team_slice: TeamSlice,
 	testimonials_gallery: TestimonialsGallery,
+	testimonials_marquee: TestimonialsMarquee,
 	values_list: ValuesList,
 	vegan_menu: VeganMenu,
 };

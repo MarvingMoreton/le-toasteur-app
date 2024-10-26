@@ -49,7 +49,6 @@ function MyApp({ Component, pageProps }) {
       />
       <PrismicPreview repositoryName={letoasteur}>
         <Component {...pageProps} />
-        <TestimonialsMarquee/>
       </PrismicPreview>
     </PrismicProvider>
   );

@@ -3,7 +3,7 @@
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "banner$953e5af4-0f7f-4d80-a100-7af2e7cc5712",
+        "key": "banner$796f2dac-790f-409a-a63d-c1351a6cbe30",
         "name": "banner",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -15,27 +15,27 @@
                 {
                   "type": "heading1",
                   "content": {
-                    "text": "Stood"
+                    "text": "Common"
                   }
                 }
               ]
             },
             "description": {
               "__TYPE__": "FieldContent",
-              "value": "simple",
+              "value": "adventure",
               "type": "Text"
             },
             "backgroundimage": {
               "__TYPE__": "ImageContent",
               "origin": {
                 "id": "main",
-                "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-                "width": 5616,
-                "height": 3744
+                "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
+                "width": 3935,
+                "height": 5894
               },
-              "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-              "width": 5616,
-              "height": 3744,
+              "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
+              "width": 3935,
+              "height": 5894,
               "edit": {
                 "zoom": 1,
                 "crop": {
@@ -56,7 +56,7 @@
         }
       },
       {
-        "key": "blog_post_list$1802ffb7-a0d4-4a59-9e0a-2a49ff80b9ca",
+        "key": "blog_post_list$bc661d96-54db-49f7-94df-f05851373454",
         "name": "blog_post_list",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -64,12 +64,33 @@
           "primary": {
             "title": {
               "__TYPE__": "FieldContent",
-              "value": "pan",
+              "value": "struggle",
               "type": "Text"
             },
             "description": {
               "__TYPE__": "FieldContent",
-              "value": "bent",
+              "value": "curious",
+              "type": "Text"
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "testimonials_marquee$0a09a42f-b425-4447-a0d0-dfd50db43f3c",
+        "name": "testimonials_marquee",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "FieldContent",
+              "value": "nobody",
               "type": "Text"
             }
           },
@@ -85,30 +106,30 @@
   },
   "keyword": {
     "__TYPE__": "FieldContent",
-    "value": "tired",
+    "value": "substance",
     "type": "Text"
   },
   "meta_title": {
     "__TYPE__": "FieldContent",
-    "value": "off",
+    "value": "another",
     "type": "Text"
   },
   "meta_description": {
     "__TYPE__": "FieldContent",
-    "value": "ball",
+    "value": "slipped",
     "type": "Text"
   },
   "og_image": {
     "__TYPE__": "ImageContent",
     "origin": {
       "id": "main",
-      "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
-      "width": 2747,
-      "height": 4120
+      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+      "width": 4010,
+      "height": 4010
     },
-    "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
-    "width": 2747,
-    "height": 4120,
+    "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+    "width": 4010,
+    "height": 4010,
     "edit": {
       "zoom": 1,
       "crop": {

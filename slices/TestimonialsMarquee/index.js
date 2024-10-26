@@ -1,5 +1,6 @@
+import React from "react";
 import clsx from "clsx";
-import Marquee from "../magicui/marquee";
+import Marquee from "../../components/ui/magicui/marquee";
 import Image from "next/image";
 
 const reviews = [
@@ -89,7 +90,6 @@ const reviews = [
 
 const firstRow = reviews.slice(0, Math.floor(reviews.length / 2));
 const secondRow = reviews.slice(Math.floor(reviews.length / 2));
-
 const ReviewCard = ({ img, name, username, body }) => {
 	return (
 		<figure
@@ -128,34 +128,36 @@ const ReviewCard = ({ img, name, username, body }) => {
 		</figure>
 	);
 };
+/**
+ * @typedef {import("@prismicio/client").Content.TestimonialsMarqueeSlice} TestimonialsMarqueeSlice
+ * @typedef {import("@prismicio/react").SliceComponentProps<TestimonialsMarqueeSlice>} TestimonialsMarqueeProps
+ * @param { TestimonialsMarqueeProps }
+ */
+const TestimonialsMarquee = ({ slice }) => (
+	<section className="my-20 mb-34">
+		<div className="mx-auto max-w-2xl text-center">
+			<h2 className="dark:text-white mt-6 text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:mt-8 lg:text-5xl">
+				{slice.primary.title}
+			</h2>
+		</div>
 
-const TestimonialsMarquee = () => {
-	return (
-		<section className="my-20">
-			<div className="mx-auto max-w-2xl text-center">
-				<h2 className="dark:text-white mt-6 text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:mt-8 lg:text-5xl">
-					{"Real results, real stories"}
-				</h2>
-			</div>
-
-			<div className="mt-10 relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
-				<Marquee pauseOnHover className="[--duration:20s]">
-					{firstRow.map((review, index) => (
-						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-						<ReviewCard key={index} {...review} />
-					))}
-				</Marquee>
-				<Marquee reverse pauseOnHover className="[--duration:20s]">
-					{secondRow.map((review, index) => (
-						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-						<ReviewCard key={index} {...review} />
-					))}
-				</Marquee>
-				<div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r dark:from-black from-white" />
-				<div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l dark:from-black from-white" />
-			</div>
-		</section>
-	);
-};
+		<div className="mt-10 relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
+			<Marquee pauseOnHover className="[--duration:20s]">
+				{firstRow.map((review, index) => (
+					// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+					<ReviewCard key={index} {...review} />
+				))}
+			</Marquee>
+			<Marquee reverse pauseOnHover className="[--duration:20s]">
+				{secondRow.map((review, index) => (
+					// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+					<ReviewCard key={index} {...review} />
+				))}
+			</Marquee>
+			<div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r dark:from-black from-white" />
+			<div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l dark:from-black from-white" />
+		</div>
+	</section>
+);
 
 export default TestimonialsMarquee;

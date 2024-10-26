@@ -41,6 +41,9 @@
             },
             "take_away": {
               "type": "SharedSlice"
+            },
+            "testimonials_marquee": {
+              "type": "SharedSlice"
             }
           }
         }
