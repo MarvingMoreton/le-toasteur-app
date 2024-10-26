@@ -1,14 +1,21 @@
 .section-map {
   padding: 9.6rem 0;
 }
+.map-box-title{
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem !important;
 
+  color: #383838;
+}
 .banner {
   border-radius: 0.8rem;
   background-color: #efdbb2;
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  padding: 4rem 3.8rem;
+  padding: 4rem 3.4rem;
   display: flex;
   flex-direction: column;
   position: relative;
