@@ -32,7 +32,9 @@ const nextConfig = async () => {
       domains: [
         'letoasteur.cdn.prismic.io',
         'images.prismic.io',
-        'res.cloudinary.com'
+        'res.cloudinary.com',
+        'www.google.com',
+        'lh3.googleusercontent.com'
       ]
     }
 

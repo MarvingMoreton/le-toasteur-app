@@ -363,6 +363,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "TestimonialsMarquee": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

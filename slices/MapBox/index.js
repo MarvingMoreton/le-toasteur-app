@@ -13,7 +13,7 @@ const MapBox = ({ slice }) => (
       <div className={classes['container-banner-overlay']}>
         <div className={classes['banner']}>
           <span className={classes.pin}>📍</span>
-          <span>{slice.primary.description}</span>
+          <h1 className={classes['map-box-title']}>{slice.primary.description}</h1>
         </div>
       </div>
       <div className={classes['map-box']}>

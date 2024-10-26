@@ -10,6 +10,7 @@ import { PrismicProvider } from '@prismicio/react';
 import { PrismicPreview } from '@prismicio/next';
 import { letoasteur } from '../prismicio';
 import Script from 'next/script';
+import TestimonialsMarquee from '../components/ui/shared/TestimonialsMarquee';
 
 function MyApp({ Component, pageProps }) {
   return (
