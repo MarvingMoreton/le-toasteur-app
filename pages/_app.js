@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }) {
           type="image/png"
           href="/images/logos/toast-blue-navy-ellipsed.png"
         />
+        <meta name="google-site-verification" content="HjMuvqyhUevfkO0IWh-9Fw9VNVoPGw3QlPs-1ienJVs" />
       </Head>
       <Script
         strategy="lazyOnload"
