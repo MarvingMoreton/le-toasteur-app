@@ -4,7 +4,8 @@
     "standardpage": {},
     "page": {},
     "menu": {},
-    "blog_home": {}
+    "blog_home": {},
+    "reservations": {}
   },
   "slices": {
     "HeroSlice": {
