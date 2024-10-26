@@ -8,8 +8,7 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "slicemachine": "start-slicemachine",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build && next-sitemap"
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
